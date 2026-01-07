@@ -101,3 +101,60 @@
 ### 方向
 - North / East / South / West：北 / 東 / 南 / 西
 - Up / Down：上 / 下
+
+## CableTiers（線材分級）
+
+### 等級與命名
+- Elite：菁英
+- Ultra：究極
+- Mega：巨型
+- Creative：創造模式
+
+### 方塊/設備（Refined Storage 擴充）
+- Importer：輸入匯流排
+- Exporter：輸出匯流排
+- Destructor：破壞面板
+- Constructor：放置面板
+- Disk Interface：磁碟介面
+- Autocrafter：自動合成器
+- Interface：介面
+
+### GUI/操作
+- Advanced Filter：進階過濾器
+- Tag Filter：標籤過濾器
+- Done：完成
+- Click to open advanced filter：點擊以開啟進階過濾器
+- Import Mode：輸入模式
+- Don’t import：不輸入
+- Import everything：輸入所有物品
+- Import pattern outputs：輸入樣板成品
+- Import requested resources：僅輸入請求的資源
+- Import requested resources (deep)：僅輸入請求的資源（含子材料）
+
+### 方向/面
+- Side：面
+- Change input side：變更輸入面
+- None：無
+- Down / Up：下 / 上
+- North / South / West / East：北 / 南 / 西 / 東
+
+### 物品提示（Tooltip）
+- Faster than normal by %s：比一般的快 %s
+- Filter slots：過濾槽位
+- Input slots：輸入槽位
+- Transfer quota multiplier：傳輸配額倍率
+- Built-in stack upgrade：已內建堆疊升級
+
+### 設定（AutoConfig）
+- Config / Settings：設定
+- Tiered Importers：分級輸入匯流排
+- Tiered Exporters：分級輸出匯流排
+- Tiered Destructors：分級破壞面板
+- Tiered Constructors：分級放置面板
+- Tiered Disk Interface：分級磁碟介面
+- Tiered Autocrafters：分級自動合成器
+- Tiered Interfaces：分級介面
+- Energy Usage：能量消耗
+- Speed：速度
+- Stack Upgrade Integrated：內建堆疊升級
+- Transfer Quota Multiplier：傳輸配額倍率
