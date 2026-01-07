@@ -371,3 +371,69 @@
 - Closing in %s seconds：將於 %s 秒後關閉
 - Closing...：關閉中…
 - Teleporting to %s at %s：正在傳送至 %s（%s）
+
+## Chicken Roost（終極雞舍）
+
+### 核心名詞
+- Chicken：雞
+- Roost：雞舍
+- Empty Roost：空雞舍
+- Active Roost / In-use Roost：使用中的雞舍
+- Breeder：繁殖器
+- Closed Breeder：封閉式繁殖器
+- Soul Breeder：靈魂繁殖器
+- Soul Extractor：靈魂抽取器
+- Trainer：馴雞器
+- Collector：雞舍收集器
+- Feeder：雞舍餵食器
+- Chicken Storage：終極雞隻儲存箱
+- Manual / Book：終極雞舍手冊
+- Chicken Scanner：雞隻掃描器
+- Chicken Stick：趕雞棒（扳手）
+
+### 資源與階級
+- Chicken Seed (Tier 1–9)：雞種子（一階～九階）
+- Chicken Essence / Soul (Tier 1–9)：雞之靈魂（一階～九階）
+- Essence：精華（如：石頭精華、木頭精華）
+- Nether Star Shard：地獄之星碎片
+
+### 產出/機制（常用提示字）
+- Progress：進度
+- Data：數據
+- Training：訓練
+- Breeding：繁殖
+- Soul Breeding：靈魂繁殖
+- Soul Extracting：靈魂抽取
+- Roosting：雞舍
+
+### 命名規範（雞的種類）
+- <Material> Chicken：<材料>雞
+- Colored Chicken：<顏色>雞（例：藍色雞、棕色雞）
+- <Color> Egg：<顏色>雞蛋（例：藍色雞蛋、黃色雞蛋）
+- Lava Egg / Water Egg：岩漿蛋／水蛋
+
+### 常見礦物/合金（出現在雞與錠）
+- Adamantium：精金
+- Aluminium：鋁
+- Bronze：青銅
+- Chrome：鉻
+- Electrum：琥珀金
+- Enderium：終界金
+- Invar：因瓦合金
+- Iridium：銥
+- Lead：鉛
+- Lumium：流明金
+- Nickel：鎳
+- Platinum：鉑
+- Signalum：信號金
+- Steel：鋼
+- Tin：錫
+- Titanium：鈦
+- Tungsten：鎢
+- Tungstensteel：鎢鋼
+- Uranium：鈾
+- Zinc：鋅
+- Netherite：獄髓
+
+### 狀態/標記（建議統一）
+- WIP：開發中（WIP）
