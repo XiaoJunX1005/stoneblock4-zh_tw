@@ -232,3 +232,53 @@
 - Reset All：重置所有
 - None：無
 - Top / Bottom / Front / Back / Left / Right：上 / 下 / 前 /
+
+## FTB Chunks（區塊宣告/地圖）
+
+### 核心概念
+- Chunk：區塊
+- Claimed / Claimed Chunk：已宣告／已宣告區塊
+- Claim：宣告（區塊）
+- Already claimed：已被宣告（此區塊已被 %s 認領/宣告）
+- Wilderness：野外
+- Force Loaded / Force Loaded Chunk：強制載入／強制載入區塊
+
+### 地圖/小地圖
+- Map：地圖
+- Large Map：大地圖
+- Map Mode：地圖模式
+- Minimap：小地圖
+- Minimap Scale：小地圖比例
+- Minimap Locked North：小地圖鎖定北方
+- Minimap Waypoints：小地圖路徑點
+- Minimap Entities：小地圖實體
+- Minimap Player Heads：小地圖玩家圖示
+- Minimap Entity Heads：小地圖實體圖示
+- Minimap Large Entities：小地圖大型實體
+- Minimap XYZ：小地圖 XYZ
+- Minimap Biome：小地圖生物群系
+- Minimap Compass：小地圖指南針
+- Minimap Visibility：小地圖透明度
+- Chunk Grid：區塊邊界
+
+### 路徑點
+- Waypoint：路徑點
+- Add Waypoint：新增路徑點
+- In-world Waypoints：在世界上顯示路徑點
+- Death Waypoints：死亡時建立死亡路徑點
+
+### 盟友與共享
+- Allies：盟友
+- Sync / Share Map：共享地圖／同步
+- Ally Whitelist：盟友白名單
+- Ally Blacklist：盟友黑名單
+
+### 顯示/特效（設定項）
+- Noise：噪點
+- Shadows：陰影
+- Reduced Color Palette：簡化色板
+- Saturation：飽和度
+- Debug Info：除錯資訊
+
+### 錯誤/提示
+- No server mod：伺服器需要此 Mod！
