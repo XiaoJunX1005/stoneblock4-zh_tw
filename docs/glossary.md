@@ -282,3 +282,92 @@
 
 ### 錯誤/提示
 - No server mod：伺服器需要此 Mod！
+
+## Tempad（時門傳送裝置）
+
+### 核心名詞
+- Tempad：Tempad（可保留英文專名；或譯「時序器」但建議保留 Tempad）
+- Timedoor：時門（建議固定用「時門」）
+- Chronon：時子（或「克羅農」；二選一固定）
+- Chronons：時子（複數仍用「時子」即可）
+- Teleport：傳送
+- Destination：目的地
+- Location：位置／地點（建議固定用「位置」）
+- Coordinates：座標
+- Dimension：維度
+
+### 方塊/裝置（Blocks）
+- Timedoor Marker：時門標記器
+- Timedoor Projector：時門投影器
+- Chronomark：時標（Chronomark）
+- Metronome：節拍器
+- Workstation：工作站
+- Workstation Terminal / Workstation Child：工作站終端機
+
+### 物品（Items）
+- Location Card：位置卡
+- Card Wallet：卡片錢包
+- Location Broadcaster：位置廣播器
+- Knowledge Projector：知識投影器
+- Knowledge Repository Upgrade：知識庫升級
+- Chronometer：計時儀
+- Chronon Cell：時子電池芯
+- Chronon Battery：時子電池
+- Chronon Generator：時子產生器
+- Time Steel：時間鋼
+- Time Twister：時間扭曲器
+- Screening Device：篩選裝置
+
+### App / 介面（Apps & UI）
+- Settings：設定
+- Default App：預設 App
+- Default Macro：預設巨集
+- Organization：排序方式／整理方式
+- New Location：新增位置
+- Teleport：傳送
+- Travel Timeline：旅行時間線
+- Tracking：追蹤
+- Search...：搜尋…
+- Name...：名稱…
+- Color：顏色
+- Pin / Unpin：置頂／取消置頂
+- Favorite / Unfavorite：加入最愛／取消最愛
+- Delete：刪除
+- Delete Location?：刪除位置？
+- This action cannot be undone.：此操作無法復原。
+
+### 入口/權限（Access / Security）
+- Who can access?：誰可以使用？
+- Public access：公開存取
+- Just you：只有你
+- Everyone：所有人
+- Guildmates：公會成員
+- Party members：隊伍成員
+- Team：團隊（FTB Teams）
+
+### Portal Setup（時門位置微調）
+- Portal Setup：時門設定
+- Offset：偏移（-/+）
+- Angle：角度
+- F/B (Front/Back)：前/後
+- L/R (Left/Right)：左/右
+- U/D (Up/Down)：上/下
+- Is upright：保持直立
+- Positive ... / negative ...：正值…／負值…（保留原意）
+
+### 常見訊息（Messages / Errors）
+- Not enough chronons：時子不足
+- Teleport disabled：不可傳送至此位置
+- Delete disabled：不可刪除此位置
+- Timedoor already opened：時門已開啟
+- Timedoor opened：時門已開啟
+- Failed to open Timedoor：開啟時門失敗
+- Position is not initialized：位置尚未初始化
+- Travelling between dimensions is not allowed：不允許跨維度移動
+- Travelling within this dimension is not allowed：不允許在此維度內移動
+- Leaving this dimension is not allowed：不允許離開此維度
+- Entering this dimension is not allowed：不允許進入此維度
+- Returning to %s：返回至 %s
+- Closing in %s seconds：將於 %s 秒後關閉
+- Closing...：關閉中…
+- Teleporting to %s at %s：正在傳送至 %s（%s）
