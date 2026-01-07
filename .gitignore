@@ -1,0 +1,17 @@
+# Minecraft runtime junk
+logs/
+crash-reports/
+saves/
+screenshots/
+journeymap/
+shaderpacks/
+
+# Don't commit mods jars
+mods/
+
+# OS/IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.iml
