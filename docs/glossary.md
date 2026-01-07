@@ -231,7 +231,7 @@
 - Fuel In/Out：燃料輸入/彈出
 - Reset All：重置所有
 - None：無
-- Top / Bottom / Front / Back / Left / Right：上 / 下 / 前 /
+- Top / Bottom / Front / Back / Left / Right：上 / 下 / 前 / 後 / 左 / 右
 
 ## FTB Chunks（區塊宣告/地圖）
 
@@ -437,3 +437,53 @@
 
 ### 狀態/標記（建議統一）
 - WIP：開發中（WIP）
+
+## Toolkit（指令工具組）
+
+### 指令/系統訊息
+- Clipboard：剪貼簿
+- Copied to Clipboard：已複製到剪貼簿
+- Unknown Argument：未知參數
+- WIP：尚未實裝
+
+### 玩家/執行限制
+- Missing Player：缺少玩家／此指令只能由玩家在遊戲內執行
+- Hand Empty：手中無物品
+
+### 實體清除（Kill）
+- Entity：實體
+- Remove Entities：移除實體／清除實體
+- Type：類型
+- All：所有
+- Animals：動物
+- Monsters：怪物
+- Players：玩家
+- Items：掉落物
+- XP Orbs：經驗球
+- Current Player：當前玩家
+- Not Found：找不到（指定類型不存在）
+
+### 方塊移除（Remove）
+- Remove Blocks：移除方塊
+- Remove Done：方塊移除完成
+- Lag Warning：延遲警告（移除大量方塊可能造成延遲）
+
+### 附魔/修復
+- Enchant：附魔
+- Missing Enchant：缺少附魔（未附魔指定附魔）
+- Enchant Success：已附魔
+- Remove Enchant：移除附魔
+- Remove Enchant Success：已移除附魔
+- Repair：修復
+- Repair Success：已修復
+
+### 其他指令/功能（依字面用途）
+- Ore Distribution（oredist）：礦物分佈（需要區域大小參數）
+- LA：缺少參數（0=方塊/1=流體）
+
+### 內容/稱號
+- Dragonslayer：屠龍者
+
+### 附魔等級顯示
+- Enchantment Level (Roman Numerals)：附魔等級（羅馬數字顯示；例如 XI、XII…）
+- Enchantment Level 100+：100 以上等級以 C / CI / CII… 顯示
