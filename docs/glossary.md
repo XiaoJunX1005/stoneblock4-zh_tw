@@ -158,3 +158,77 @@
 - Speed：速度
 - Stack Upgrade Integrated：內建堆疊升級
 - Transfer Quota Multiplier：傳輸配額倍率
+
+## IronFurnaces（鐵熔爐）
+
+### 熔爐等級
+- Iron Furnace：鐵熔爐
+- Gold Furnace：金熔爐
+- Diamond Furnace：鑽石熔爐
+- Emerald Furnace：綠寶石熔爐
+- Obsidian Furnace：黑曜石熔爐
+- Crystal Furnace：水晶熔爐
+- Netherite Furnace：獄髓熔爐
+- Copper Furnace：銅熔爐
+- Silver Furnace：銀熔爐
+- Million / Rainbow Furnace：彩虹熔爐
+- Allthemodium Furnace：Allthemodium 熔爐
+- Vibranium Furnace：Vibranium 熔爐
+- Unobtainium Furnace：Unobtainium 熔爐
+
+### 升級（Upgrade）
+- Upgrade：升級
+- Stone → Iron Upgrade：石製轉鐵製熔爐升級
+- Iron → Gold Upgrade：鐵製轉金製熔爐升級
+- Gold → Diamond Upgrade：金製轉鑽石熔爐升級
+- Diamond → Emerald Upgrade：鑽石轉綠寶石熔爐升級
+- Emerald → Obsidian Upgrade：綠寶石轉黑曜石熔爐升級
+- Diamond → Crystal Upgrade：鑽石轉水晶熔爐升級
+- Crystal → Obsidian Upgrade：水晶轉黑曜石熔爐升級
+- Obsidian → Netherite Upgrade：黑曜石轉獄髓熔爐升級
+- Stone → Copper Upgrade：石製轉銅熔爐升級
+- Copper → Silver Upgrade：銅轉銀熔爐升級
+- Iron → Silver Upgrade：鐵製轉銀熔爐升級
+- Copper → Iron Upgrade：銅轉鐵製熔爐升級
+- Silver → Gold Upgrade：銀轉金製熔爐升級
+- Netherite → Allthemodium Upgrade：獄髓轉 Allthemodium 熔爐升級
+- Allthemodium → Vibranium Upgrade：Allthemodium 轉 Vibranium 熔爐升級
+- Vibranium → Unobtainium Upgrade：Vibranium 轉 Unobtainium 熔爐升級
+
+### 強化（Augment）
+- Augment：強化
+- Blasting Augment：強化：高爐
+- Smoking Augment：強化：煙燻
+- Speed Augment：強化：速度
+- Fuel Augment：強化：燃料效率
+- Factory Augment：強化：工廠
+- Generator Augment：強化：發電機
+- GUI Augment：強化：物品欄設定
+- Augment Slot：強化欄位
+- Right-click to insert augments：右鍵點擊以置入強化
+
+### 無線熱能（Heater）
+- Wireless Heater：無線加熱器
+- Wireless Energy Heater：無線熱能傳送器
+- Wireless Energy Heater Item：無線熱能接收器
+- Bind / Bound：綁定 / 已綁定
+- Not bound：尚未綁定
+- Heater tip：放置於熔爐的燃料欄位
+- Only iron+：僅適用於鐵製及以上等級
+- Provide Forge Energy (FE)：提供 Forge Energy (FE) 能量
+
+### 紅石控制（Redstone Control）
+- Redstone Control Mode：紅石控制模式（接收紅石訊號時不熔煉）
+- Inverse Redstone Control Mode：紅石反轉控制模式（僅在接收紅石訊號時才熔煉）
+- Comparator Mode：比較器模式（作為內部比較器運作）
+- Comparator Subtract Mode：比較器減法模式（可減去 GUI 設定的訊號強度）
+- Ignore Redstone：忽略紅石
+- Redstone Low / High：紅石低電位 / 紅石高電位
+
+### 介面/方向
+- Auto Input / Auto Output：自動輸入 / 自動輸出
+- Input / Output / Input-Output：輸入 / 輸出 / 輸入/輸出
+- Fuel In/Out：燃料輸入/彈出
+- Reset All：重置所有
+- None：無
+- Top / Bottom / Front / Back / Left / Right：上 / 下 / 前 /
