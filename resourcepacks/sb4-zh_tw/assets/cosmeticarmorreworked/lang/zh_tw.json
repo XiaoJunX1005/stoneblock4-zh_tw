@@ -1,0 +1,7 @@
+{
+  "cos.key.opencosarmorinventory": "開啟時裝物品欄",
+  "cos.gui.buttoncos": "時裝",
+  "cos.gui.buttonnormal": "普通",
+  "cos.command.clearcosarmor.success.single": "已從玩家%2$s的時裝物品欄裡移除了%1$s個物品",
+  "cos.command.clearcosarmor.success.multiple": "已從%2$s名玩家的時裝物品欄裡移除了%1$s個物品"
+}

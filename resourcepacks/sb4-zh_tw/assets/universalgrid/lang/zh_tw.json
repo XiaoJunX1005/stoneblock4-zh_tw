@@ -1,0 +1,18 @@
+{
+  "mod.universalgrid": "通用終端",
+  "item.universalgrid.wireless_universal_grid": "無線通用終端",
+  "item.universalgrid.creative_wireless_universal_grid": "創造無線通用終端",
+  "key.universalgrid.open_wireless_universal_grid": "開啟無線通用終端",
+  "key.universalgrid.switch_wireless_universal_grid_type": "Switch Wireless Universal Grid Type",
+  "text.autoconfig.universalgrid.title": "通用終端配置",
+  "universalgrid.configuration.title": "通用終端配置",
+  "universalgrid.configuration.section.universalgrid.common.toml": "通用終端配置",
+  "universalgrid.configuration.section.universalgrid.common.toml.title": "通用終端配置",
+  "gui.universalgrid.grid.grid_type": "終端型別",
+  "text.autoconfig.universalgrid.option.wirelessUniversalGrid": "無線通用終端",
+  "text.autoconfig.universalgrid.option.wirelessUniversalGrid.tooltip": "無線通用終端配置。",
+  "text.autoconfig.universalgrid.option.wirelessUniversalGrid.energyCapacity": "能量容量",
+  "text.autoconfig.universalgrid.option.wirelessUniversalGrid.energyCapacity.tooltip": "無線通用終端的能量容量。",
+  "text.autoconfig.universalgrid.option.wirelessUniversalGrid.gridType": "終端種類",
+  "text.autoconfig.universalgrid.option.wirelessUniversalGrid.gridType.tooltip": "選擇的無線通用終端種類。"
+}

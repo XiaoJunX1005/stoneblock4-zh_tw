@@ -1,0 +1,14 @@
+{
+  "tip.kiwi.press_shift": "§r§7<按住§f§oShift§r§7..>",
+  "tip.kiwi.press_ctrl": "§r§7<按住§f§oCtrl§r§7..>",
+  "tip.kiwi.press_shift_or_ctrl": "§r§7<按住§f§oShift§r§7或§f§oCtrl§r§7..>",
+  "tip.kiwi.debug_tooltip": "==========\n感謝你使用Kiwi和Snownee的其他模組！\n物品NBT和標籤除錯氣泡提示生效中。%s來禁用。\n按住Alt鍵展開標籤列表。顯示標籤時，按Alt或Ctrl+Alt鍵可在頁面間導航。\n==========",
+  "tip.kiwi.click_here": "[點選這裡]",
+  "tip.kiwi.debug_tooltip.success": "除錯氣泡提示已禁用。你可以在配置裡開啟它們。",
+  "msg.kiwi.no_dependencies": "{1}: 模組 §e{2}§r 需要啟用以下依賴模組：§e{3}",
+  "kiwi.config.requiresRestart": "需要重啟生效",
+  "gui.kiwi.cosmetic": "選擇飾品",
+  "cosmetic.snownee.2020q3": "行星",
+  "cosmetic.snownee.2020q4": "狐狸",
+  "cosmetic.snownee.xmas": "聖誕帽"
+}

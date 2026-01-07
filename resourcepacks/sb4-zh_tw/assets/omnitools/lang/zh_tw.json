@@ -1,0 +1,16 @@
+{
+  "item.omnitools.omni_wrench": "全能扳手",
+  "itemGroup.omnitools": "全能工具",
+  "key.categories.omnitools": "OmniTools 控制",
+  "key.omnitools.cycle_mode": "Omni 扳手：切換模式",
+  "toolmode.omnitools.wrench": "普通扳手模式",
+  "toolmode.omnitools.link": "連線模式[去除wrench標籤]",
+  "toolmode.omnitools.rename": "改名模式[石英切割刀]",
+  "message.omnitools.mode_switched": "§6[Omni工具] §r模式切換為：§e%s",
+  "tooltip.omnitools.omni_wrench.main": "多模組通用的全能扳手，擁有三個模式狀態",
+  "tooltip.omnitools.omni_wrench.controls": "在控制選項中繫結按鍵（預設：左 Alt）來切換模式。",
+  "omnitools.compat.draconicevolution": "§6[OmniTools] §r龍之研究",
+  "omnitools.compat.extendedae": "§6[OmniTools] §r擴充套件AE",
+  "omnitools.compat.powah": "§6[OmniTools] §rPowah",
+  "omnitools.compat.entangled": "§6[OmniTools] §r糾纏方塊"
+}

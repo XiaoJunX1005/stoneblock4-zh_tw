@@ -1,0 +1,8 @@
+{
+  "key.categories.placebo": "Placebo",
+  "placebo.toggleTrails": "切換 支持者 (在Discord中贊助作者) 軌跡",
+  "placebo.toggleWings": "切換 支持者 (在Discord中贊助作者) 翅膀",
+  "placebo.cmd.serialize_success": "已將 %s 儲存至 %s。",
+  "placebo.cmd.serialize_failure": "序列化過程中發生錯誤。",
+  "placebo.cmd.not_found": "未找到 %s。"
+}

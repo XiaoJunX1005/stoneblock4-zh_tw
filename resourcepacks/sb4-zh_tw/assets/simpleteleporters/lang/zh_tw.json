@@ -1,0 +1,8 @@
+{
+  "item.simpleteleporters.ender_shard": "末影碎片",
+  "block.simpleteleporters.teleporter": "傳送器",
+  "text.simpleteleporters.unlinked": "未連結",
+  "text.simpleteleporters.linked": "已連結到: %1$s, %2$s, %3$s",
+  "text.simpleteleporters.how_to_link": "潛行時右擊方塊以連結",
+  "text.simpleteleporters.crystal_info": "這個水晶連結在%1$s, %2$s, %3$s"
+}

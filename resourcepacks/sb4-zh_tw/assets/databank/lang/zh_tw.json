@@ -1,0 +1,15 @@
+{
+  "block.databank.megastructure_save": "超級結構方塊：儲存模式",
+  "block.databank.megastructure_save.reset": "邊界重設成功",
+  "block.databank.megastructure_save.corner1": "請選擇第一個角落",
+  "block.databank.megastructure_save.corner2": "請選擇第二個角落",
+  "block.databank.megastructure_save.center": "請選擇中心位置",
+  "block.databank.megastructure_save.finished": "邊界範圍已設為%1$s至%2$s",
+  "block.databank.megastructure_save.saved": "已儲存為%1$s",
+  "commands.databank.megastructure": "已在%2$s處生成%1$s",
+  "commands.databank.recheck_advancements": "已成功為%1$s名玩家重新檢驗所有進度",
+  "commands.databank.recheck_advancements.plural": "已成功為%1$s名玩家重新檢驗所有進度",
+  "entity.databank.world_gui": "世界GUI",
+  "databank.configuration.compatibility": "相容性",
+  "databank.configuration.accessibility": "輔助功能"
+}

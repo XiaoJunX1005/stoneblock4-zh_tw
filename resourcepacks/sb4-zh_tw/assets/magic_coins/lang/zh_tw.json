@@ -1,0 +1,17 @@
+{
+  "item_group.magic_coins.magic_group": "Magic Coins",
+  "item.magic_coins.silver_coin": "銀幣",
+  "item.magic_coins.gold_coin": "金幣",
+  "item.magic_coins.crystal_coin": "水晶幣",
+  "item.magic_coins.prosperity_amulet": "繁榮護符",
+  "item.prosperity_amulet.description_0.effect_0": "保護你的硬幣",
+  "item.prosperity_amulet.description_1.effect_0": "如果你死亡，保護你的錢包",
+  "item.prosperity_amulet.description_0.effect_1": "當生命值低於50%時",
+  "item.prosperity_amulet.description_1.effect_1": "在3秒內給予再生I效果",
+  "command.coins.add.success": "%2$s 收到了 %1$d %3$s",
+  "command.coins.set.success": "%2$s 現在有 %1$d %3$s",
+  "command.coins.rank.title": "富豪排行榜",
+  "text.coin": "硬幣",
+  "text.coins": "硬幣",
+  "text.page": "頁面"
+}
