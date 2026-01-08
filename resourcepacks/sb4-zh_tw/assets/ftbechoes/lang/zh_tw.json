@@ -1,0 +1,7 @@
+{
+  "ftbechoes.gui.page.lore": "故事",
+  "ftbechoes.gui.page.shop": "商店",
+  "ftbechoes.gui.shopping_basket": "購物籃",
+  "ftbechoes.jei.shop.title": "回聲商店",
+  "ftbechoes.commands.shop_stock_reset": "已將回聲「%s」的商店庫存重置為滿"
+}
