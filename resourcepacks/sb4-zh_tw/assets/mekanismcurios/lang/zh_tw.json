@@ -1,12 +1,12 @@
 {
-  "key.categories.mekanismcurios": "機械動力：飾品",
-  "key.mekanismcurios.protableqio": "開啟行動式QIO",
-  "key.mekanismcurios.portableteleporter": "開啟便攜傳送器",
-  "key.mekanismcurios.quickteleport": "快捷傳送",
-  "key.mekanismcurios.quickteleport.notconnected": "便攜傳送器未連線。",
-  "key.mekanismcurios.quickteleport.empty": "飾品欄中無便攜傳送器。",
-  "key.mekanismcurios.quickteleport.noenergy": "便攜傳送器的能量已耗盡。",
-  "key.mekanismcurios.quickteleport.notfound": "此頻率下未找到傳送器。",
-  "curios.identifier.qio": "QIO",
-  "curios.identifier.teleporter": "傳送器"
+    "key.categories.mekanismcurios":  "機械動力：飾品",
+    "key.mekanismcurios.protableqio":  "打開便攜式QIO",
+    "key.mekanismcurios.portableteleporter":  "打開便攜傳送器",
+    "key.mekanismcurios.quickteleport":  "快捷傳送",
+    "key.mekanismcurios.quickteleport.notconnected":  "便攜傳送器未連接。",
+    "key.mekanismcurios.quickteleport.empty":  "飾品欄中無便攜傳送器。",
+    "key.mekanismcurios.quickteleport.noenergy":  "便攜傳送器的能量已耗盡。",
+    "key.mekanismcurios.quickteleport.notfound":  "此頻率下未找到傳送器。",
+    "curios.identifier.qio":  "QIO",
+    "curios.identifier.teleporter":  "傳送器"
 }

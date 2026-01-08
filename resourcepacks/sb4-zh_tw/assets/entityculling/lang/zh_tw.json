@@ -1,0 +1,22 @@
+{
+    "text.entityculling.title":  "EntityCulling",
+    "key.entityculling.toggle":  "調試切換剔除",
+    "key.entityculling.toggleBoxes":  "顯示篩選框",
+    "text.entityculling.tab.general_options":  "常規",
+    "text.entityculling.tab.tick_culling":  "跳過被剔除的 Tick 更新",
+    "text.entityculling.tab.tick_culling.tooltip":  "此選項卡內的實體不參與 Tick 更新。這適用於需要刻更新來實現某些功能的實體，例如實體船。",
+    "text.entityculling.tab.entity_culling":  "跳過實體剔除",
+    "text.entityculling.tab.entity_culling.tooltip":  "在這個選項卡中選中的實體根本不會被剔除。這主要用於客戶端實體，或者那些無論是否可見都需要被渲染的實體。",
+    "text.entityculling.tab.block_entity_culling":  "跳過方塊實體剔除",
+    "text.entityculling.tab.block_entity_culling.tooltip":  "在這個選項卡中選中的方塊實體根本不會被剔除。這主要用於那些無論是否可見都需要被渲染的方塊實體。",
+    "text.entityculling.renderNametagsThroughWalls":  "透過墻壁渲染名字標簽",
+    "text.entityculling.renderNametagsThroughWalls.tooltip":  "關閉後，被剔除的實體的名字標簽將不會透過墻壁渲染。",
+    "text.entityculling.tickCulling":  "Tick 剔除",
+    "text.entityculling.tickCulling.tooltip":  "開啟後，被剔除的實體將不會進行 Tick 更新。這在某些情況下可以提高性能，但可能會導致某些模組出現問題。可以考慮在其他選項卡中使用更精細的控制選項。",
+    "text.entityculling.disableF3":  "禁用 F3 信息",
+    "text.entityculling.disableF3.tooltip":  "開啟後，F3 調試信息將不會顯示剔除信息。",
+    "text.entityculling.skipEntityCulling":  "跳過實體剔除",
+    "text.entityculling.skipEntityCulling.tooltip":  "開啟後，將完全跳過實體的剔除。這在你調試時很有用，或者當你想要臨時禁用剔除實體功能時也很方便。",
+    "text.entityculling.skipBlockEntityCulling":  "跳過方塊實體剔除",
+    "text.entityculling.skipBlockEntityCulling.tooltip":  "開啟後，將完全跳過方塊實體的剔除。這在你調試時很有用，或者當你想要臨時禁用剔除功能時也很方便。"
+}

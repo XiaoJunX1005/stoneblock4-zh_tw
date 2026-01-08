@@ -1,11 +1,11 @@
 {
-  "block.deepdarkdimdungeons.deep_dark_portal": "深暗傳送門",
-  "item.deepdarkdimdungeons.deep_dark_catalyst": "深暗催化劑",
-  "deepdarkdimdungeons.portal.starting_generation": "開始生成地牢……",
-  "deepdarkdimdungeons.portal.generation_failed": "生成地牢失敗。",
-  "deepdarkdimdungeons.portal.invalid_frame": "未檢測到有效的傳送門框架！",
-  "deepdarkdimdungeons.portal.generating_progress": "地牢生成中（%ds）",
-  "deepdarkdimdungeons.portal.no_catalyst": "傳送門生成已取消：物品欄中沒有催化劑！",
-  "deepdarkdimdungeons.portal.complete": "傳送門已啟用！地牢已生成完成。",
-  "deepdarkdimdungeons.portal.complete_consumed": "傳送門已啟用！地牢已生成完成。催化劑已消耗。"
+    "block.deepdarkdimdungeons.deep_dark_portal":  "深暗傳送門",
+    "item.deepdarkdimdungeons.deep_dark_catalyst":  "深暗催化劑",
+    "deepdarkdimdungeons.portal.starting_generation":  "開始生成地牢……",
+    "deepdarkdimdungeons.portal.generation_failed":  "生成地牢失敗。",
+    "deepdarkdimdungeons.portal.invalid_frame":  "未檢測到有效的傳送門框架！",
+    "deepdarkdimdungeons.portal.generating_progress":  "地牢生成中（%ds）",
+    "deepdarkdimdungeons.portal.no_catalyst":  "傳送門生成已取消：物品欄中沒有催化劑！",
+    "deepdarkdimdungeons.portal.complete":  "傳送門已激活！地牢已生成完成。",
+    "deepdarkdimdungeons.portal.complete_consumed":  "傳送門已激活！地牢已生成完成。催化劑已消耗。"
 }

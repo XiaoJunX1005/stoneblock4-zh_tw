@@ -1,0 +1,14 @@
+{
+    "options.showAll":  "顯示所有鍵位",
+    "options.showConflicts":  "顯示沖突鍵位",
+    "options.showNone":  "顯示未綁定鍵位",
+    "options.availableKeys":  "可用的快捷鍵",
+    "options.sort":  "排序",
+    "options.sortNone":  "無",
+    "options.sortAZ":  "A-\u003eZ",
+    "options.sortZA":  "Z-\u003eA",
+    "options.sortKeyAZ":  "鍵位 A-\u003eZ",
+    "options.sortKeyZA":  "鍵位 Z-\u003eA",
+    "options.toggleFree":  "自由切換",
+    "options.confirmReset":  "確定？"
+}

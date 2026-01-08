@@ -1,0 +1,10 @@
+{
+    "item.enderstorage.ender_pouch":  "末影袋子",
+    "block.enderstorage.ender_chest":  "末影箱子",
+    "enderstorage.command.no_colour":  "無效顏色:%s",
+    "enderstorage.command.usage":  "enderstorage \u003cfreq\u003e|(\u003ccolour\u003e \u003ccolour\u003e \u003ccolour\u003e) [owner]",
+    "enderstorage.command.no_freq":  "無效頻率",
+    "block.enderstorage.ender_tank":  "末影蓄水槽",
+    "enderstorage.command.no_arguments":  "該數字無法作為有效參數",
+    "enderstorage.serverop":  "OP"
+}

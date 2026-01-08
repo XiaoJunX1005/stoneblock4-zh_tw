@@ -1,8 +1,8 @@
 {
-  "sodium.options.use_compact_vertex_format.name": "使用緊湊型頂點格式",
-  "sodium.options.use_compact_vertex_format.tooltip": "啟用後，遊戲將使用更緊湊的頂點格式來渲染區塊。這可以顯著減少視訊記憶體使用和頻寬需求，尤其是對於整合顯示卡而言。但是，由於它降低了位置和紋理座標屬性的精度，可能會導致一些資源包出現深度衝突（z-fighting）的問題。",
-  "sodium.options.translucent_face_sorting.name": "半透明面排序",
-  "sodium.options.translucent_face_sorting.tooltip": "啟用後，遊戲將正確應用彩色玻璃、水等方塊表面的半透明效果。",
-  "embeddium.conflicting_mod": "Embeddium 檢測到已安裝的模組中有些可能會導致渲染問題或崩潰。建議解除安裝它們。請參考以下列表。",
-  "embeddium.conflicting_mod_list": "[{2}]"
+    "sodium.options.use_compact_vertex_format.name":  "使用緊湊型頂點格式",
+    "sodium.options.use_compact_vertex_format.tooltip":  "啟用後，遊戲將使用更緊湊的頂點格式來渲染區塊。這可以顯著減少顯存使用和帶寬需求，尤其是對於集成顯卡而言。但是，由於它降低了位置和紋理坐標屬性的精度，可能會導致一些資源包出現深度沖突（z-fighting）的問題。",
+    "sodium.options.translucent_face_sorting.name":  "半透明面排序",
+    "sodium.options.translucent_face_sorting.tooltip":  "啟用後，遊戲將正確應用彩色玻璃、水等方塊表面的半透明效果。",
+    "embeddium.conflicting_mod":  "Embeddium 檢測到已安裝的模組中有些可能會導致渲染問題或崩潰。建議卸載它們。請參考以下列表。",
+    "embeddium.conflicting_mod_list":  "[{2}]"
 }

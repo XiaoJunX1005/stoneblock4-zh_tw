@@ -1,0 +1,10 @@
+{
+    "trashslot.serverNotInstalled":  "服務器沒有安裝垃圾桶。此 Mod 將被禁用。",
+    "key.trashslot.toggle":  "顯示/隱藏 垃圾桶",
+    "key.trashslot.delete":  "刪除物品",
+    "key.trashslot.deleteAll":  "刪除所有此類物品",
+    "key.categories.trashslot":  "垃圾桶",
+    "trashslot.config.instantDeletion":  "立刻刪除",
+    "config.trashslot.title":  "垃圾桶",
+    "config.trashslot.instantDeletion":  "立刻刪除"
+}
