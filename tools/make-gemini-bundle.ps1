@@ -478,7 +478,7 @@ function Build-ModEntries {
     param(
         [Parameter(Mandatory = $true)]
         [string]$ModId,
-        [Parameter(Mandatory = $true)]
+        [Parameter()]
         [object[]]$MissingKeys,
         [Parameter(Mandatory = $true)]
         [System.Collections.IDictionary]$KubejsZhCn,
@@ -489,6 +489,10 @@ function Build-ModEntries {
         [Parameter(Mandatory = $true)]
         [System.Collections.IDictionary]$JarEnUs
     )
+
+    if ($null -eq $MissingKeys) {
+        $MissingKeys = @()
+    }
 
     $entries = [ordered]@{}
     $entrySource = [ordered]@{}
@@ -745,12 +749,18 @@ if ($TargetModId -and $TargetModId.Trim() -ne '') {
     if ($detailsKeys.Count -gt $missingKeys.Count) {
         $missingKeys = $detailsKeys
     }
+    if ($null -eq $missingKeys) {
+        $missingKeys = @()
+    }
     $translatedKeySet = New-Object System.Collections.Generic.HashSet[string]([System.StringComparer]::Ordinal)
     if ($resourceZhTw.ContainsKey($targetId)) { Add-KeysToSet -Set $translatedKeySet -Keys $resourceZhTw[$targetId].Keys }
     if ($kubejsZhTw.ContainsKey($targetId)) { Add-KeysToSet -Set $translatedKeySet -Keys $kubejsZhTw[$targetId].Keys }
     $existingBundlePath = Join-Path $OutDir ("{0}\bundle_to_translate.json" -f $targetId)
     Add-KeysToSet -Set $translatedKeySet -Keys (Get-BundleKeys -BundlePath $existingBundlePath -ModId $targetId)
     $missingKeys = Filter-KeysBySet -Keys $missingKeys -Exclude $translatedKeySet
+    if ($null -eq $missingKeys) {
+        $missingKeys = @()
+    }
     if ($KeysPerMod -gt 0) {
         $missingKeys = $missingKeys | Select-Object -First $KeysPerMod
     } else {
