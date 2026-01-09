@@ -21,7 +21,6 @@ busy_villagers,busy_villagers-neoforge-2101.1.1.jar,Y,N,N,N,EN_only
 cable_facades,cable_facades-1.21.1-NeoForge-1.6.5.jar,Y,N,N,N,EN_only
 caelus,caelus-neoforge-7.0.1+1.21.1.jar,Y,N,N,N,EN_only
 carbonconfig,CarbonConfig-Neoforge-1.21-1.2.9.6.1.jar,Y,N,N,N,EN_only
-chisel,chisel-1.21.1-NeoForge-1.2.2.jar,Y,N,N,N,EN_only
 clavis,Clavis-NEOFORGE-0.2.10+1.21.1.jar,Y,N,N,N,EN_only
 codechickenlib,CodeChickenLib-1.21.1-4.6.1.526.jar,Y,N,N,N,EN_only
 colorfulhearts,colorfulhearts-neoforge-1.21.1-10.5.9.jar,Y,N,Y,N,EN_only
@@ -84,7 +83,6 @@ pocketstorage,pocketstorage-1.2.5+1.21.1-b3.jar,Y,N,N,N,EN_only
 polylib,polylib-2100.1.0-build.183-neoforge.jar,Y,N,N,N,EN_only
 productivemetalworks,productivemetalworks-1.21.1-1.14.0.jar,Y,N,N,N,EN_only
 rarcompat,rarcompat-1.21-0.9.7.jar,Y,N,N,N,EN_only
-rechiseled,rechiseled-1.1.6a-neoforge-mc1.21.jar,Y,N,N,N,EN_only
 rechiseled_chipped,rechiseled_chipped-1.4.1-1.21.1.jar,Y,N,N,N,EN_only
 refinedstorage_curios_integration,refinedstorage-curios-integration-1.0.0.jar,Y,N,N,N,EN_only
 reliquified_ars_nouveau,reliquified_ars_nouveau-1.21.1-0.6.1.jar,Y,N,N,N,EN_only
@@ -158,6 +156,7 @@ cataclysm,L_Ender's Cataclysm 1.21.1-3.16.jar,Y,Y,Y,Y,OK
 chancecubes,ChanceCubes-1.21.1-5.0.2.517.jar,Y,Y,N,Y,OK
 chicken_roost,roostultimate_1.21.1-curse-4.1.0.jar,Y,N,N,Y,OK
 chipped,chipped-neoforge-1.21.1-4.0.2.jar,Y,N,N,Y,OK
+chisel,chisel-1.21.1-NeoForge-1.2.2.jar,Y,N,N,Y,OK
 classicpipes,classicpipes-neoforge-1.21.1-1.0.10.jar,Y,N,N,Y,OK
 cloth-config2,cloth-config-15.0.140-neoforge.jar,Y,Y,Y,Y,OK
 cognition,Cognition-v2.4.10-1.21.1.jar,Y,Y,N,Y,OK
@@ -270,6 +269,7 @@ placebo,Placebo-1.21.1-9.9.1.jar,Y,Y,N,Y,OK
 powah,Powah-6.2.7.jar,Y,Y,Y,Y,OK
 projecte,ProjectE-1.21.1-PE1.1.0.jar,Y,Y,N,Y,OK
 psi,Psi-1.21.1-107.jar,Y,Y,Y,Y,OK
+rechiseled,rechiseled-1.1.6a-neoforge-mc1.21.jar,Y,N,N,Y,OK
 refinedstorage,refinedstorage-neoforge-2.0.0.jar,Y,Y,Y,Y,OK
 refinedstorage_jei_integration,refinedstorage-jei-integration-neoforge-1.0.0.jar,Y,Y,Y,Y,OK
 refinedstorage_mekanism_integration,refinedstorage-mekanism-integration-1.1.1.jar,Y,Y,Y,Y,OK
