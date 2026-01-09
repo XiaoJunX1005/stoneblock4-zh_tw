@@ -10,6 +10,9 @@ param(
     [string]$OutDir = 'D:\stoneblock4-zh_tw\tools\out',
 
     [Parameter()]
+    [string]$ReportsDir = 'D:\stoneblock4-zh_tw\tools\reports',
+
+    [Parameter()]
     [string]$TargetModId = 'chisel',
 
     [Parameter()]
@@ -77,10 +80,11 @@ if (-not (Test-Path $modsDir)) {
 }
 
 New-Item -ItemType Directory -Path $OutDir -Force | Out-Null
+New-Item -ItemType Directory -Path $ReportsDir -Force | Out-Null
 
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 
-$modsLangCsv = Join-Path $OutDir 'mods-lang-support.csv'
+$modsLangCsv = Join-Path $ReportsDir 'mods-lang-support.csv'
 
 $pythonScript = @'
 import os,glob,json,zipfile,csv,sys,re
@@ -185,7 +189,7 @@ $candidates = foreach ($row in $enOnly) {
 
 $candidates = $candidates | Sort-Object -Property @{ Expression = 'KeyCount'; Descending = $true }, @{ Expression = 'ModId'; Descending = $false }
 
-$mdPath = Join-Path $OutDir 'next_mod_candidates.md'
+$mdPath = Join-Path $ReportsDir 'next_mod_candidates.md'
 $mdLines = New-Object System.Collections.Generic.List[string]
 $mdLines.Add('# Next EN_only translation candidates (by en_us key count)')
 $mdLines.Add('| Rank | ModId | KeyCount | Jar |')
@@ -249,8 +253,8 @@ if (-not (Test-Path $bundleScript)) {
 Push-Location $RepoRoot
 try {
     $pathsToAdd = @(
-        'tools/out/mods-lang-support.csv',
-        'tools/out/next_mod_candidates.md',
+        'tools/reports/mods-lang-support.csv',
+        'tools/reports/next_mod_candidates.md',
         'tools/out/zh_tw_missing_summary.csv',
         'tools/out/zh_tw_missing_details.json',
         'tools/out/zh_tw_missing_top_20.md',
