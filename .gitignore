@@ -15,14 +15,3 @@ Thumbs.db
 .vscode/
 .idea/
 *.iml
-
-# generated / build artifacts
-tools/out/
-tools/out/**
-
-# optional: one-off prompts/bundles/reports (keep repo clean)
-**/*bundle*.json
-**/gemini_prompt*.txt
-**/*missing*.csv
-**/*missing*.json
-**/*missing*.md

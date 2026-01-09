@@ -1,0 +1,2165 @@
+[
+    {
+        "modid":  "chipped",
+        "hitZhCn":  0,
+        "hitEnUs":  7265,
+        "skipped":  0,
+        "totalRequested":  7265
+    },
+    {
+        "modid":  "chisel",
+        "hitZhCn":  0,
+        "hitEnUs":  2554,
+        "skipped":  0,
+        "totalRequested":  2554
+    },
+    {
+        "modid":  "betterblockz",
+        "hitZhCn":  0,
+        "hitEnUs":  1381,
+        "skipped":  0,
+        "totalRequested":  1381
+    },
+    {
+        "modid":  "rechiseled",
+        "hitZhCn":  0,
+        "hitEnUs":  1222,
+        "skipped":  0,
+        "totalRequested":  1222
+    },
+    {
+        "modid":  "ars_nouveau",
+        "hitZhCn":  923,
+        "hitEnUs":  4,
+        "skipped":  0,
+        "totalRequested":  927
+    },
+    {
+        "modid":  "apothic_compats",
+        "hitZhCn":  0,
+        "hitEnUs":  701,
+        "skipped":  0,
+        "totalRequested":  701
+    },
+    {
+        "modid":  "irregular_implements",
+        "hitZhCn":  0,
+        "hitEnUs":  618,
+        "skipped":  0,
+        "totalRequested":  618
+    },
+    {
+        "modid":  "ftbquests",
+        "hitZhCn":  0,
+        "hitEnUs":  494,
+        "skipped":  0,
+        "totalRequested":  494
+    },
+    {
+        "modid":  "projecte",
+        "hitZhCn":  0,
+        "hitEnUs":  464,
+        "skipped":  0,
+        "totalRequested":  464
+    },
+    {
+        "modid":  "productivemetalworks",
+        "hitZhCn":  0,
+        "hitEnUs":  376,
+        "skipped":  0,
+        "totalRequested":  376
+    },
+    {
+        "modid":  "framedblocks",
+        "hitZhCn":  0,
+        "hitEnUs":  326,
+        "skipped":  0,
+        "totalRequested":  326
+    },
+    {
+        "modid":  "xycraft_world",
+        "hitZhCn":  0,
+        "hitEnUs":  324,
+        "skipped":  0,
+        "totalRequested":  324
+    },
+    {
+        "modid":  "ftbchunks",
+        "hitZhCn":  0,
+        "hitEnUs":  316,
+        "skipped":  0,
+        "totalRequested":  316
+    },
+    {
+        "modid":  "custommachinery",
+        "hitZhCn":  0,
+        "hitEnUs":  316,
+        "skipped":  0,
+        "totalRequested":  316
+    },
+    {
+        "modid":  "simplyswords",
+        "hitZhCn":  0,
+        "hitEnUs":  301,
+        "skipped":  0,
+        "totalRequested":  301
+    },
+    {
+        "modid":  "twilightforest",
+        "hitZhCn":  0,
+        "hitEnUs":  291,
+        "skipped":  0,
+        "totalRequested":  291
+    },
+    {
+        "modid":  "fzzy_config",
+        "hitZhCn":  0,
+        "hitEnUs":  284,
+        "skipped":  0,
+        "totalRequested":  284
+    },
+    {
+        "modid":  "rarcompat",
+        "hitZhCn":  0,
+        "hitEnUs":  273,
+        "skipped":  0,
+        "totalRequested":  273
+    },
+    {
+        "modid":  "ars_elemental",
+        "hitZhCn":  0,
+        "hitEnUs":  258,
+        "skipped":  0,
+        "totalRequested":  258
+    },
+    {
+        "modid":  "fdbosses",
+        "hitZhCn":  0,
+        "hitEnUs":  256,
+        "skipped":  0,
+        "totalRequested":  256
+    },
+    {
+        "modid":  "xycraft_machines",
+        "hitZhCn":  0,
+        "hitEnUs":  225,
+        "skipped":  0,
+        "totalRequested":  225
+    },
+    {
+        "modid":  "crystalix",
+        "hitZhCn":  0,
+        "hitEnUs":  216,
+        "skipped":  0,
+        "totalRequested":  216
+    },
+    {
+        "modid":  "reliquified_twilight_forest",
+        "hitZhCn":  0,
+        "hitEnUs":  190,
+        "skipped":  0,
+        "totalRequested":  190
+    },
+    {
+        "modid":  "create",
+        "hitZhCn":  0,
+        "hitEnUs":  182,
+        "skipped":  0,
+        "totalRequested":  182
+    },
+    {
+        "modid":  "simplylight",
+        "hitZhCn":  0,
+        "hitEnUs":  163,
+        "skipped":  0,
+        "totalRequested":  163
+    },
+    {
+        "modid":  "ars_affinity",
+        "hitZhCn":  0,
+        "hitEnUs":  162,
+        "skipped":  0,
+        "totalRequested":  162
+    },
+    {
+        "modid":  "starbunclemania",
+        "hitZhCn":  0,
+        "hitEnUs":  149,
+        "skipped":  0,
+        "totalRequested":  149
+    },
+    {
+        "modid":  "antiblocksrechiseled",
+        "hitZhCn":  0,
+        "hitEnUs":  147,
+        "skipped":  0,
+        "totalRequested":  147
+    },
+    {
+        "modid":  "jei",
+        "hitZhCn":  130,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  130
+    },
+    {
+        "modid":  "rgp_client",
+        "hitZhCn":  0,
+        "hitEnUs":  129,
+        "skipped":  0,
+        "totalRequested":  129
+    },
+    {
+        "modid":  "bookshelf",
+        "hitZhCn":  0,
+        "hitEnUs":  123,
+        "skipped":  0,
+        "totalRequested":  123
+    },
+    {
+        "modid":  "reliquified_ars_nouveau",
+        "hitZhCn":  0,
+        "hitEnUs":  122,
+        "skipped":  0,
+        "totalRequested":  122
+    },
+    {
+        "modid":  "connectedglass",
+        "hitZhCn":  0,
+        "hitEnUs":  120,
+        "skipped":  0,
+        "totalRequested":  120
+    },
+    {
+        "modid":  "enchdesc",
+        "hitZhCn":  0,
+        "hitEnUs":  115,
+        "skipped":  0,
+        "totalRequested":  115
+    },
+    {
+        "modid":  "xycraft_core",
+        "hitZhCn":  0,
+        "hitEnUs":  106,
+        "skipped":  0,
+        "totalRequested":  106
+    },
+    {
+        "modid":  "modonomicon",
+        "hitZhCn":  0,
+        "hitEnUs":  103,
+        "skipped":  0,
+        "totalRequested":  103
+    },
+    {
+        "modid":  "brandonscore",
+        "hitZhCn":  0,
+        "hitEnUs":  102,
+        "skipped":  0,
+        "totalRequested":  102
+    },
+    {
+        "modid":  "nbt_ac",
+        "hitZhCn":  0,
+        "hitEnUs":  102,
+        "skipped":  0,
+        "totalRequested":  102
+    },
+    {
+        "modid":  "industrialforegoing",
+        "hitZhCn":  94,
+        "hitEnUs":  1,
+        "skipped":  0,
+        "totalRequested":  95
+    },
+    {
+        "modid":  "mob_grinding_utils",
+        "hitZhCn":  0,
+        "hitEnUs":  93,
+        "skipped":  0,
+        "totalRequested":  93
+    },
+    {
+        "modid":  "rftoolsbuilder",
+        "hitZhCn":  0,
+        "hitEnUs":  92,
+        "skipped":  0,
+        "totalRequested":  92
+    },
+    {
+        "modid":  "leaderboards",
+        "hitZhCn":  0,
+        "hitEnUs":  87,
+        "skipped":  0,
+        "totalRequested":  87
+    },
+    {
+        "modid":  "mininggadgets",
+        "hitZhCn":  0,
+        "hitEnUs":  85,
+        "skipped":  0,
+        "totalRequested":  85
+    },
+    {
+        "modid":  "simpletomb",
+        "hitZhCn":  0,
+        "hitEnUs":  84,
+        "skipped":  0,
+        "totalRequested":  84
+    },
+    {
+        "modid":  "utilitarian",
+        "hitZhCn":  0,
+        "hitEnUs":  79,
+        "skipped":  0,
+        "totalRequested":  79
+    },
+    {
+        "modid":  "extremesoundmuffler",
+        "hitZhCn":  0,
+        "hitEnUs":  76,
+        "skipped":  0,
+        "totalRequested":  76
+    },
+    {
+        "modid":  "hostilenetworks",
+        "hitZhCn":  0,
+        "hitEnUs":  75,
+        "skipped":  0,
+        "totalRequested":  75
+    },
+    {
+        "modid":  "ftbbackups3",
+        "hitZhCn":  0,
+        "hitEnUs":  69,
+        "skipped":  0,
+        "totalRequested":  69
+    },
+    {
+        "modid":  "embeddium",
+        "hitZhCn":  0,
+        "hitEnUs":  68,
+        "skipped":  0,
+        "totalRequested":  68
+    },
+    {
+        "modid":  "structurify",
+        "hitZhCn":  0,
+        "hitEnUs":  67,
+        "skipped":  0,
+        "totalRequested":  67
+    },
+    {
+        "modid":  "ftbfiltersystem",
+        "hitZhCn":  0,
+        "hitEnUs":  65,
+        "skipped":  0,
+        "totalRequested":  65
+    },
+    {
+        "modid":  "rftoolspower",
+        "hitZhCn":  0,
+        "hitEnUs":  65,
+        "skipped":  0,
+        "totalRequested":  65
+    },
+    {
+        "modid":  "petrock",
+        "hitZhCn":  0,
+        "hitEnUs":  64,
+        "skipped":  0,
+        "totalRequested":  64
+    },
+    {
+        "modid":  "kiwi",
+        "hitZhCn":  0,
+        "hitEnUs":  62,
+        "skipped":  0,
+        "totalRequested":  62
+    },
+    {
+        "modid":  "pipe_connector",
+        "hitZhCn":  0,
+        "hitEnUs":  61,
+        "skipped":  0,
+        "totalRequested":  61
+    },
+    {
+        "modid":  "ftblibrary",
+        "hitZhCn":  0,
+        "hitEnUs":  59,
+        "skipped":  0,
+        "totalRequested":  59
+    },
+    {
+        "modid":  "statuseffectbars",
+        "hitZhCn":  0,
+        "hitEnUs":  58,
+        "skipped":  0,
+        "totalRequested":  58
+    },
+    {
+        "modid":  "compactmachines",
+        "hitZhCn":  0,
+        "hitEnUs":  58,
+        "skipped":  0,
+        "totalRequested":  58
+    },
+    {
+        "modid":  "bhmenu",
+        "hitZhCn":  0,
+        "hitEnUs":  57,
+        "skipped":  0,
+        "totalRequested":  57
+    },
+    {
+        "modid":  "carbonconfig",
+        "hitZhCn":  0,
+        "hitEnUs":  56,
+        "skipped":  0,
+        "totalRequested":  56
+    },
+    {
+        "modid":  "createenchantablemachinery",
+        "hitZhCn":  0,
+        "hitEnUs":  56,
+        "skipped":  0,
+        "totalRequested":  56
+    },
+    {
+        "modid":  "rftoolsbase",
+        "hitZhCn":  0,
+        "hitEnUs":  55,
+        "skipped":  0,
+        "totalRequested":  55
+    },
+    {
+        "modid":  "gag",
+        "hitZhCn":  0,
+        "hitEnUs":  55,
+        "skipped":  0,
+        "totalRequested":  55
+    },
+    {
+        "modid":  "titanium",
+        "hitZhCn":  0,
+        "hitEnUs":  53,
+        "skipped":  0,
+        "totalRequested":  53
+    },
+    {
+        "modid":  "ftbechoes",
+        "hitZhCn":  0,
+        "hitEnUs":  51,
+        "skipped":  0,
+        "totalRequested":  51
+    },
+    {
+        "modid":  "bhc",
+        "hitZhCn":  0,
+        "hitEnUs":  49,
+        "skipped":  0,
+        "totalRequested":  49
+    },
+    {
+        "modid":  "modularrouters",
+        "hitZhCn":  0,
+        "hitEnUs":  48,
+        "skipped":  0,
+        "totalRequested":  48
+    },
+    {
+        "modid":  "balm",
+        "hitZhCn":  0,
+        "hitEnUs":  47,
+        "skipped":  0,
+        "totalRequested":  47
+    },
+    {
+        "modid":  "actuallyadditions",
+        "hitZhCn":  0,
+        "hitEnUs":  47,
+        "skipped":  0,
+        "totalRequested":  47
+    },
+    {
+        "modid":  "extrastorage",
+        "hitZhCn":  0,
+        "hitEnUs":  46,
+        "skipped":  0,
+        "totalRequested":  46
+    },
+    {
+        "modid":  "ars_hex",
+        "hitZhCn":  0,
+        "hitEnUs":  45,
+        "skipped":  0,
+        "totalRequested":  45
+    },
+    {
+        "modid":  "ftbultimine",
+        "hitZhCn":  0,
+        "hitEnUs":  43,
+        "skipped":  0,
+        "totalRequested":  43
+    },
+    {
+        "modid":  "irons_jewelry",
+        "hitZhCn":  0,
+        "hitEnUs":  42,
+        "skipped":  0,
+        "totalRequested":  42
+    },
+    {
+        "modid":  "ftbunearthed",
+        "hitZhCn":  0,
+        "hitEnUs":  40,
+        "skipped":  0,
+        "totalRequested":  40
+    },
+    {
+        "modid":  "moreoverlays",
+        "hitZhCn":  0,
+        "hitEnUs":  40,
+        "skipped":  0,
+        "totalRequested":  40
+    },
+    {
+        "modid":  "reliquified_lenders_cataclysm",
+        "hitZhCn":  0,
+        "hitEnUs":  39,
+        "skipped":  0,
+        "totalRequested":  39
+    },
+    {
+        "modid":  "irons_apothic",
+        "hitZhCn":  33,
+        "hitEnUs":  5,
+        "skipped":  0,
+        "totalRequested":  38
+    },
+    {
+        "modid":  "guideme",
+        "hitZhCn":  0,
+        "hitEnUs":  36,
+        "skipped":  0,
+        "totalRequested":  36
+    },
+    {
+        "modid":  "stonechest",
+        "hitZhCn":  0,
+        "hitEnUs":  36,
+        "skipped":  0,
+        "totalRequested":  36
+    },
+    {
+        "modid":  "inventoryessentials",
+        "hitZhCn":  0,
+        "hitEnUs":  36,
+        "skipped":  0,
+        "totalRequested":  36
+    },
+    {
+        "modid":  "moonlight",
+        "hitZhCn":  0,
+        "hitEnUs":  35,
+        "skipped":  0,
+        "totalRequested":  35
+    },
+    {
+        "modid":  "farmersdelight",
+        "hitZhCn":  0,
+        "hitEnUs":  34,
+        "skipped":  0,
+        "totalRequested":  34
+    },
+    {
+        "modid":  "simpleteleporters",
+        "hitZhCn":  0,
+        "hitEnUs":  34,
+        "skipped":  0,
+        "totalRequested":  34
+    },
+    {
+        "modid":  "cataclysm",
+        "hitZhCn":  0,
+        "hitEnUs":  33,
+        "skipped":  0,
+        "totalRequested":  33
+    },
+    {
+        "modid":  "ali",
+        "hitZhCn":  0,
+        "hitEnUs":  32,
+        "skipped":  0,
+        "totalRequested":  32
+    },
+    {
+        "modid":  "clavis",
+        "hitZhCn":  0,
+        "hitEnUs":  31,
+        "skipped":  0,
+        "totalRequested":  31
+    },
+    {
+        "modid":  "more_immersive_wires",
+        "hitZhCn":  0,
+        "hitEnUs":  31,
+        "skipped":  0,
+        "totalRequested":  31
+    },
+    {
+        "modid":  "morered",
+        "hitZhCn":  0,
+        "hitEnUs":  30,
+        "skipped":  0,
+        "totalRequested":  30
+    },
+    {
+        "modid":  "schematicenergistics",
+        "hitZhCn":  0,
+        "hitEnUs":  29,
+        "skipped":  0,
+        "totalRequested":  29
+    },
+    {
+        "modid":  "justzoom",
+        "hitZhCn":  0,
+        "hitEnUs":  29,
+        "skipped":  0,
+        "totalRequested":  29
+    },
+    {
+        "modid":  "resourcefulconfig",
+        "hitZhCn":  0,
+        "hitEnUs":  28,
+        "skipped":  0,
+        "totalRequested":  28
+    },
+    {
+        "modid":  "irons_spellbooks",
+        "hitZhCn":  0,
+        "hitEnUs":  28,
+        "skipped":  0,
+        "totalRequested":  28
+    },
+    {
+        "modid":  "farmingforblockheads",
+        "hitZhCn":  0,
+        "hitEnUs":  28,
+        "skipped":  0,
+        "totalRequested":  28
+    },
+    {
+        "modid":  "pocketstorage",
+        "hitZhCn":  0,
+        "hitEnUs":  28,
+        "skipped":  0,
+        "totalRequested":  28
+    },
+    {
+        "modid":  "beer",
+        "hitZhCn":  0,
+        "hitEnUs":  28,
+        "skipped":  0,
+        "totalRequested":  28
+    },
+    {
+        "modid":  "villagerconfig",
+        "hitZhCn":  0,
+        "hitEnUs":  27,
+        "skipped":  0,
+        "totalRequested":  27
+    },
+    {
+        "modid":  "lychee",
+        "hitZhCn":  0,
+        "hitEnUs":  26,
+        "skipped":  0,
+        "totalRequested":  26
+    },
+    {
+        "modid":  "inventorysorter",
+        "hitZhCn":  0,
+        "hitEnUs":  25,
+        "skipped":  0,
+        "totalRequested":  25
+    },
+    {
+        "modid":  "malum",
+        "hitZhCn":  0,
+        "hitEnUs":  25,
+        "skipped":  0,
+        "totalRequested":  25
+    },
+    {
+        "modid":  "owo",
+        "hitZhCn":  0,
+        "hitEnUs":  25,
+        "skipped":  0,
+        "totalRequested":  25
+    },
+    {
+        "modid":  "jade",
+        "hitZhCn":  0,
+        "hitEnUs":  24,
+        "skipped":  0,
+        "totalRequested":  24
+    },
+    {
+        "modid":  "laserio",
+        "hitZhCn":  0,
+        "hitEnUs":  24,
+        "skipped":  0,
+        "totalRequested":  24
+    },
+    {
+        "modid":  "chicken_roost",
+        "hitZhCn":  0,
+        "hitEnUs":  23,
+        "skipped":  0,
+        "totalRequested":  23
+    },
+    {
+        "modid":  "jearchaeology",
+        "hitZhCn":  0,
+        "hitEnUs":  23,
+        "skipped":  0,
+        "totalRequested":  23
+    },
+    {
+        "modid":  "custommachineryars",
+        "hitZhCn":  0,
+        "hitEnUs":  22,
+        "skipped":  0,
+        "totalRequested":  22
+    },
+    {
+        "modid":  "modernfix",
+        "hitZhCn":  0,
+        "hitEnUs":  22,
+        "skipped":  0,
+        "totalRequested":  22
+    },
+    {
+        "modid":  "moofluids",
+        "hitZhCn":  0,
+        "hitEnUs":  21,
+        "skipped":  0,
+        "totalRequested":  21
+    },
+    {
+        "modid":  "belts",
+        "hitZhCn":  0,
+        "hitEnUs":  21,
+        "skipped":  0,
+        "totalRequested":  21
+    },
+    {
+        "modid":  "torchmaster",
+        "hitZhCn":  0,
+        "hitEnUs":  20,
+        "skipped":  0,
+        "totalRequested":  20
+    },
+    {
+        "modid":  "justdynathings",
+        "hitZhCn":  0,
+        "hitEnUs":  19,
+        "skipped":  0,
+        "totalRequested":  19
+    },
+    {
+        "modid":  "artifacts",
+        "hitZhCn":  0,
+        "hitEnUs":  19,
+        "skipped":  0,
+        "totalRequested":  19
+    },
+    {
+        "modid":  "jags",
+        "hitZhCn":  0,
+        "hitEnUs":  19,
+        "skipped":  0,
+        "totalRequested":  19
+    },
+    {
+        "modid":  "codechickenlib",
+        "hitZhCn":  0,
+        "hitEnUs":  18,
+        "skipped":  0,
+        "totalRequested":  18
+    },
+    {
+        "modid":  "immersiveengineering",
+        "hitZhCn":  0,
+        "hitEnUs":  18,
+        "skipped":  0,
+        "totalRequested":  18
+    },
+    {
+        "modid":  "jumbofurnace",
+        "hitZhCn":  0,
+        "hitEnUs":  18,
+        "skipped":  0,
+        "totalRequested":  18
+    },
+    {
+        "modid":  "ars_creo",
+        "hitZhCn":  0,
+        "hitEnUs":  18,
+        "skipped":  0,
+        "totalRequested":  18
+    },
+    {
+        "modid":  "trashslot",
+        "hitZhCn":  0,
+        "hitEnUs":  17,
+        "skipped":  0,
+        "totalRequested":  17
+    },
+    {
+        "modid":  "mecrh",
+        "hitZhCn":  0,
+        "hitEnUs":  17,
+        "skipped":  0,
+        "totalRequested":  17
+    },
+    {
+        "modid":  "xnetgases",
+        "hitZhCn":  0,
+        "hitEnUs":  17,
+        "skipped":  0,
+        "totalRequested":  17
+    },
+    {
+        "modid":  "cable_facades",
+        "hitZhCn":  0,
+        "hitEnUs":  16,
+        "skipped":  0,
+        "totalRequested":  16
+    },
+    {
+        "modid":  "craftingtweaks",
+        "hitZhCn":  0,
+        "hitEnUs":  15,
+        "skipped":  0,
+        "totalRequested":  15
+    },
+    {
+        "modid":  "ftbpc",
+        "hitZhCn":  0,
+        "hitEnUs":  15,
+        "skipped":  0,
+        "totalRequested":  15
+    },
+    {
+        "modid":  "routers",
+        "hitZhCn":  0,
+        "hitEnUs":  15,
+        "skipped":  0,
+        "totalRequested":  15
+    },
+    {
+        "modid":  "measurements",
+        "hitZhCn":  0,
+        "hitEnUs":  15,
+        "skipped":  0,
+        "totalRequested":  15
+    },
+    {
+        "modid":  "ironchest",
+        "hitZhCn":  0,
+        "hitEnUs":  15,
+        "skipped":  0,
+        "totalRequested":  15
+    },
+    {
+        "modid":  "xp_synthesiser",
+        "hitZhCn":  0,
+        "hitEnUs":  15,
+        "skipped":  0,
+        "totalRequested":  15
+    },
+    {
+        "modid":  "cookingforblockheads",
+        "hitZhCn":  0,
+        "hitEnUs":  15,
+        "skipped":  0,
+        "totalRequested":  15
+    },
+    {
+        "modid":  "psi",
+        "hitZhCn":  0,
+        "hitEnUs":  14,
+        "skipped":  0,
+        "totalRequested":  14
+    },
+    {
+        "modid":  "ae2netanalyser",
+        "hitZhCn":  0,
+        "hitEnUs":  14,
+        "skipped":  0,
+        "totalRequested":  14
+    },
+    {
+        "modid":  "bambooeverything",
+        "hitZhCn":  0,
+        "hitEnUs":  14,
+        "skipped":  0,
+        "totalRequested":  14
+    },
+    {
+        "modid":  "colorfulhearts",
+        "hitZhCn":  0,
+        "hitEnUs":  14,
+        "skipped":  0,
+        "totalRequested":  14
+    },
+    {
+        "modid":  "mekanisticrouters",
+        "hitZhCn":  0,
+        "hitEnUs":  13,
+        "skipped":  0,
+        "totalRequested":  13
+    },
+    {
+        "modid":  "relics",
+        "hitZhCn":  0,
+        "hitEnUs":  13,
+        "skipped":  0,
+        "totalRequested":  13
+    },
+    {
+        "modid":  "polylib",
+        "hitZhCn":  0,
+        "hitEnUs":  13,
+        "skipped":  0,
+        "totalRequested":  13
+    },
+    {
+        "modid":  "extendedae",
+        "hitZhCn":  0,
+        "hitEnUs":  12,
+        "skipped":  0,
+        "totalRequested":  12
+    },
+    {
+        "modid":  "tipsmod",
+        "hitZhCn":  0,
+        "hitEnUs":  12,
+        "skipped":  0,
+        "totalRequested":  12
+    },
+    {
+        "modid":  "authme",
+        "hitZhCn":  0,
+        "hitEnUs":  12,
+        "skipped":  0,
+        "totalRequested":  12
+    },
+    {
+        "modid":  "resourcepackoverrides",
+        "hitZhCn":  0,
+        "hitEnUs":  12,
+        "skipped":  0,
+        "totalRequested":  12
+    },
+    {
+        "modid":  "shrink",
+        "hitZhCn":  0,
+        "hitEnUs":  12,
+        "skipped":  0,
+        "totalRequested":  12
+    },
+    {
+        "modid":  "rep_ae2_bridge",
+        "hitZhCn":  0,
+        "hitEnUs":  12,
+        "skipped":  0,
+        "totalRequested":  12
+    },
+    {
+        "modid":  "elevatorid",
+        "hitZhCn":  0,
+        "hitEnUs":  11,
+        "skipped":  0,
+        "totalRequested":  11
+    },
+    {
+        "modid":  "akashictome",
+        "hitZhCn":  0,
+        "hitEnUs":  11,
+        "skipped":  0,
+        "totalRequested":  11
+    },
+    {
+        "modid":  "mekagenjei",
+        "hitZhCn":  0,
+        "hitEnUs":  10,
+        "skipped":  0,
+        "totalRequested":  10
+    },
+    {
+        "modid":  "morphtool",
+        "hitZhCn":  0,
+        "hitEnUs":  10,
+        "skipped":  0,
+        "totalRequested":  10
+    },
+    {
+        "modid":  "custommachinerycreate",
+        "hitZhCn":  0,
+        "hitEnUs":  10,
+        "skipped":  0,
+        "totalRequested":  10
+    },
+    {
+        "modid":  "apothic_enchanting",
+        "hitZhCn":  0,
+        "hitEnUs":  9,
+        "skipped":  0,
+        "totalRequested":  9
+    },
+    {
+        "modid":  "gateways",
+        "hitZhCn":  0,
+        "hitEnUs":  9,
+        "skipped":  0,
+        "totalRequested":  9
+    },
+    {
+        "modid":  "omnitools",
+        "hitZhCn":  8,
+        "hitEnUs":  1,
+        "skipped":  0,
+        "totalRequested":  9
+    },
+    {
+        "modid":  "oracle_index",
+        "hitZhCn":  0,
+        "hitEnUs":  8,
+        "skipped":  0,
+        "totalRequested":  8
+    },
+    {
+        "modid":  "bonsaitrees4",
+        "hitZhCn":  0,
+        "hitEnUs":  8,
+        "skipped":  0,
+        "totalRequested":  8
+    },
+    {
+        "modid":  "synesthesia",
+        "hitZhCn":  0,
+        "hitEnUs":  8,
+        "skipped":  0,
+        "totalRequested":  8
+    },
+    {
+        "modid":  "fusion",
+        "hitZhCn":  0,
+        "hitEnUs":  8,
+        "skipped":  0,
+        "totalRequested":  8
+    },
+    {
+        "modid":  "rsrequestify",
+        "hitZhCn":  0,
+        "hitEnUs":  8,
+        "skipped":  0,
+        "totalRequested":  8
+    },
+    {
+        "modid":  "replication_matter_overflow",
+        "hitZhCn":  0,
+        "hitEnUs":  7,
+        "skipped":  0,
+        "totalRequested":  7
+    },
+    {
+        "modid":  "ctm",
+        "hitZhCn":  0,
+        "hitEnUs":  7,
+        "skipped":  0,
+        "totalRequested":  7
+    },
+    {
+        "modid":  "curios",
+        "hitZhCn":  0,
+        "hitEnUs":  7,
+        "skipped":  0,
+        "totalRequested":  7
+    },
+    {
+        "modid":  "iris",
+        "hitZhCn":  0,
+        "hitEnUs":  6,
+        "skipped":  0,
+        "totalRequested":  6
+    },
+    {
+        "modid":  "custommachinerymekanism",
+        "hitZhCn":  0,
+        "hitEnUs":  6,
+        "skipped":  0,
+        "totalRequested":  6
+    },
+    {
+        "modid":  "metalbarrels",
+        "hitZhCn":  0,
+        "hitEnUs":  6,
+        "skipped":  0,
+        "totalRequested":  6
+    },
+    {
+        "modid":  "structures_tweaker",
+        "hitZhCn":  0,
+        "hitEnUs":  6,
+        "skipped":  0,
+        "totalRequested":  6
+    },
+    {
+        "modid":  "woodenshears",
+        "hitZhCn":  0,
+        "hitEnUs":  6,
+        "skipped":  0,
+        "totalRequested":  6
+    },
+    {
+        "modid":  "justdirethings",
+        "hitZhCn":  0,
+        "hitEnUs":  5,
+        "skipped":  0,
+        "totalRequested":  5
+    },
+    {
+        "modid":  "tooltipoverhaul",
+        "hitZhCn":  0,
+        "hitEnUs":  5,
+        "skipped":  0,
+        "totalRequested":  5
+    },
+    {
+        "modid":  "modernworldcreation",
+        "hitZhCn":  0,
+        "hitEnUs":  5,
+        "skipped":  0,
+        "totalRequested":  5
+    },
+    {
+        "modid":  "chancecubes",
+        "hitZhCn":  0,
+        "hitEnUs":  5,
+        "skipped":  0,
+        "totalRequested":  5
+    },
+    {
+        "modid":  "craftingstation",
+        "hitZhCn":  0,
+        "hitEnUs":  5,
+        "skipped":  0,
+        "totalRequested":  5
+    },
+    {
+        "modid":  "industrialforegoingsouls",
+        "hitZhCn":  0,
+        "hitEnUs":  5,
+        "skipped":  0,
+        "totalRequested":  5
+    },
+    {
+        "modid":  "replication_rs2_bridge",
+        "hitZhCn":  0,
+        "hitEnUs":  5,
+        "skipped":  0,
+        "totalRequested":  5
+    },
+    {
+        "modid":  "entityculling",
+        "hitZhCn":  0,
+        "hitEnUs":  5,
+        "skipped":  0,
+        "totalRequested":  5
+    },
+    {
+        "modid":  "createaddition",
+        "hitZhCn":  0,
+        "hitEnUs":  4,
+        "skipped":  0,
+        "totalRequested":  4
+    },
+    {
+        "modid":  "crashutilities",
+        "hitZhCn":  0,
+        "hitEnUs":  4,
+        "skipped":  0,
+        "totalRequested":  4
+    },
+    {
+        "modid":  "ae2",
+        "hitZhCn":  0,
+        "hitEnUs":  4,
+        "skipped":  0,
+        "totalRequested":  4
+    },
+    {
+        "modid":  "soulplied_energistics",
+        "hitZhCn":  0,
+        "hitEnUs":  4,
+        "skipped":  0,
+        "totalRequested":  4
+    },
+    {
+        "modid":  "squatgrow",
+        "hitZhCn":  0,
+        "hitEnUs":  4,
+        "skipped":  0,
+        "totalRequested":  4
+    },
+    {
+        "modid":  "lionfishapi",
+        "hitZhCn":  0,
+        "hitEnUs":  4,
+        "skipped":  0,
+        "totalRequested":  4
+    },
+    {
+        "modid":  "kubejstweaks",
+        "hitZhCn":  0,
+        "hitEnUs":  4,
+        "skipped":  0,
+        "totalRequested":  4
+    },
+    {
+        "modid":  "merequester",
+        "hitZhCn":  0,
+        "hitEnUs":  4,
+        "skipped":  0,
+        "totalRequested":  4
+    },
+    {
+        "modid":  "enderdrives",
+        "hitZhCn":  0,
+        "hitEnUs":  4,
+        "skipped":  0,
+        "totalRequested":  4
+    },
+    {
+        "modid":  "patchouli",
+        "hitZhCn":  0,
+        "hitEnUs":  4,
+        "skipped":  0,
+        "totalRequested":  4
+    },
+    {
+        "modid":  "replication",
+        "hitZhCn":  0,
+        "hitEnUs":  4,
+        "skipped":  0,
+        "totalRequested":  4
+    },
+    {
+        "modid":  "mekanism_unleashed",
+        "hitZhCn":  0,
+        "hitEnUs":  3,
+        "skipped":  0,
+        "totalRequested":  3
+    },
+    {
+        "modid":  "baguettelib",
+        "hitZhCn":  0,
+        "hitEnUs":  3,
+        "skipped":  0,
+        "totalRequested":  3
+    },
+    {
+        "modid":  "ae2addonlib",
+        "hitZhCn":  0,
+        "hitEnUs":  3,
+        "skipped":  0,
+        "totalRequested":  3
+    },
+    {
+        "modid":  "jumpoverfences",
+        "hitZhCn":  0,
+        "hitEnUs":  3,
+        "skipped":  0,
+        "totalRequested":  3
+    },
+    {
+        "modid":  "sfm",
+        "hitZhCn":  0,
+        "hitEnUs":  3,
+        "skipped":  0,
+        "totalRequested":  3
+    },
+    {
+        "modid":  "jei_mekanism_multiblocks",
+        "hitZhCn":  0,
+        "hitEnUs":  3,
+        "skipped":  0,
+        "totalRequested":  3
+    },
+    {
+        "modid":  "sdrp",
+        "hitZhCn":  0,
+        "hitEnUs":  3,
+        "skipped":  0,
+        "totalRequested":  3
+    },
+    {
+        "modid":  "ftbpmapi",
+        "hitZhCn":  0,
+        "hitEnUs":  3,
+        "skipped":  0,
+        "totalRequested":  3
+    },
+    {
+        "modid":  "ftbteambases",
+        "hitZhCn":  0,
+        "hitEnUs":  3,
+        "skipped":  0,
+        "totalRequested":  3
+    },
+    {
+        "modid":  "createenderstorage",
+        "hitZhCn":  0,
+        "hitEnUs":  3,
+        "skipped":  0,
+        "totalRequested":  3
+    },
+    {
+        "modid":  "databank",
+        "hitZhCn":  0,
+        "hitEnUs":  3,
+        "skipped":  0,
+        "totalRequested":  3
+    },
+    {
+        "modid":  "busy_villagers",
+        "hitZhCn":  0,
+        "hitEnUs":  3,
+        "skipped":  0,
+        "totalRequested":  3
+    },
+    {
+        "modid":  "underlay",
+        "hitZhCn":  0,
+        "hitEnUs":  3,
+        "skipped":  0,
+        "totalRequested":  3
+    },
+    {
+        "modid":  "magiccoinstweak",
+        "hitZhCn":  0,
+        "hitEnUs":  3,
+        "skipped":  0,
+        "totalRequested":  3
+    },
+    {
+        "modid":  "magic_coins",
+        "hitZhCn":  0,
+        "hitEnUs":  3,
+        "skipped":  0,
+        "totalRequested":  3
+    },
+    {
+        "modid":  "mcjtylib",
+        "hitZhCn":  0,
+        "hitEnUs":  3,
+        "skipped":  0,
+        "totalRequested":  3
+    },
+    {
+        "modid":  "avaritia",
+        "hitZhCn":  2,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  2
+    },
+    {
+        "modid":  "trophymanager",
+        "hitZhCn":  0,
+        "hitEnUs":  2,
+        "skipped":  0,
+        "totalRequested":  2
+    },
+    {
+        "modid":  "cucumber",
+        "hitZhCn":  0,
+        "hitEnUs":  2,
+        "skipped":  0,
+        "totalRequested":  2
+    },
+    {
+        "modid":  "findme",
+        "hitZhCn":  0,
+        "hitEnUs":  2,
+        "skipped":  0,
+        "totalRequested":  2
+    },
+    {
+        "modid":  "mekanism_lasers",
+        "hitZhCn":  0,
+        "hitEnUs":  2,
+        "skipped":  0,
+        "totalRequested":  2
+    },
+    {
+        "modid":  "caelus",
+        "hitZhCn":  0,
+        "hitEnUs":  2,
+        "skipped":  0,
+        "totalRequested":  2
+    },
+    {
+        "modid":  "fdlib",
+        "hitZhCn":  0,
+        "hitEnUs":  2,
+        "skipped":  0,
+        "totalRequested":  2
+    },
+    {
+        "modid":  "entityjs",
+        "hitZhCn":  0,
+        "hitEnUs":  1,
+        "skipped":  0,
+        "totalRequested":  1
+    },
+    {
+        "modid":  "fancymenu",
+        "hitZhCn":  0,
+        "hitEnUs":  1,
+        "skipped":  0,
+        "totalRequested":  1
+    },
+    {
+        "modid":  "fadingnightvision",
+        "hitZhCn":  0,
+        "hitEnUs":  1,
+        "skipped":  0,
+        "totalRequested":  1
+    },
+    {
+        "modid":  "create_shimmer",
+        "hitZhCn":  1,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  1
+    },
+    {
+        "modid":  "apotheosis",
+        "hitZhCn":  0,
+        "hitEnUs":  1,
+        "skipped":  0,
+        "totalRequested":  1
+    },
+    {
+        "modid":  "appex",
+        "hitZhCn":  0,
+        "hitEnUs":  1,
+        "skipped":  0,
+        "totalRequested":  1
+    },
+    {
+        "modid":  "deepdarkdimdungeons",
+        "hitZhCn":  0,
+        "hitEnUs":  1,
+        "skipped":  0,
+        "totalRequested":  1
+    },
+    {
+        "modid":  "refinedstorage_curios_integration",
+        "hitZhCn":  0,
+        "hitEnUs":  1,
+        "skipped":  0,
+        "totalRequested":  1
+    },
+    {
+        "modid":  "refinedtypes",
+        "hitZhCn":  0,
+        "hitEnUs":  1,
+        "skipped":  0,
+        "totalRequested":  1
+    },
+    {
+        "modid":  "cloth-config2",
+        "hitZhCn":  0,
+        "hitEnUs":  1,
+        "skipped":  0,
+        "totalRequested":  1
+    },
+    {
+        "modid":  "ae2things",
+        "hitZhCn":  0,
+        "hitEnUs":  1,
+        "skipped":  0,
+        "totalRequested":  1
+    },
+    {
+        "modid":  "betteradvancements",
+        "hitZhCn":  0,
+        "hitEnUs":  1,
+        "skipped":  0,
+        "totalRequested":  1
+    },
+    {
+        "modid":  "ae2wtlib",
+        "hitZhCn":  0,
+        "hitEnUs":  1,
+        "skipped":  0,
+        "totalRequested":  1
+    },
+    {
+        "modid":  "constructionstick",
+        "hitZhCn":  0,
+        "hitEnUs":  1,
+        "skipped":  0,
+        "totalRequested":  1
+    },
+    {
+        "modid":  "repeatable_trial_vaults",
+        "hitZhCn":  0,
+        "hitEnUs":  1,
+        "skipped":  0,
+        "totalRequested":  1
+    },
+    {
+        "modid":  "ars_ocultas",
+        "hitZhCn":  0,
+        "hitEnUs":  1,
+        "skipped":  0,
+        "totalRequested":  1
+    },
+    {
+        "modid":  "tempad",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "yet_another_config_lib_v3",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "tesseract",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "supplementaries",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "tempad_static",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "transfer_labels",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "trade_cycling",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "solcarrot",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "trashcans",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "rsinfinitybooster",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "searchables",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "simplemagnets",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "universalgrid",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "toolkit",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "toolbelt",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "xnet",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "sophisticatedstorage",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "sophisticatedbackpacks",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "sophisticatedcore",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "rftoolsutility",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "create_hypertube",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "create_connected",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "drippyloadingscreen",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "draconicevolution",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "create_central_kitchen",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "cosmeticarmorreworked",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "create_enchantment_industry",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "create_dragons_plus",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "dummmmmmy",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "ftbauxilium",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "fluxnetworks",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "ftbmaterials",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "ftbessentials",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "enderstorage",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "durabilitytooltip",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "explorerscompass",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "entangled",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "controlling",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "apothic_attributes",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "amendments",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "appleskin",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "apothic_spawners",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "advancedperipherals",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "advanced_ae",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "almostunified",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "ae2ct",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "appmek",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "computercraft",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "cabletiers",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "cognition",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "classicpipes",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "arseng",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "appflux",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "buildinggadgets2",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "bcc",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "oritechthings",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "oritech",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "pipegoggles",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "particular",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "mffs",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "me_beam_former",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "occultism",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "occultengineering",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "pipez",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "refinedstorage_mekanism_integration",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "refinedstorage_jei_integration",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "refinedstorage_quartz_arsenal",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "refinedstorage",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "powah",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "placebo",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "rechiseled_chipped",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "lollipop",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "mekanismgenerators",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "gaze",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "functionalstorage",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "ironfurnaces",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "glassential",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "ftbteams",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "ftbstuff",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "ftboceanmobs",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "ftbxmodcompat",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "accelerateddecay",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "megacells",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "lodestone",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "mekanismcurios",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "mekanism",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "justhammers",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "itemcollectors",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "justenoughprofessions",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    },
+    {
+        "modid":  "justenoughbreeding",
+        "hitZhCn":  0,
+        "hitEnUs":  0,
+        "skipped":  0,
+        "totalRequested":  0
+    }
+]
