@@ -1,7 +1,10 @@
 [CmdletBinding()]
 param(
-    [Parameter(Mandatory = $true)]
+    [Parameter()]
     [string]$ModsDir,
+
+    [Parameter()]
+    [string]$GameRoot,
 
     [Parameter(Mandatory = $true)]
     [string]$RepoRoot,
@@ -42,6 +45,16 @@ function Read-ZipEntryText {
 
 if (-not $OutDir -or $OutDir.Trim() -eq '') {
     $OutDir = Join-Path $RepoRoot 'tools\out'
+}
+
+if (-not $ModsDir -or $ModsDir.Trim() -eq '') {
+    if ($GameRoot -and $GameRoot.Trim() -ne '') {
+        $ModsDir = Join-Path $GameRoot 'mods'
+    }
+}
+
+if (-not $ModsDir -or $ModsDir.Trim() -eq '') {
+    throw "ModsDir or GameRoot is required."
 }
 
 if (-not (Test-Path $ModsDir)) {

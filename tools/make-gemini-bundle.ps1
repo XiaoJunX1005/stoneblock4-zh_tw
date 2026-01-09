@@ -7,6 +7,9 @@ param(
     [string]$GameRoot,
 
     [Parameter()]
+    [string]$PackName = 'sb4-zh_tw',
+
+    [Parameter()]
     [string]$MissingTopMd,
 
     [Parameter()]
@@ -276,6 +279,153 @@ function Load-KubejsLangMap {
         $map[$modid] = $jsonMap
     }
     return $map
+}
+
+function Get-MissingKeysFromDetails {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$OutDir,
+        [Parameter(Mandatory = $true)]
+        [string]$TargetModId
+    )
+    $detailsPath = Join-Path $OutDir 'zh_tw_missing_details.json'
+    if (-not (Test-Path $detailsPath)) {
+        return @()
+    }
+
+    try {
+        $text = Get-Content -Path $detailsPath -Raw -Encoding UTF8
+        $obj = $text | ConvertFrom-Json
+    } catch {
+        Write-Warning ("Invalid JSON in missing details: {0}. {1}" -f $detailsPath, $_.Exception.Message)
+        return @()
+    }
+
+    if (-not $obj.PSObject.Properties.Match('mods')) {
+        return @()
+    }
+
+    foreach ($mod in $obj.mods) {
+        if ($mod.modid -and ([string]$mod.modid).Equals($TargetModId, [System.StringComparison]::OrdinalIgnoreCase)) {
+            if ($mod.PSObject.Properties.Match('missingKeys')) {
+                return Normalize-KeyList -RawKeys $mod.missingKeys
+            }
+            return @()
+        }
+    }
+
+    return @()
+}
+
+function Load-ResourcepackZhTwMap {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$RepoRoot,
+        [Parameter(Mandatory = $true)]
+        [string]$PackName,
+        [Parameter()]
+        [System.Collections.Generic.HashSet[string]]$TargetModIds
+    )
+
+    $map = New-CaseInsensitiveHashtable
+    $assetsRoot = Join-Path $RepoRoot ("resourcepacks\{0}\assets" -f $PackName)
+    if (-not (Test-Path $assetsRoot)) {
+        return $map
+    }
+
+    foreach ($modid in $TargetModIds) {
+        $path = Join-Path $assetsRoot ("{0}\lang\zh_tw.json" -f $modid)
+        if (-not (Test-Path $path)) {
+            continue
+        }
+        if ($map.ContainsKey($modid)) {
+            continue
+        }
+        $jsonMap = Read-JsonFileAsMap -Path $path -Context ("resourcepack zh_tw {0}" -f $modid)
+        if ($null -eq $jsonMap) {
+            continue
+        }
+        $map[$modid] = $jsonMap
+    }
+
+    return $map
+}
+
+function Get-BundleKeys {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$BundlePath,
+        [Parameter(Mandatory = $true)]
+        [string]$ModId
+    )
+    if (-not (Test-Path $BundlePath)) {
+        return @()
+    }
+
+    try {
+        $text = Get-Content -Path $BundlePath -Raw -Encoding UTF8
+        $obj = $text | ConvertFrom-Json
+    } catch {
+        Write-Warning ("Invalid bundle JSON: {0}. {1}" -f $BundlePath, $_.Exception.Message)
+        return @()
+    }
+
+    if (-not $obj.PSObject.Properties.Match('items')) {
+        return @()
+    }
+
+    $keys = New-Object System.Collections.Generic.List[string]
+    foreach ($item in $obj.items) {
+        if ($item.modid -ne $ModId) {
+            continue
+        }
+        if ($item.entries) {
+            foreach ($prop in $item.entries.PSObject.Properties) {
+                $keys.Add($prop.Name)
+            }
+        }
+    }
+
+    return $keys
+}
+
+function New-OrdinalKeySet {
+    $set = New-Object System.Collections.Generic.HashSet[string]([System.StringComparer]::Ordinal)
+    return $set
+}
+
+function Add-KeysToSet {
+    param(
+        [Parameter()]
+        [System.Collections.Generic.HashSet[string]]$Set,
+        [Parameter()]
+        [object[]]$Keys
+    )
+    if ($null -eq $Set) {
+        return
+    }
+    foreach ($key in (Normalize-KeyList -RawKeys $Keys)) {
+        $null = $Set.Add([string]$key)
+    }
+}
+
+function Filter-KeysBySet {
+    param(
+        [Parameter(Mandatory = $true)]
+        [object[]]$Keys,
+        [Parameter()]
+        [System.Collections.Generic.HashSet[string]]$Exclude
+    )
+    if ($null -eq $Exclude) {
+        return $Keys
+    }
+    $filtered = New-Object System.Collections.Generic.List[string]
+    foreach ($key in $Keys) {
+        if (-not $Exclude.Contains([string]$key)) {
+            $filtered.Add([string]$key)
+        }
+    }
+    return $filtered
 }
 
 function Load-JarLangMap {
@@ -582,6 +732,8 @@ if ($TargetModId -and $TargetModId.Trim() -ne '') {
     $targetModIds = New-Object System.Collections.Generic.HashSet[string]([System.StringComparer]::OrdinalIgnoreCase)
     $null = $targetModIds.Add($targetId)
 
+    $resourceZhTw = Load-ResourcepackZhTwMap -RepoRoot $RepoRoot -PackName $PackName -TargetModIds $targetModIds
+    $kubejsZhTw = Load-KubejsLangMap -RepoRoot $RepoRoot -Lang 'zh_tw' -TargetModIds $targetModIds
     $kubejsZhCn = Load-KubejsLangMap -RepoRoot $RepoRoot -Lang 'zh_cn' -TargetModIds $targetModIds
     $kubejsEnUs = Load-KubejsLangMap -RepoRoot $RepoRoot -Lang 'en_us' -TargetModIds $targetModIds
     $jarZhCn = Load-JarLangMap -ModsDir $modsDir -Lang 'zh_cn' -TargetModIds $targetModIds
@@ -589,6 +741,21 @@ if ($TargetModId -and $TargetModId.Trim() -ne '') {
 
     $missingKeys = Get-MissingKeysFromMarkdown -MissingTopMd $MissingTopMd -TargetModId $targetId -KeysPerMod $KeysPerMod
     $missingKeys = Normalize-KeyList -RawKeys $missingKeys
+    $detailsKeys = Get-MissingKeysFromDetails -OutDir $OutDir -TargetModId $targetId
+    if ($detailsKeys.Count -gt $missingKeys.Count) {
+        $missingKeys = $detailsKeys
+    }
+    $translatedKeySet = New-Object System.Collections.Generic.HashSet[string]([System.StringComparer]::Ordinal)
+    if ($resourceZhTw.ContainsKey($targetId)) { Add-KeysToSet -Set $translatedKeySet -Keys $resourceZhTw[$targetId].Keys }
+    if ($kubejsZhTw.ContainsKey($targetId)) { Add-KeysToSet -Set $translatedKeySet -Keys $kubejsZhTw[$targetId].Keys }
+    $existingBundlePath = Join-Path $OutDir ("{0}\bundle_to_translate.json" -f $targetId)
+    Add-KeysToSet -Set $translatedKeySet -Keys (Get-BundleKeys -BundlePath $existingBundlePath -ModId $targetId)
+    $missingKeys = Filter-KeysBySet -Keys $missingKeys -Exclude $translatedKeySet
+    if ($KeysPerMod -gt 0) {
+        $missingKeys = $missingKeys | Select-Object -First $KeysPerMod
+    } else {
+        $missingKeys = @()
+    }
 
     $build = Build-ModEntries -ModId $targetId -MissingKeys $missingKeys -KubejsZhCn $kubejsZhCn -JarZhCn $jarZhCn -KubejsEnUs $kubejsEnUs -JarEnUs $jarEnUs
 
@@ -703,6 +870,8 @@ foreach ($m in $modsList) {
     }
 }
 
+$resourceZhTw = Load-ResourcepackZhTwMap -RepoRoot $RepoRoot -PackName $PackName -TargetModIds $targetModIds
+$kubejsZhTw = Load-KubejsLangMap -RepoRoot $RepoRoot -Lang 'zh_tw' -TargetModIds $targetModIds
 $kubejsZhCn = Load-KubejsLangMap -RepoRoot $RepoRoot -Lang 'zh_cn' -TargetModIds $targetModIds
 $kubejsEnUs = Load-KubejsLangMap -RepoRoot $RepoRoot -Lang 'en_us' -TargetModIds $targetModIds
 $jarZhCn = Load-JarLangMap -ModsDir $modsDir -Lang 'zh_cn' -TargetModIds $targetModIds
@@ -719,6 +888,13 @@ foreach ($mod in $modsList) {
     if ($mod.PSObject.Properties.Match('missingKeys')) {
         $missingKeys = Normalize-KeyList -RawKeys $mod.missingKeys
     }
+
+    $translatedKeySet = New-Object System.Collections.Generic.HashSet[string]([System.StringComparer]::Ordinal)
+    if ($resourceZhTw.ContainsKey($modid)) { Add-KeysToSet -Set $translatedKeySet -Keys $resourceZhTw[$modid].Keys }
+    if ($kubejsZhTw.ContainsKey($modid)) { Add-KeysToSet -Set $translatedKeySet -Keys $kubejsZhTw[$modid].Keys }
+    $existingBundlePath = Join-Path $OutDir ("{0}\bundle_to_translate.json" -f $modid)
+    Add-KeysToSet -Set $translatedKeySet -Keys (Get-BundleKeys -BundlePath $existingBundlePath -ModId $modid)
+    $missingKeys = Filter-KeysBySet -Keys $missingKeys -Exclude $translatedKeySet
 
     $build = Build-ModEntries -ModId $modid -MissingKeys $missingKeys -KubejsZhCn $kubejsZhCn -JarZhCn $jarZhCn -KubejsEnUs $kubejsEnUs -JarEnUs $jarEnUs
 

@@ -1,5 +1,0 @@
-{
-  "block.underlay.overlay": " (Overlay)",
-  "config.jade.plugin_underlay.overlay": "Overlay",
-  "config.jade.plugin_underlay.overlay.tooltip": "Show Underlay overlay tooltips"
-}
