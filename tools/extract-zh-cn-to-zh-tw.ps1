@@ -44,9 +44,27 @@ $bundlePath = Join-Path $RepoRoot 'tools\out\zh_cn_bundle.json'
 $assetsRoot = Join-Path $RepoRoot ("resourcepacks\{0}\assets" -f $PackName)
 
 $extracted = 0
-$skipped = 0
+$extractSkipped = 0
 $errors = 0
 $applyWritten = 0
+$applySkipped = 0
+$applyCreated = 0
+$applyUpdated = 0
+
+function ConvertTo-HashtableFromJsonObject {
+    param(
+        [Parameter(Mandatory = $true)]
+        [object]$JsonObject
+    )
+    if ($JsonObject -is [hashtable]) {
+        return $JsonObject
+    }
+    $map = New-Object System.Collections.Hashtable ([System.StringComparer]::Ordinal)
+    foreach ($prop in $JsonObject.PSObject.Properties) {
+        $map[$prop.Name] = $prop.Value
+    }
+    return $map
+}
 
 if ($PSCmdlet.ParameterSetName -eq 'Extract') {
     if (-not (Test-Path $ModsDir)) {
@@ -85,7 +103,7 @@ if ($PSCmdlet.ParameterSetName -eq 'Extract') {
                     $targetDir = Join-Path $assetsRoot ("{0}\lang" -f $modid)
                     $targetFile = Join-Path $targetDir 'zh_tw.json'
                     if ((Test-Path $targetFile) -and (-not $Overwrite)) {
-                        $skipped++
+                        $extractSkipped++
                         continue
                     }
 
@@ -123,36 +141,89 @@ if ($PSCmdlet.ParameterSetName -eq 'Apply') {
     }
 
     if (-not $bundleObj.PSObject.Properties.Match('mods')) {
-        throw "ApplyBundle missing 'mods' object: $ApplyBundle"
-    }
-    $modsObj = $bundleObj.mods
-    if (-not $modsObj) {
-        throw "ApplyBundle 'mods' is empty: $ApplyBundle"
-    }
-
-    $modIds = @()
-    if ($modsObj -is [hashtable]) {
-        $modIds = $modsObj.Keys
+        $modsObj = $null
     } else {
-        $modIds = $modsObj.PSObject.Properties.Name
+        $modsObj = $bundleObj.mods
     }
 
-    $applyTotal = $modIds.Count
+    $applyItems = New-Object System.Collections.Generic.List[object]
+    if ($modsObj) {
+        $modIds = @()
+        if ($modsObj -is [hashtable]) {
+            $modIds = $modsObj.Keys
+        } else {
+            $modIds = $modsObj.PSObject.Properties.Name
+        }
+
+        foreach ($modid in $modIds) {
+            if (-not $modid) { continue }
+            $entriesObj = if ($modsObj -is [hashtable]) { $modsObj[$modid] } else { $modsObj.$modid }
+            if ($null -eq $entriesObj) { continue }
+            $applyItems.Add([pscustomobject]@{
+                modid   = [string]$modid
+                entries = ConvertTo-HashtableFromJsonObject -JsonObject $entriesObj
+            })
+        }
+    } elseif ($bundleObj.PSObject.Properties.Match('items') -and ($bundleObj.items -is [System.Collections.IEnumerable])) {
+        foreach ($item in $bundleObj.items) {
+            if (-not $item) { continue }
+            $modid = [string]$item.modid
+            if (-not $modid) { continue }
+            $entriesObj = $item.entries
+            if ($null -eq $entriesObj) { continue }
+            $applyItems.Add([pscustomobject]@{
+                modid   = $modid
+                entries = ConvertTo-HashtableFromJsonObject -JsonObject $entriesObj
+            })
+        }
+    } else {
+        throw "ApplyBundle missing 'mods' or 'items' array: $ApplyBundle"
+    }
+
+    if ($applyItems.Count -eq 0) {
+        throw "ApplyBundle has no entries to apply: $ApplyBundle"
+    }
+
+    $applyTotal = $applyItems.Count
     $applyFailed = 0
 
-    foreach ($modid in $modIds) {
+    foreach ($item in $applyItems) {
+        $modid = $item.modid
         try {
             $targetDir = Join-Path $assetsRoot ("{0}\lang" -f $modid)
             $targetFile = Join-Path $targetDir 'zh_tw.json'
             New-Item -ItemType Directory -Path $targetDir -Force | Out-Null
 
-            if ($modsObj -is [hashtable]) {
-                $modJson = $modsObj[$modid] | ConvertTo-Json -Depth 100
-            } else {
-                $modJson = $modsObj.$modid | ConvertTo-Json -Depth 100
+            $fileExists = Test-Path $targetFile
+            $currentMap = @{}
+            if ($fileExists) {
+                try {
+                    $existingText = Get-Content -Path $targetFile -Raw -Encoding UTF8
+                    $existingObj = $existingText | ConvertFrom-Json
+                    $currentMap = ConvertTo-HashtableFromJsonObject -JsonObject $existingObj
+                } catch {
+                    Write-Warning "Invalid existing zh_tw.json for mod '$modid'; treating as empty."
+                    $currentMap = @{}
+                }
             }
-            [System.IO.File]::WriteAllText($targetFile, $modJson, (Get-Utf8NoBom))
-            $applyWritten++
+
+            $entries = $item.entries
+            $changed = $false
+            foreach ($key in $entries.Keys) {
+                if ($currentMap.ContainsKey($key) -and (-not $Overwrite)) {
+                    $applySkipped++
+                    continue
+                }
+                $currentMap[$key] = $entries[$key]
+                $applyWritten++
+                $changed = $true
+            }
+
+            if ($changed) {
+                $modJson = $currentMap | ConvertTo-Json -Depth 100
+                [System.IO.File]::WriteAllText($targetFile, $modJson, (Get-Utf8NoBom))
+                if ($fileExists) { $applyUpdated++ } else { $applyCreated++ }
+            }
         } catch {
             $applyFailed++
             $errors++
@@ -160,12 +231,15 @@ if ($PSCmdlet.ParameterSetName -eq 'Apply') {
         }
     }
 
-    Write-Host ("Apply bundle: total={0}, success={1}, failed={2}" -f $applyTotal, $applyWritten, $applyFailed)
+    Write-Host ("Apply bundle: totalMods={0}, applied={1}, skipped={2}, created={3}, updated={4}, failed={5}" -f $applyTotal, $applyWritten, $applySkipped, $applyCreated, $applyUpdated, $applyFailed)
 }
 
 Write-Host "Summary:"
 Write-Host ("  extracted: {0}" -f $extracted)
-Write-Host ("  skipped:   {0}" -f $skipped)
+Write-Host ("  skipped:   {0}" -f $extractSkipped)
 Write-Host ("  errors:    {0}" -f $errors)
 Write-Host ("  bundle:    {0}" -f $bundlePath)
 Write-Host ("  applied:   {0}" -f $applyWritten)
+Write-Host ("  skipped:   {0}" -f $applySkipped)
+Write-Host ("  created:   {0}" -f $applyCreated)
+Write-Host ("  updated:   {0}" -f $applyUpdated)
