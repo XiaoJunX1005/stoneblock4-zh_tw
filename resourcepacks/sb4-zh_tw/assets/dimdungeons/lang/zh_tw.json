@@ -4,7 +4,7 @@
 	"biome.dimdungeons.biome_dungeon": "地牢",
 	"dimension.dimdungeons.dimension_dungeon": "地牢維度",
 
-	"dimdungeons:activate_key": "激活鑰匙", // JEI
+	"dimdungeons:activate_key": "激活鑰匙",
 
     "block.dimdungeons.block_gilded_portal": "鍍金傳送門方塊",
     "block.dimdungeons.block_gold_portal": "黃金地牢傳送門",
@@ -198,7 +198,7 @@
     "book.dimdungeons.advanced_message_7": "您可以安全地重命名地牢鑰匙，它們仍會將您傳送到同一個地方。",
     "book.dimdungeons.advanced_message_8": "還有更多！ 這不是最後的地牢。",
 
-	// 此處的指南書文段已被棄用
+
     "book.dimdungeons.guidebook_1": "這份簡短的指南將詳細說明您需要了解的有關建造傳送門、制作鑰匙和突襲地下城的所有信息！",
     "book.dimdungeons.guidebook_2": "首先，您的傳送門需要 3 個鍍金傳送門塊。 用 8 個金錠圍繞一塊鏨制石磚來制作一個鍍金傳送門塊。",
     "book.dimdungeons.guidebook_3": "其次，您的傳送門需要一個傳送門基石。 要制作此物品，請使用您的 3 個鍍金傳送門塊之一，並將其​​與一個陷阱箱和一個末影之眼結合起來。",

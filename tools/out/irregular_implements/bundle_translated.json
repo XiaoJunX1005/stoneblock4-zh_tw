@@ -1,0 +1,55 @@
+{
+    "meta": {
+        "sourcePriority": [
+            "zh_cn",
+            "en_us"
+        ],
+        "target": "zh_tw",
+        "generatedAt": "2026-01-09T21:27:05.4122650+08:00"
+    },
+    "items": [
+        {
+            "modid": "irregular_implements",
+            "entries": {
+                "tooltip.irregular_implements.player_filter_player": "玩家：%s",
+                "tooltip.irregular_implements.player_filter_uuid": "玩家 UUID：%s",
+                "tooltip.irregular_implements.portkey_destination": "%s: %d, %d, %d",
+                "tooltip.irregular_implements.portkey_disguise": "偽裝成：%s",
+                "tooltip.irregular_implements.shift_for_more": "按住 SHIFT 以檢視更多資訊",
+                "tooltip.irregular_implements.show_lazy_shape": "顯示懶惰形狀",
+                "tooltip.irregular_implements.sodium_incompatible": "與 Sodium 不完全相容",
+                "tooltip.irregular_implements.stops_message": "停止訊息",
+                "tooltip.irregular_implements.summoning_pendulum_fraction": "已儲存：%d/%d",
+                "tooltip.irregular_implements.summoning_pendulum_list_each": "• %s",
+                "tooltip.irregular_implements.trans_rights": "跨性別權益即人權！",
+                "tooltip.irregular_implements.uninverted": "未反轉",
+                "tooltip.irregular_implements.void_stone_holding": "目前持有 %s，放入另一物品將會將其銷毀並替換",
+                "tooltip.irregular_implements.void_stone_insert": "拿著物品對此堆疊按右鍵以儲存",
+                "tooltip.irregular_implements.void_stone_remove": "你可以拿著石頭對空插槽按右鍵來移除 %s",
+                "tooltip.irregular_implements.white_stone_full_moon": "在滿月下充能",
+                "tooltip.irregular_implements.whitelist": "白名單",
+                "tooltip.irregular_implements.with_block_entity": "帶有方塊實體的 %s"
+            },
+            "entrySource": {
+                "tooltip.irregular_implements.player_filter_player": "en_us",
+                "tooltip.irregular_implements.player_filter_uuid": "en_us",
+                "tooltip.irregular_implements.portkey_destination": "en_us",
+                "tooltip.irregular_implements.portkey_disguise": "en_us",
+                "tooltip.irregular_implements.shift_for_more": "en_us",
+                "tooltip.irregular_implements.show_lazy_shape": "en_us",
+                "tooltip.irregular_implements.sodium_incompatible": "en_us",
+                "tooltip.irregular_implements.stops_message": "en_us",
+                "tooltip.irregular_implements.summoning_pendulum_fraction": "en_us",
+                "tooltip.irregular_implements.summoning_pendulum_list_each": "en_us",
+                "tooltip.irregular_implements.trans_rights": "en_us",
+                "tooltip.irregular_implements.uninverted": "en_us",
+                "tooltip.irregular_implements.void_stone_holding": "en_us",
+                "tooltip.irregular_implements.void_stone_insert": "en_us",
+                "tooltip.irregular_implements.void_stone_remove": "en_us",
+                "tooltip.irregular_implements.white_stone_full_moon": "en_us",
+                "tooltip.irregular_implements.whitelist": "en_us",
+                "tooltip.irregular_implements.with_block_entity": "en_us"
+            }
+        }
+    ]
+}

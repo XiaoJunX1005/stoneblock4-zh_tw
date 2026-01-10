@@ -1,0 +1,1470 @@
+你是專業的繁體中文翻譯助手。請將以下 JSON 中 entries 的值翻譯為 zh_tw。
+規則：
+1) 只輸出 JSON，不要附加任何說明。
+2) JSON 結構必須完全一致，key 不可變。
+3) 不可更改格式碼/占位符（例如 %s、%d、{0}、{1}、\n、%%）。
+4) 保留大小寫、空白、標點與順序。
+
+以下是需要翻譯的 JSON：
+{
+    "meta":  {
+                 "sourcePriority":  [
+                                        "zh_cn",
+                                        "en_us"
+                                    ],
+                 "target":  "zh_tw",
+                 "generatedAt":  "2026-01-10T17:35:15.9801320+08:00"
+             },
+    "items":  [
+                  {
+                      "modid":  "ars_nouveau",
+                      "entries":  {
+                                      "ars_nouveau.augment_desc.glyph_launch_glyph_amplify":  "增加向上击飞的力度。",
+                                      "ars_nouveau.augment_desc.glyph_launch_glyph_aoe":  "增加目标方块的判定范围。",
+                                      "ars_nouveau.augment_desc.glyph_launch_glyph_dampen":  "降低向上击飞的力度。",
+                                      "ars_nouveau.augment_desc.glyph_launch_glyph_extract":  "破坏方块时附带精准采集。",
+                                      "ars_nouveau.augment_desc.glyph_launch_glyph_fortune":  "破坏方块时附带时运。",
+                                      "ars_nouveau.augment_desc.glyph_launch_glyph_pierce":  "增加目标方块的判定深度。",
+                                      "ars_nouveau.augment_desc.glyph_launch_glyph_randomize":  "有概率不将某方块选作目标。",
+                                      "ars_nouveau.augment_desc.glyph_launch_glyph_sensitive":  "阻止发射方块。",
+                                      "ars_nouveau.augment_desc.glyph_leap_glyph_amplify":  "增加速度。",
+                                      "ars_nouveau.augment_desc.glyph_leap_glyph_aoe":  "增加目标方块的判定范围。",
+                                      "ars_nouveau.augment_desc.glyph_leap_glyph_dampen":  "降低速度。",
+                                      "ars_nouveau.augment_desc.glyph_leap_glyph_extract":  "破坏方块时附带精准采集。",
+                                      "ars_nouveau.augment_desc.glyph_leap_glyph_fortune":  "破坏方块时附带时运。",
+                                      "ars_nouveau.augment_desc.glyph_leap_glyph_pierce":  "增加目标方块的判定深度。",
+                                      "ars_nouveau.augment_desc.glyph_leap_glyph_randomize":  "有概率不将某方块选作目标。",
+                                      "ars_nouveau.augment_desc.glyph_leap_glyph_sensitive":  "阻止移动方块。",
+                                      "ars_nouveau.augment_desc.glyph_light_glyph_amplify":  "增加光照等级。",
+                                      "ars_nouveau.augment_desc.glyph_light_glyph_dampen":  "降低光照等级。",
+                                      "ars_nouveau.augment_desc.glyph_light_glyph_duration_down":  "缩短光源的持续时间。会影响发光、夜视效果的持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_light_glyph_extend_time":  "光源变为暂时性，延长其持续时间。会影响发光、夜视效果的持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_light_glyph_sensitive":  "可给予施法者发光效果，并令发光轮廓使用法术颜色。",
+                                      "ars_nouveau.augment_desc.glyph_lightning_glyph_amplify":  "增加闪电束的伤害。",
+                                      "ars_nouveau.augment_desc.glyph_lightning_glyph_dampen":  "降低闪电束的伤害。",
+                                      "ars_nouveau.augment_desc.glyph_lightning_glyph_duration_down":  "缩短闪电束的存在时间。",
+                                      "ars_nouveau.augment_desc.glyph_lightning_glyph_extend_time":  "延长闪电束的存在时间。",
+                                      "ars_nouveau.augment_desc.glyph_linger_glyph_accelerate":  "加快法术施放速度。",
+                                      "ars_nouveau.augment_desc.glyph_linger_glyph_aoe":  "增加目标区域。",
+                                      "ars_nouveau.augment_desc.glyph_linger_glyph_dampen":  "无视重力。",
+                                      "ars_nouveau.augment_desc.glyph_linger_glyph_decelerate":  "减慢法术施放速度。",
+                                      "ars_nouveau.augment_desc.glyph_linger_glyph_duration_down":  "缩短效果持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_linger_glyph_extend_time":  "延长效果持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_linger_glyph_sensitive":  "从以实体改为以方块为目标。",
+                                      "ars_nouveau.augment_desc.glyph_orbit_glyph_accelerate":  "加快环绕弹射物的速度。",
+                                      "ars_nouveau.augment_desc.glyph_orbit_glyph_aoe":  "增加环绕弹射物的环绕半径。",
+                                      "ars_nouveau.augment_desc.glyph_orbit_glyph_decelerate":  "减慢环绕弹射物的速度。",
+                                      "ars_nouveau.augment_desc.glyph_orbit_glyph_duration_down":  "缩短环绕弹射物的持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_orbit_glyph_extend_time":  "延长环绕弹射物的持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_orbit_glyph_pierce":  "允许环绕弹射物穿透敌人。",
+                                      "ars_nouveau.augment_desc.glyph_orbit_glyph_sensitive":  "允许环绕弹射物命中方块。",
+                                      "ars_nouveau.augment_desc.glyph_orbit_glyph_split":  "增加环绕弹射物的数量。",
+                                      "ars_nouveau.augment_desc.glyph_pantomime_glyph_amplify":  "增加目标判定的距离。",
+                                      "ars_nouveau.augment_desc.glyph_pantomime_glyph_dampen":  "降低目标判定的距离。",
+                                      "ars_nouveau.augment_desc.glyph_pantomime_glyph_sensitive":  "高亮所选的方块。",
+                                      "ars_nouveau.augment_desc.glyph_phantom_block_glyph_amplify":  "使得方块不再自行消失。",
+                                      "ars_nouveau.augment_desc.glyph_phantom_block_glyph_aoe":  "增加目标方块的判定范围。",
+                                      "ars_nouveau.augment_desc.glyph_phantom_block_glyph_duration_down":  "缩短临时方块的存在时间。",
+                                      "ars_nouveau.augment_desc.glyph_phantom_block_glyph_extend_time":  "延长临时方块的存在时间。",
+                                      "ars_nouveau.augment_desc.glyph_phantom_block_glyph_extract":  "破坏方块时附带精准采集。",
+                                      "ars_nouveau.augment_desc.glyph_phantom_block_glyph_fortune":  "破坏方块时附带时运。",
+                                      "ars_nouveau.augment_desc.glyph_phantom_block_glyph_pierce":  "增加目标方块的判定深度。",
+                                      "ars_nouveau.augment_desc.glyph_phantom_block_glyph_randomize":  "有概率不将某方块选作目标。",
+                                      "ars_nouveau.augment_desc.glyph_pickup_glyph_aoe":  "增加拾取的半径。",
+                                      "ars_nouveau.augment_desc.glyph_place_block_glyph_aoe":  "增加目标方块的判定范围。",
+                                      "ars_nouveau.augment_desc.glyph_place_block_glyph_extract":  "破坏方块时附带精准采集。",
+                                      "ars_nouveau.augment_desc.glyph_place_block_glyph_fortune":  "破坏方块时附带时运。",
+                                      "ars_nouveau.augment_desc.glyph_place_block_glyph_pierce":  "增加目标方块的判定深度。",
+                                      "ars_nouveau.augment_desc.glyph_place_block_glyph_randomize":  "有概率不将某方块选作目标。",
+                                      "ars_nouveau.augment_desc.glyph_place_block_glyph_sensitive":  "朝施法者面向的方向放置方块。两个此构件改为背向方向。",
+                                      "ars_nouveau.augment_desc.glyph_prestidigitation_glyph_amplify":  "令方块永久存在，无视持续时间修饰。",
+                                      "ars_nouveau.augment_desc.glyph_prestidigitation_glyph_duration_down":  "缩短持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_prestidigitation_glyph_extend_time":  "延长持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_projectile_glyph_accelerate":  "加快弹射物移动速度。",
+                                      "ars_nouveau.augment_desc.glyph_projectile_glyph_decelerate":  "减慢弹射物移动速度。",
+                                      "ars_nouveau.augment_desc.glyph_projectile_glyph_pierce":  "弹射物会在方块上多反弹一次，或可以多穿透一次敌人。",
+                                      "ars_nouveau.augment_desc.glyph_projectile_glyph_sensitive":  "弹射物能够击中植物等不阻碍移动的事物。",
+                                      "ars_nouveau.augment_desc.glyph_projectile_glyph_split":  "产生多个弹射物。",
+                                      "ars_nouveau.augment_desc.glyph_pull_glyph_amplify":  "增加速度。",
+                                      "ars_nouveau.augment_desc.glyph_pull_glyph_aoe":  "增加目标方块的判定范围。",
+                                      "ars_nouveau.augment_desc.glyph_pull_glyph_dampen":  "降低速度。",
+                                      "ars_nouveau.augment_desc.glyph_pull_glyph_extract":  "破坏方块时附带精准采集。",
+                                      "ars_nouveau.augment_desc.glyph_pull_glyph_fortune":  "破坏方块时附带时运。",
+                                      "ars_nouveau.augment_desc.glyph_pull_glyph_pierce":  "增加目标方块的判定深度。",
+                                      "ars_nouveau.augment_desc.glyph_pull_glyph_randomize":  "有概率不将某方块选作目标。",
+                                      "ars_nouveau.augment_desc.glyph_pull_glyph_sensitive":  "阻止拉动方块。",
+                                      "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_amplify":  "增加红石信号的强度。",
+                                      "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_aoe":  "增加目标方块的判定范围。",
+                                      "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_dampen":  "降低红石信号的强度。",
+                                      "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_duration_down":  "缩短红石信号的持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_extend_time":  "延长红石信号的持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_extract":  "破坏方块时附带精准采集。",
+                                      "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_fortune":  "破坏方块时附带时运。",
+                                      "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_pierce":  "增加目标方块的判定深度。",
+                                      "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_randomize":  "有概率不将某方块选作目标。",
+                                      "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_sensitive":  "令击中的方块成为信号源，此信号可激活其自身和毗邻方块。",
+                                      "ars_nouveau.augment_desc.glyph_rotate_glyph_amplify":  "增加顺时针旋转的角度。",
+                                      "ars_nouveau.augment_desc.glyph_rotate_glyph_aoe":  "增加目标方块的判定范围。",
+                                      "ars_nouveau.augment_desc.glyph_rotate_glyph_dampen":  "增加逆时针旋转的角度。",
+                                      "ars_nouveau.augment_desc.glyph_rotate_glyph_extract":  "破坏方块时附带精准采集。",
+                                      "ars_nouveau.augment_desc.glyph_rotate_glyph_fortune":  "破坏方块时附带时运。",
+                                      "ars_nouveau.augment_desc.glyph_rotate_glyph_pierce":  "增加目标方块的判定深度。",
+                                      "ars_nouveau.augment_desc.glyph_rotate_glyph_randomize":  "进行随机旋转，无视旋转轴。",
+                                      "ars_nouveau.augment_desc.glyph_rotate_glyph_sensitive":  "更改旋转方块操作的旋转轴，或强制实体旋转其头部。",
+                                      "ars_nouveau.augment_desc.glyph_rune_glyph_sensitive":  "符文会向其所有者的物品栏存放或从中取用。",
+                                      "ars_nouveau.augment_desc.glyph_sense_magic_glyph_amplify":  "增加效果等级。",
+                                      "ars_nouveau.augment_desc.glyph_sense_magic_glyph_duration_down":  "延长效果持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_sense_magic_glyph_extend_time":  "缩短效果持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_slowfall_glyph_amplify":  "增加效果等级。",
+                                      "ars_nouveau.augment_desc.glyph_slowfall_glyph_duration_down":  "延长效果持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_slowfall_glyph_extend_time":  "缩短效果持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_smelt_glyph_amplify":  "允许烧炼更高硬度的方块，或对物品施法时改为使用高炉烧炼配方。",
+                                      "ars_nouveau.augment_desc.glyph_smelt_glyph_aoe":  "增加目标方块的判定范围。",
+                                      "ars_nouveau.augment_desc.glyph_smelt_glyph_dampen":  "从烧炼配方换为使用烟熏配方。",
+                                      "ars_nouveau.augment_desc.glyph_smelt_glyph_extract":  "破坏方块时附带精准采集。",
+                                      "ars_nouveau.augment_desc.glyph_smelt_glyph_fortune":  "破坏方块时附带时运。",
+                                      "ars_nouveau.augment_desc.glyph_smelt_glyph_pierce":  "增加目标方块的判定深度。",
+                                      "ars_nouveau.augment_desc.glyph_smelt_glyph_randomize":  "有概率不将某方块选作目标。",
+                                      "ars_nouveau.augment_desc.glyph_smelt_glyph_sensitive":  "只会烧炼物品，忽略方块。",
+                                      "ars_nouveau.augment_desc.glyph_snare_glyph_amplify":  "增加效果等级。",
+                                      "ars_nouveau.augment_desc.glyph_snare_glyph_duration_down":  "延长效果持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_snare_glyph_extend_time":  "缩短效果持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_summon_decoy_glyph_duration_down":  "缩短召唤的持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_summon_decoy_glyph_extend_time":  "延长召唤的持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_summon_steed_glyph_aoe":  "增加所召唤马匹的数量。",
+                                      "ars_nouveau.augment_desc.glyph_summon_steed_glyph_duration_down":  "缩短召唤的持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_summon_steed_glyph_extend_time":  "延长召唤的持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_summon_undead_glyph_amplify":  "增加所召唤骷髅的武器品质。",
+                                      "ars_nouveau.augment_desc.glyph_summon_undead_glyph_duration_down":  "缩短召唤的持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_summon_undead_glyph_extend_time":  "延长召唤的持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_summon_undead_glyph_pierce":  "将召唤的骷髅变为弓箭手。",
+                                      "ars_nouveau.augment_desc.glyph_summon_undead_glyph_split":  "增加所召唤骷髅的数量。",
+                                      "ars_nouveau.augment_desc.glyph_summon_vex_glyph_duration_down":  "缩短召唤的持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_summon_vex_glyph_extend_time":  "延长召唤的持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_summon_wolves_glyph_duration_down":  "缩短召唤的持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_summon_wolves_glyph_extend_time":  "延长召唤的持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_toss_glyph_amplify":  "投掷数量上限翻倍。",
+                                      "ars_nouveau.augment_desc.glyph_toss_glyph_dampen":  "投掷数量上限减半。",
+                                      "ars_nouveau.augment_desc.glyph_toss_glyph_extract":  "从施法者物品栏取用物品。",
+                                      "ars_nouveau.augment_desc.glyph_toss_glyph_randomize":  "随机选择物品堆叠。",
+                                      "ars_nouveau.augment_desc.glyph_touch_glyph_sensitive":  "可选定空气和流体为目标。",
+                                      "ars_nouveau.augment_desc.glyph_wall_glyph_accelerate":  "加快法术施放速度。",
+                                      "ars_nouveau.augment_desc.glyph_wall_glyph_aoe":  "增加目标区域。",
+                                      "ars_nouveau.augment_desc.glyph_wall_glyph_dampen":  "无视重力。",
+                                      "ars_nouveau.augment_desc.glyph_wall_glyph_decelerate":  "减慢法术施放速度。",
+                                      "ars_nouveau.augment_desc.glyph_wall_glyph_duration_down":  "缩短效果持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_wall_glyph_extend_time":  "延长效果持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_wall_glyph_sensitive":  "从以实体改为以方块为目标。",
+                                      "ars_nouveau.augment_desc.glyph_wind_burst_glyph_amplify":  "增加击退力度。",
+                                      "ars_nouveau.augment_desc.glyph_wind_burst_glyph_aoe":  "增加效果作用范围。",
+                                      "ars_nouveau.augment_desc.glyph_wind_burst_glyph_dampen":  "降低击退力度。",
+                                      "ars_nouveau.augment_desc.glyph_wind_burst_glyph_sensitive":  "让施法者不受击退。",
+                                      "ars_nouveau.augment_desc.glyph_wind_shear_glyph_amplify":  "增加造成的伤害。",
+                                      "ars_nouveau.augment_desc.glyph_wind_shear_glyph_dampen":  "减少造成的伤害。",
+                                      "ars_nouveau.augment_desc.glyph_wind_shear_glyph_fortune":  "击杀生物时附带抢夺。",
+                                      "ars_nouveau.augment_desc.glyph_wind_shear_glyph_randomize":  "改为造成随机量的伤害。",
+                                      "ars_nouveau.augment_desc.glyph_wither_glyph_amplify":  "增加效果等级。",
+                                      "ars_nouveau.augment_desc.glyph_wither_glyph_duration_down":  "延长效果持续时间。",
+                                      "ars_nouveau.augment_desc.glyph_wither_glyph_extend_time":  "缩短效果持续时间。",
+                                      "ars_nouveau.augment_desc.rewind_glyph_duration_down":  "缩短回溯耗时。",
+                                      "ars_nouveau.augment_desc.rewind_glyph_extend_time":  "延长回溯耗时。",
+                                      "ars_nouveau.augment_desc.wololo_glyph_randomize":  "随机选取使用的染料颜色。",
+                                      "ars_nouveau.augment_desc.wololo_glyph_sensitive":  "为目标的盔甲染色。",
+                                      "ars_nouveau.augment_icon_tooltip":  "增强：出现在形态和效果之后，会调整它们的行为。",
+                                      "ars_nouveau.augmenting":  "增强%s：",
+                                      "ars_nouveau.budding_conversion_recipe":  "紫晶傀儡转化",
+                                      "ars_nouveau.color_gui.black":  "黑色",
+                                      "ars_nouveau.color_gui.brown":  "棕色",
+                                      "ars_nouveau.color_gui.gray":  "灰色",
+                                      "ars_nouveau.color_gui.light_blue":  "淡蓝色",
+                                      "ars_nouveau.color_gui.light_gray":  "淡灰色",
+                                      "ars_nouveau.color_gui.lime":  "黄绿色",
+                                      "ars_nouveau.color_gui.magenta":  "品红色",
+                                      "ars_nouveau.color_gui.pink":  "粉红色",
+                                      "ars_nouveau.color_gui.save_all":  "保存全部",
+                                      "ars_nouveau.color_none":  "无色",
+                                      "ars_nouveau.color_rainbow":  "虹彩",
+                                      "ars_nouveau.connected_search_result":  "%s（%s）",
+                                      "ars_nouveau.connection.range":  "最多只能连接相距%s格的事物。",
+                                      "ars_nouveau.connections.remove":  "连接已移除。",
+                                      "ars_nouveau.density_slider":  "每秒粒子：%s",
+                                      "ars_nouveau.density_tooltip":  "随时间所生成粒子的数量与形状",
+                                      "ars_nouveau.dependency.install":  "打开模组页面",
+                                      "ars_nouveau.doc.categories":  "分类",
+                                      "ars_nouveau.doc.related_entries":  "相关条目",
+                                      "ars_nouveau.doc.search_results":  "搜索结果",
+                                      "ars_nouveau.documentation.intro1":  "欢迎来到新生魔艺！如果还是新人，推荐阅读入门指南分类，再从完成进度入手。",
+                                      "ars_nouveau.documentation.intro2":  "加入Discord服务器吧！可在其中分享法术，询问问题，还能一睹即将到来的新内容！",
+                                      "ars_nouveau.dominion_wand.clear":  "清空",
+                                      "ars_nouveau.dominion_wand.normal":  "普通模式",
+                                      "ars_nouveau.dominion_wand.strict":  "严格模式",
+                                      "ars_nouveau.drygmy.blacklist":  "德格米黑名单",
+                                      "ars_nouveau.drygmy.only_use_jars":  "仅使用收容罐",
+                                      "ars_nouveau.effect_icon_tooltip":  "效果：决定了法术击中目标后的行为与功效。",
+                                      "ars_nouveau.empty":  "空槽位",
+                                      "ars_nouveau.expand_button":  "切换扩展视图",
+                                      "ars_nouveau.filter_icon_tooltip":  "Filters: Prevents the spell from resolving if the target does not match the filter.",
+                                      "ars_nouveau.fishing_rod.invalid":  "无效法术。巫师钓鱼竿只接受效果和增强构件。",
+                                      "ars_nouveau.form_icon_tooltip":  "形态：出现在法术的起始位置，决定了法术的施放形式。",
+                                      "ars_nouveau.gauntlet.invalid":  "无效法术。巫师护手只接受效果和增强构件。",
+                                      "ars_nouveau.global_position":  "%4$s中X：%1$d Y：%2$d Z：%3$d",
+                                      "ars_nouveau.glyph_desc.glyph_bubble":  "包裹法术击中的生物和实体，令它们向上漂浮。若泡泡持续存在了超过一刻，则对泡泡中的实体造成伤害会戳破泡泡，并对该实体造成额外伤害。“延长时效”和“强化”可增加泡泡的持续时间和伤害增益。",
+                                      "ars_nouveau.glyph_desc.glyph_burst":  "令法术效果作用于目标周围的球形区域。以“敏感”增强后法术目标从实体变为方块，“抑制”可将区域变为空心球壳，“扩散”可增加区域半径。",
+                                      "ars_nouveau.glyph_desc.glyph_pantomime":  "对你的视线方向中最近的方块施放法术。“抑制”可缩短判断距离，“强化”可延长。“敏感”会高亮选中的方块。",
+                                      "ars_nouveau.glyph_desc.glyph_prestidigitation":  "放置一个短暂存在的隐形方块，该方块会产生粒子。“强化”可让方块永久存在。可在法术书的法术样式菜单配置粒子。以实体为目标时会以其身体为中心发出粒子。",
+                                      "ars_nouveau.glyph_desc.glyph_wind_burst":  "在落点触发一枚风弹，击退实体。“敏感”可让施法者免受击退。",
+                                      "ars_nouveau.glyph_desc.reset":  "若法术链因效果构件发生变化，则将其重置到最初的法术目标处。例如，“爆发 -\u003e 放置方块 -\u003e 重置 -\u003e 破坏”会在“爆发”的作用范围内放置方块，但“破坏”只会作用于法术最初的落点。也正因此，“重置”可抵消法术构件的组合及数量限制。",
+                                      "ars_nouveau.glyph_desc.rewind":  "将实体回溯到先前的某时间点，位置和生命值也一并回溯。可将法术移动的方块复原回原有状态。“回溯”后方的魔符会延迟至回溯结束后施放，如同被“延迟”一样。",
+                                      "ars_nouveau.glyph_desc.wololo":  "将实体或可用方块的颜色更改为法术颜色。",
+                                      "ars_nouveau.glyph_name.glyph_bubble":  "泡泡",
+                                      "ars_nouveau.glyph_name.glyph_burst":  "爆发",
+                                      "ars_nouveau.glyph_name.glyph_pantomime":  "遥指"
+                                  },
+                      "entrySource":  {
+                                          "ars_nouveau.augment_desc.glyph_launch_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_launch_glyph_aoe":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_launch_glyph_dampen":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_launch_glyph_extract":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_launch_glyph_fortune":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_launch_glyph_pierce":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_launch_glyph_randomize":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_launch_glyph_sensitive":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_leap_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_leap_glyph_aoe":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_leap_glyph_dampen":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_leap_glyph_extract":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_leap_glyph_fortune":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_leap_glyph_pierce":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_leap_glyph_randomize":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_leap_glyph_sensitive":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_light_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_light_glyph_dampen":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_light_glyph_duration_down":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_light_glyph_extend_time":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_light_glyph_sensitive":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_lightning_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_lightning_glyph_dampen":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_lightning_glyph_duration_down":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_lightning_glyph_extend_time":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_linger_glyph_accelerate":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_linger_glyph_aoe":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_linger_glyph_dampen":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_linger_glyph_decelerate":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_linger_glyph_duration_down":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_linger_glyph_extend_time":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_linger_glyph_sensitive":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_orbit_glyph_accelerate":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_orbit_glyph_aoe":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_orbit_glyph_decelerate":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_orbit_glyph_duration_down":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_orbit_glyph_extend_time":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_orbit_glyph_pierce":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_orbit_glyph_sensitive":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_orbit_glyph_split":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_pantomime_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_pantomime_glyph_dampen":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_pantomime_glyph_sensitive":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_phantom_block_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_phantom_block_glyph_aoe":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_phantom_block_glyph_duration_down":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_phantom_block_glyph_extend_time":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_phantom_block_glyph_extract":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_phantom_block_glyph_fortune":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_phantom_block_glyph_pierce":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_phantom_block_glyph_randomize":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_pickup_glyph_aoe":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_place_block_glyph_aoe":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_place_block_glyph_extract":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_place_block_glyph_fortune":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_place_block_glyph_pierce":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_place_block_glyph_randomize":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_place_block_glyph_sensitive":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_prestidigitation_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_prestidigitation_glyph_duration_down":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_prestidigitation_glyph_extend_time":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_projectile_glyph_accelerate":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_projectile_glyph_decelerate":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_projectile_glyph_pierce":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_projectile_glyph_sensitive":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_projectile_glyph_split":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_pull_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_pull_glyph_aoe":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_pull_glyph_dampen":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_pull_glyph_extract":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_pull_glyph_fortune":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_pull_glyph_pierce":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_pull_glyph_randomize":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_pull_glyph_sensitive":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_aoe":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_dampen":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_duration_down":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_extend_time":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_extract":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_fortune":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_pierce":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_randomize":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_redstone_signal_glyph_sensitive":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_rotate_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_rotate_glyph_aoe":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_rotate_glyph_dampen":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_rotate_glyph_extract":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_rotate_glyph_fortune":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_rotate_glyph_pierce":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_rotate_glyph_randomize":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_rotate_glyph_sensitive":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_rune_glyph_sensitive":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_sense_magic_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_sense_magic_glyph_duration_down":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_sense_magic_glyph_extend_time":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_slowfall_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_slowfall_glyph_duration_down":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_slowfall_glyph_extend_time":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_smelt_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_smelt_glyph_aoe":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_smelt_glyph_dampen":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_smelt_glyph_extract":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_smelt_glyph_fortune":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_smelt_glyph_pierce":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_smelt_glyph_randomize":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_smelt_glyph_sensitive":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_snare_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_snare_glyph_duration_down":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_snare_glyph_extend_time":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_summon_decoy_glyph_duration_down":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_summon_decoy_glyph_extend_time":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_summon_steed_glyph_aoe":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_summon_steed_glyph_duration_down":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_summon_steed_glyph_extend_time":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_summon_undead_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_summon_undead_glyph_duration_down":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_summon_undead_glyph_extend_time":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_summon_undead_glyph_pierce":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_summon_undead_glyph_split":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_summon_vex_glyph_duration_down":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_summon_vex_glyph_extend_time":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_summon_wolves_glyph_duration_down":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_summon_wolves_glyph_extend_time":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_toss_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_toss_glyph_dampen":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_toss_glyph_extract":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_toss_glyph_randomize":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_touch_glyph_sensitive":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_wall_glyph_accelerate":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_wall_glyph_aoe":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_wall_glyph_dampen":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_wall_glyph_decelerate":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_wall_glyph_duration_down":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_wall_glyph_extend_time":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_wall_glyph_sensitive":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_wind_burst_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_wind_burst_glyph_aoe":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_wind_burst_glyph_dampen":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_wind_burst_glyph_sensitive":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_wind_shear_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_wind_shear_glyph_dampen":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_wind_shear_glyph_fortune":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_wind_shear_glyph_randomize":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_wither_glyph_amplify":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_wither_glyph_duration_down":  "zh_cn",
+                                          "ars_nouveau.augment_desc.glyph_wither_glyph_extend_time":  "zh_cn",
+                                          "ars_nouveau.augment_desc.rewind_glyph_duration_down":  "zh_cn",
+                                          "ars_nouveau.augment_desc.rewind_glyph_extend_time":  "zh_cn",
+                                          "ars_nouveau.augment_desc.wololo_glyph_randomize":  "zh_cn",
+                                          "ars_nouveau.augment_desc.wololo_glyph_sensitive":  "zh_cn",
+                                          "ars_nouveau.augment_icon_tooltip":  "zh_cn",
+                                          "ars_nouveau.augmenting":  "zh_cn",
+                                          "ars_nouveau.budding_conversion_recipe":  "zh_cn",
+                                          "ars_nouveau.color_gui.black":  "zh_cn",
+                                          "ars_nouveau.color_gui.brown":  "zh_cn",
+                                          "ars_nouveau.color_gui.gray":  "zh_cn",
+                                          "ars_nouveau.color_gui.light_blue":  "zh_cn",
+                                          "ars_nouveau.color_gui.light_gray":  "zh_cn",
+                                          "ars_nouveau.color_gui.lime":  "zh_cn",
+                                          "ars_nouveau.color_gui.magenta":  "zh_cn",
+                                          "ars_nouveau.color_gui.pink":  "zh_cn",
+                                          "ars_nouveau.color_gui.save_all":  "zh_cn",
+                                          "ars_nouveau.color_none":  "zh_cn",
+                                          "ars_nouveau.color_rainbow":  "zh_cn",
+                                          "ars_nouveau.connected_search_result":  "zh_cn",
+                                          "ars_nouveau.connection.range":  "zh_cn",
+                                          "ars_nouveau.connections.remove":  "zh_cn",
+                                          "ars_nouveau.density_slider":  "zh_cn",
+                                          "ars_nouveau.density_tooltip":  "zh_cn",
+                                          "ars_nouveau.dependency.install":  "zh_cn",
+                                          "ars_nouveau.doc.categories":  "zh_cn",
+                                          "ars_nouveau.doc.related_entries":  "zh_cn",
+                                          "ars_nouveau.doc.search_results":  "zh_cn",
+                                          "ars_nouveau.documentation.intro1":  "zh_cn",
+                                          "ars_nouveau.documentation.intro2":  "zh_cn",
+                                          "ars_nouveau.dominion_wand.clear":  "zh_cn",
+                                          "ars_nouveau.dominion_wand.normal":  "zh_cn",
+                                          "ars_nouveau.dominion_wand.strict":  "zh_cn",
+                                          "ars_nouveau.drygmy.blacklist":  "zh_cn",
+                                          "ars_nouveau.drygmy.only_use_jars":  "zh_cn",
+                                          "ars_nouveau.effect_icon_tooltip":  "zh_cn",
+                                          "ars_nouveau.empty":  "zh_cn",
+                                          "ars_nouveau.expand_button":  "zh_cn",
+                                          "ars_nouveau.filter_icon_tooltip":  "en_us",
+                                          "ars_nouveau.fishing_rod.invalid":  "zh_cn",
+                                          "ars_nouveau.form_icon_tooltip":  "zh_cn",
+                                          "ars_nouveau.gauntlet.invalid":  "zh_cn",
+                                          "ars_nouveau.global_position":  "zh_cn",
+                                          "ars_nouveau.glyph_desc.glyph_bubble":  "zh_cn",
+                                          "ars_nouveau.glyph_desc.glyph_burst":  "zh_cn",
+                                          "ars_nouveau.glyph_desc.glyph_pantomime":  "zh_cn",
+                                          "ars_nouveau.glyph_desc.glyph_prestidigitation":  "zh_cn",
+                                          "ars_nouveau.glyph_desc.glyph_wind_burst":  "zh_cn",
+                                          "ars_nouveau.glyph_desc.reset":  "zh_cn",
+                                          "ars_nouveau.glyph_desc.rewind":  "zh_cn",
+                                          "ars_nouveau.glyph_desc.wololo":  "zh_cn",
+                                          "ars_nouveau.glyph_name.glyph_bubble":  "zh_cn",
+                                          "ars_nouveau.glyph_name.glyph_burst":  "zh_cn",
+                                          "ars_nouveau.glyph_name.glyph_pantomime":  "zh_cn"
+                                      }
+                  }
+              ]
+}
+
+參考：缺少 zh_tw 的 top 清單（可忽略）
+# Top 20 missing zh_tw keys
+
+## betterblockz (missing 1381)
+- axis.betterblockz.x
+- axis.betterblockz.y
+- axis.betterblockz.z
+- block.betterblockz.agon_blockz_0
+- block.betterblockz.agon_blockz_1
+- block.betterblockz.agon_blockz_10
+- block.betterblockz.agon_blockz_11
+- block.betterblockz.agon_blockz_12
+- block.betterblockz.agon_blockz_13
+- block.betterblockz.agon_blockz_14
+- block.betterblockz.agon_blockz_15
+- block.betterblockz.agon_blockz_2
+- block.betterblockz.agon_blockz_3
+- block.betterblockz.agon_blockz_4
+- block.betterblockz.agon_blockz_5
+- block.betterblockz.agon_blockz_6
+- block.betterblockz.agon_blockz_7
+- block.betterblockz.agon_blockz_8
+- block.betterblockz.agon_blockz_9
+- block.betterblockz.ambercore_blockz_0
+- block.betterblockz.ambercore_blockz_1
+- block.betterblockz.ambercore_blockz_10
+- block.betterblockz.ambercore_blockz_2
+- block.betterblockz.ambercore_blockz_3
+- block.betterblockz.ambercore_blockz_4
+- block.betterblockz.ambercore_blockz_5
+- block.betterblockz.ambercore_blockz_6
+- block.betterblockz.ambercore_blockz_7
+- block.betterblockz.ambercore_blockz_8
+- block.betterblockz.ambercore_blockz_9
+- block.betterblockz.armz_blockz_0
+- block.betterblockz.armz_blockz_1
+- block.betterblockz.armz_blockz_10
+- block.betterblockz.armz_blockz_11
+- block.betterblockz.armz_blockz_12
+- block.betterblockz.armz_blockz_13
+- block.betterblockz.armz_blockz_14
+- block.betterblockz.armz_blockz_15
+- block.betterblockz.armz_blockz_2
+- block.betterblockz.armz_blockz_3
+- block.betterblockz.armz_blockz_4
+- block.betterblockz.armz_blockz_5
+- block.betterblockz.armz_blockz_6
+- block.betterblockz.armz_blockz_7
+- block.betterblockz.armz_blockz_8
+- block.betterblockz.armz_blockz_9
+- block.betterblockz.aurora_blockz
+- block.betterblockz.azur_blockz_0
+- block.betterblockz.azur_blockz_1
+- block.betterblockz.azur_blockz_10
+
+## ars_nouveau (missing 927)
+- alert.core.wrong_axis
+- ars_nouveau.abjuration_essence.tooltip
+- ars_nouveau.add_bookmark
+- ars_nouveau.alakarkinos.set_home
+- ars_nouveau.alakarkinos_recipe
+- ars_nouveau.alakarkinos_recipe.chance
+- ars_nouveau.alias.archaeology
+- ars_nouveau.alias.auto_crafter
+- ars_nouveau.alias.book
+- ars_nouveau.alias.brewing_stand
+- ars_nouveau.alias.crop_farm
+- ars_nouveau.alias.documentation
+- ars_nouveau.alias.filter
+- ars_nouveau.alias.guide
+- ars_nouveau.alias.hopper
+- ars_nouveau.alias.item_transporter
+- ars_nouveau.alias.mob_farm
+- ars_nouveau.alias.pipe
+- ars_nouveau.alias.potion_brewer
+- ars_nouveau.alias.sherd
+- ars_nouveau.alias.spellbook
+- ars_nouveau.alias.warp_portal
+- ars_nouveau.alias.worn_notebook
+- ars_nouveau.already_learned
+- ars_nouveau.apparatus.use_imbuement
+- ars_nouveau.augment_desc.glyph_animate_block_glyph_duration_down
+- ars_nouveau.augment_desc.glyph_animate_block_glyph_extend_time
+- ars_nouveau.augment_desc.glyph_blink_glyph_amplify
+- ars_nouveau.augment_desc.glyph_blink_glyph_dampen
+- ars_nouveau.augment_desc.glyph_bounce_glyph_amplify
+- ars_nouveau.augment_desc.glyph_bounce_glyph_duration_down
+- ars_nouveau.augment_desc.glyph_bounce_glyph_extend_time
+- ars_nouveau.augment_desc.glyph_break_glyph_amplify
+- ars_nouveau.augment_desc.glyph_break_glyph_aoe
+- ars_nouveau.augment_desc.glyph_break_glyph_dampen
+- ars_nouveau.augment_desc.glyph_break_glyph_extract
+- ars_nouveau.augment_desc.glyph_break_glyph_fortune
+- ars_nouveau.augment_desc.glyph_break_glyph_pierce
+- ars_nouveau.augment_desc.glyph_break_glyph_randomize
+- ars_nouveau.augment_desc.glyph_break_glyph_sensitive
+- ars_nouveau.augment_desc.glyph_bubble_glyph_amplify
+- ars_nouveau.augment_desc.glyph_bubble_glyph_dampen
+- ars_nouveau.augment_desc.glyph_bubble_glyph_duration_down
+- ars_nouveau.augment_desc.glyph_bubble_glyph_extend_time
+- ars_nouveau.augment_desc.glyph_burst_glyph_aoe
+- ars_nouveau.augment_desc.glyph_burst_glyph_dampen
+- ars_nouveau.augment_desc.glyph_burst_glyph_sensitive
+- ars_nouveau.augment_desc.glyph_cold_snap_glyph_amplify
+- ars_nouveau.augment_desc.glyph_cold_snap_glyph_aoe
+- ars_nouveau.augment_desc.glyph_cold_snap_glyph_dampen
+
+## apothic_compats (missing 701)
+- affix.apothic_compats:armor/attribute/abjured
+- affix.apothic_compats:armor/attribute/abjured.suffix
+- affix.apothic_compats:armor/attribute/adept
+- affix.apothic_compats:armor/attribute/adept.suffix
+- affix.apothic_compats:armor/attribute/ancient/abjured
+- affix.apothic_compats:armor/attribute/ancient/abjured.suffix
+- affix.apothic_compats:armor/attribute/ancient/adept
+- affix.apothic_compats:armor/attribute/ancient/adept.suffix
+- affix.apothic_compats:armor/attribute/ancient/malevolent
+- affix.apothic_compats:armor/attribute/ancient/malevolent.suffix
+- affix.apothic_compats:armor/attribute/ancient/mana
+- affix.apothic_compats:armor/attribute/ancient/mana.suffix
+- affix.apothic_compats:armor/attribute/ancient/scythe_proficiency
+- affix.apothic_compats:armor/attribute/ancient/scythe_proficiency.suffix
+- affix.apothic_compats:armor/attribute/ancient/ward_capacity
+- affix.apothic_compats:armor/attribute/ancient/ward_capacity.suffix
+- affix.apothic_compats:armor/attribute/ancient/ward_integrity
+- affix.apothic_compats:armor/attribute/ancient/ward_integrity.suffix
+- affix.apothic_compats:armor/attribute/malevolent
+- affix.apothic_compats:armor/attribute/malevolent.suffix
+- affix.apothic_compats:armor/attribute/mana
+- affix.apothic_compats:armor/attribute/mana.suffix
+- affix.apothic_compats:armor/attribute/scythe_proficiency
+- affix.apothic_compats:armor/attribute/scythe_proficiency.suffix
+- affix.apothic_compats:armor/attribute/ward_capacity
+- affix.apothic_compats:armor/attribute/ward_capacity.suffix
+- affix.apothic_compats:armor/attribute/ward_integrity
+- affix.apothic_compats:armor/attribute/ward_integrity.suffix
+- affix.apothic_compats:armor/mob_effect/ancient/inebriation
+- affix.apothic_compats:armor/mob_effect/ancient/inebriation.suffix
+- affix.apothic_compats:armor/mob_effect/inebriation
+- affix.apothic_compats:armor/mob_effect/inebriation.suffix
+- affix.apothic_compats:breaker/mob_effect/ancient/sculky
+- affix.apothic_compats:breaker/mob_effect/ancient/sculky.suffix
+- affix.apothic_compats:breaker/mob_effect/sculky
+- affix.apothic_compats:breaker/mob_effect/sculky.suffix
+- affix.apothic_compats:curios/attribute/abjured
+- affix.apothic_compats:curios/attribute/abjured.suffix
+- affix.apothic_compats:curios/attribute/adamantine
+- affix.apothic_compats:curios/attribute/adamantine.suffix
+- affix.apothic_compats:curios/attribute/adept
+- affix.apothic_compats:curios/attribute/adept.suffix
+- affix.apothic_compats:curios/attribute/ancient/abjured
+- affix.apothic_compats:curios/attribute/ancient/abjured.suffix
+- affix.apothic_compats:curios/attribute/ancient/adamantine
+- affix.apothic_compats:curios/attribute/ancient/adamantine.suffix
+- affix.apothic_compats:curios/attribute/ancient/adept
+- affix.apothic_compats:curios/attribute/ancient/adept.suffix
+- affix.apothic_compats:curios/attribute/ancient/aquatic
+- affix.apothic_compats:curios/attribute/ancient/aquatic.suffix
+
+## irregular_implements (missing 618)
+- block.irregular_implements.acacia_platform
+- block.irregular_implements.accelerator_plate
+- block.irregular_implements.advanced_item_collector
+- block.irregular_implements.advanced_redstone_interface
+- block.irregular_implements.advanced_redstone_repeater
+- block.irregular_implements.advanced_redstone_torch
+- block.irregular_implements.analog_emitter
+- block.irregular_implements.ancient_brick
+- block.irregular_implements.auto_placer
+- block.irregular_implements.bamboo_platform
+- block.irregular_implements.basic_redstone_interface
+- block.irregular_implements.bean_pod
+- block.irregular_implements.biome_cobblestone
+- block.irregular_implements.biome_glass
+- block.irregular_implements.biome_radar
+- block.irregular_implements.biome_stone
+- block.irregular_implements.biome_stone_bricks
+- block.irregular_implements.biome_stone_bricks_chiseled
+- block.irregular_implements.biome_stone_bricks_cracked
+- block.irregular_implements.birch_platform
+- block.irregular_implements.blaze_fire
+- block.irregular_implements.block_breaker
+- block.irregular_implements.block_destabilizer
+- block.irregular_implements.block_detector
+- block.irregular_implements.block_of_sticks
+- block.irregular_implements.block_teleporter
+- block.irregular_implements.bouncy_plate
+- block.irregular_implements.chat_detector
+- block.irregular_implements.cherry_platform
+- block.irregular_implements.collection_plate
+- block.irregular_implements.colored_grass_black
+- block.irregular_implements.colored_grass_blue
+- block.irregular_implements.colored_grass_brown
+- block.irregular_implements.colored_grass_cyan
+- block.irregular_implements.colored_grass_gray
+- block.irregular_implements.colored_grass_green
+- block.irregular_implements.colored_grass_light_blue
+- block.irregular_implements.colored_grass_light_gray
+- block.irregular_implements.colored_grass_lime
+- block.irregular_implements.colored_grass_magenta
+- block.irregular_implements.colored_grass_orange
+- block.irregular_implements.colored_grass_pink
+- block.irregular_implements.colored_grass_purple
+- block.irregular_implements.colored_grass_red
+- block.irregular_implements.colored_grass_white
+- block.irregular_implements.colored_grass_yellow
+- block.irregular_implements.compressed_slime_block
+- block.irregular_implements.contact_button
+- block.irregular_implements.contact_lever
+- block.irregular_implements.corrector_plate
+
+## ftbquests (missing 494)
+- block.ftbquests.aux_task_screen
+- block.ftbquests.barrier
+- block.ftbquests.barrier.invis_when_open
+- block.ftbquests.barrier.object
+- block.ftbquests.detector
+- block.ftbquests.detector.notifications
+- block.ftbquests.detector.player
+- block.ftbquests.detector.player.height
+- block.ftbquests.detector.player.offset_y
+- block.ftbquests.detector.player.radius
+- block.ftbquests.detector.redstone
+- block.ftbquests.detector.redstone.required_redstone
+- block.ftbquests.detector.task
+- block.ftbquests.loot_crate_opener
+- block.ftbquests.loot_crate_opener.rightclick
+- block.ftbquests.loot_crate_storage
+- block.ftbquests.screen.no_permission
+- block.ftbquests.screen.text_shadow
+- block.ftbquests.screen_1
+- block.ftbquests.screen_3
+- block.ftbquests.screen_5
+- block.ftbquests.screen_7
+- block.ftbquests.stage_barrier
+- commands.ftbquests.change_progress.invalid_type
+- commands.ftbquests.change_progress.text
+- commands.ftbquests.command.delete_empty_reward_tables.text
+- commands.ftbquests.command.error.invalid_id
+- commands.ftbquests.command.error.invalid_type
+- commands.ftbquests.command.error.no_file
+- commands.ftbquests.command.error.no_inventory
+- commands.ftbquests.command.error.no_object
+- commands.ftbquests.command.error.not_editing
+- commands.ftbquests.command.feedback.clear_display_cache
+- commands.ftbquests.command.feedback.reloaded
+- commands.ftbquests.command.feedback.reloaded.disclaimer
+- commands.ftbquests.command.feedback.reloaded_progress
+- commands.ftbquests.command.feedback.reloaded_quest
+- commands.ftbquests.command.feedback.rewards_blocked
+- commands.ftbquests.command.feedback.table_exported
+- commands.ftbquests.command.feedback.table_imported
+- commands.ftbquests.command.feedback.table_too_many_items
+- commands.ftbquests.export_rewards_to_chest.text
+- commands.ftbquests.export_rewards_to_chest.usage
+- commands.ftbquests.locked.disabled
+- commands.ftbquests.locked.enabled
+- commands.ftbquests.weigh_from_emc.invalid_id
+- commands.ftbquests.weigh_from_emc.text
+- config.jade.plugin_ftbquests.barrier
+- ftbquests
+- ftbquests.barrier.teleport
+
+## projecte (missing 464)
+- advancements.projecte.description
+- alias.projecte.accelerator.plant
+- alias.projecte.accelerator.tick
+- alias.projecte.aoe
+- alias.projecte.aoe.long
+- alias.projecte.auto.feeder
+- alias.projecte.auto.healer
+- alias.projecte.auto_step
+- alias.projecte.block.aeternalis_fuel
+- alias.projecte.block.alchemical_coal
+- alias.projecte.block.dark_matter
+- alias.projecte.block.mobius_fuel
+- alias.projecte.block.red_matter
+- alias.projecte.building_wand
+- alias.projecte.condenser.items
+- alias.projecte.condenser.matter
+- alias.projecte.control.time
+- alias.projecte.control.weather
+- alias.projecte.crafting.portable
+- alias.projecte.crafting.portable.workbench
+- alias.projecte.emc.battery
+- alias.projecte.emc.charger
+- alias.projecte.emc.detector
+- alias.projecte.emc.generator
+- alias.projecte.emc.transfer
+- alias.projecte.explosive
+- alias.projecte.fire.extinguisher
+- alias.projecte.fire.starter
+- alias.projecte.flight.creative
+- alias.projecte.fluid.remover
+- alias.projecte.fluid.void
+- alias.projecte.freeze
+- alias.projecte.grower.plant
+- alias.projecte.infinite.lava
+- alias.projecte.infinite.water
+- alias.projecte.item_repair
+- alias.projecte.lightning
+- alias.projecte.magnet
+- alias.projecte.night_vision
+- alias.projecte.protection.fire
+- alias.projecte.repel.hostile
+- alias.projecte.repel.mob
+- alias.projecte.repel.projectile
+- alias.projecte.ring.base
+- alias.projecte.slow.hostile
+- alias.projecte.slow.mobs
+- alias.projecte.speed.movement
+- alias.projecte.step_assist
+- alias.projecte.storage.backpack
+- alias.projecte.storage.emc
+
+## productivemetalworks (missing 376)
+- block.productivemetalworks.black_fire_bricks
+- block.productivemetalworks.black_foundry_capacitor
+- block.productivemetalworks.black_foundry_controller
+- block.productivemetalworks.black_foundry_drain
+- block.productivemetalworks.black_foundry_tank
+- block.productivemetalworks.black_foundry_window
+- block.productivemetalworks.blue_fire_bricks
+- block.productivemetalworks.blue_foundry_capacitor
+- block.productivemetalworks.blue_foundry_controller
+- block.productivemetalworks.blue_foundry_drain
+- block.productivemetalworks.blue_foundry_tank
+- block.productivemetalworks.blue_foundry_window
+- block.productivemetalworks.brown_fire_bricks
+- block.productivemetalworks.brown_foundry_capacitor
+- block.productivemetalworks.brown_foundry_controller
+- block.productivemetalworks.brown_foundry_drain
+- block.productivemetalworks.brown_foundry_tank
+- block.productivemetalworks.brown_foundry_window
+- block.productivemetalworks.casting_basin
+- block.productivemetalworks.casting_table
+- block.productivemetalworks.cyan_fire_bricks
+- block.productivemetalworks.cyan_foundry_capacitor
+- block.productivemetalworks.cyan_foundry_controller
+- block.productivemetalworks.cyan_foundry_drain
+- block.productivemetalworks.cyan_foundry_tank
+- block.productivemetalworks.cyan_foundry_window
+- block.productivemetalworks.fire_clay
+- block.productivemetalworks.foundry_tap
+- block.productivemetalworks.gray_fire_bricks
+- block.productivemetalworks.gray_foundry_capacitor
+- block.productivemetalworks.gray_foundry_controller
+- block.productivemetalworks.gray_foundry_drain
+- block.productivemetalworks.gray_foundry_tank
+- block.productivemetalworks.gray_foundry_window
+- block.productivemetalworks.green_fire_bricks
+- block.productivemetalworks.green_foundry_capacitor
+- block.productivemetalworks.green_foundry_controller
+- block.productivemetalworks.green_foundry_drain
+- block.productivemetalworks.green_foundry_tank
+- block.productivemetalworks.green_foundry_window
+- block.productivemetalworks.high_powered_heating_coil
+- block.productivemetalworks.light_blue_fire_bricks
+- block.productivemetalworks.light_blue_foundry_capacitor
+- block.productivemetalworks.light_blue_foundry_controller
+- block.productivemetalworks.light_blue_foundry_drain
+- block.productivemetalworks.light_blue_foundry_tank
+- block.productivemetalworks.light_blue_foundry_window
+- block.productivemetalworks.light_gray_fire_bricks
+- block.productivemetalworks.light_gray_foundry_capacitor
+- block.productivemetalworks.light_gray_foundry_controller
+
+## framedblocks (missing 326)
+- block.framedblocks.framed_activator_rail_slope
+- block.framedblocks.framed_adj_double_copycat_panel
+- block.framedblocks.framed_adj_double_copycat_slab
+- block.framedblocks.framed_adj_double_panel
+- block.framedblocks.framed_adj_double_slab
+- block.framedblocks.framed_bookshelf
+- block.framedblocks.framed_centered_panel
+- block.framedblocks.framed_centered_slab
+- block.framedblocks.framed_chain
+- block.framedblocks.framed_checkered_cube
+- block.framedblocks.framed_checkered_cube_segment
+- block.framedblocks.framed_checkered_panel
+- block.framedblocks.framed_checkered_panel_segment
+- block.framedblocks.framed_checkered_slab
+- block.framedblocks.framed_checkered_slab_segment
+- block.framedblocks.framed_chiseled_bookshelf
+- block.framedblocks.framed_collapsible_copycat_block
+- block.framedblocks.framed_compound_slope_panel
+- block.framedblocks.framed_compound_slope_slab
+- block.framedblocks.framed_corner_slope_edge
+- block.framedblocks.framed_corner_strip
+- block.framedblocks.framed_corner_tube
+- block.framedblocks.framed_detector_rail_slope
+- block.framedblocks.framed_divided_panel_horizontal
+- block.framedblocks.framed_divided_panel_vertical
+- block.framedblocks.framed_divided_slab
+- block.framedblocks.framed_divided_slope
+- block.framedblocks.framed_divided_stairs
+- block.framedblocks.framed_double_half_slope
+- block.framedblocks.framed_double_half_stairs
+- block.framedblocks.framed_double_threeway_corner_pillar
+- block.framedblocks.framed_elev_double_corner_slope_edge
+- block.framedblocks.framed_elev_double_inner_corner_slope_edge
+- block.framedblocks.framed_elevated_corner_slope_edge
+- block.framedblocks.framed_elevated_double_slope_edge
+- block.framedblocks.framed_elevated_inner_corner_slope_edge
+- block.framedblocks.framed_elevated_inner_double_prism
+- block.framedblocks.framed_elevated_inner_double_sloped_prism
+- block.framedblocks.framed_elevated_inner_prism
+- block.framedblocks.framed_elevated_inner_sloped_prism
+- block.framedblocks.framed_elevated_pyramid_slab
+- block.framedblocks.framed_elevated_slope_edge
+- block.framedblocks.framed_ext_corner_slope_panel
+- block.framedblocks.framed_ext_corner_slope_panel_w
+- block.framedblocks.framed_ext_double_corner_slope_panel
+- block.framedblocks.framed_ext_double_corner_slope_panel_w
+- block.framedblocks.framed_ext_inner_corner_slope_panel
+- block.framedblocks.framed_ext_inner_corner_slope_panel_w
+- block.framedblocks.framed_ext_inner_double_corner_slope_panel
+- block.framedblocks.framed_ext_inner_double_corner_slope_panel_w
+
+## xycraft_world (missing 324)
+- block.xycraft_world.aluminum_bricks
+- block.xycraft_world.aluminum_bricks_cloud_blue
+- block.xycraft_world.aluminum_bricks_cloud_dark
+- block.xycraft_world.aluminum_bricks_cloud_green
+- block.xycraft_world.aluminum_bricks_cloud_light
+- block.xycraft_world.aluminum_bricks_cloud_red
+- block.xycraft_world.aluminum_ore_deepslate
+- block.xycraft_world.aluminum_ore_kivi
+- block.xycraft_world.aluminum_ore_stone
+- block.xycraft_world.aluminum_pillar_blue
+- block.xycraft_world.aluminum_pillar_dark
+- block.xycraft_world.aluminum_pillar_green
+- block.xycraft_world.aluminum_pillar_light
+- block.xycraft_world.aluminum_pillar_red
+- block.xycraft_world.aluminum_storage
+- block.xycraft_world.aluminum_tiles
+- block.xycraft_world.aluminum_tiles_cloud_blue
+- block.xycraft_world.aluminum_tiles_cloud_dark
+- block.xycraft_world.aluminum_tiles_cloud_green
+- block.xycraft_world.aluminum_tiles_cloud_light
+- block.xycraft_world.aluminum_tiles_cloud_red
+- block.xycraft_world.aluminum_torch
+- block.xycraft_world.aluminum_trim_blue
+- block.xycraft_world.aluminum_trim_dark
+- block.xycraft_world.aluminum_trim_green
+- block.xycraft_world.aluminum_trim_light
+- block.xycraft_world.aluminum_trim_red
+- block.xycraft_world.aurey_block_fx_black
+- block.xycraft_world.aurey_block_fx_blue
+- block.xycraft_world.aurey_block_fx_brown
+- block.xycraft_world.aurey_block_fx_cyan
+- block.xycraft_world.aurey_block_fx_glowing_black
+- block.xycraft_world.aurey_block_fx_glowing_blue
+- block.xycraft_world.aurey_block_fx_glowing_brown
+- block.xycraft_world.aurey_block_fx_glowing_cyan
+- block.xycraft_world.aurey_block_fx_glowing_gray
+- block.xycraft_world.aurey_block_fx_glowing_green
+- block.xycraft_world.aurey_block_fx_glowing_light_blue
+- block.xycraft_world.aurey_block_fx_glowing_light_gray
+- block.xycraft_world.aurey_block_fx_glowing_lime
+- block.xycraft_world.aurey_block_fx_glowing_magenta
+- block.xycraft_world.aurey_block_fx_glowing_orange
+- block.xycraft_world.aurey_block_fx_glowing_pink
+- block.xycraft_world.aurey_block_fx_glowing_purple
+- block.xycraft_world.aurey_block_fx_glowing_red
+- block.xycraft_world.aurey_block_fx_glowing_white
+- block.xycraft_world.aurey_block_fx_glowing_yellow
+- block.xycraft_world.aurey_block_fx_gray
+- block.xycraft_world.aurey_block_fx_green
+- block.xycraft_world.aurey_block_fx_light_blue
+
+## custommachinery (missing 316)
+- custommachinery.command.edit.cant
+- custommachinery.command.edit.missing
+- custommachinery.command.reload
+- custommachinery.command.verify.error
+- custommachinery.command.verify.log
+- custommachinery.command.verify.log.tooltip
+- custommachinery.command.verify.success
+- custommachinery.configuration.block_tag_cycle_time
+- custommachinery.configuration.box_render_time
+- custommachinery.configuration.debug_level
+- custommachinery.configuration.item_slot_cycle_time
+- custommachinery.configuration.log_first_either_error
+- custommachinery.configuration.log_legacy_folder_files
+- custommachinery.configuration.log_missing_optional
+- custommachinery.configuration.logs
+- custommachinery.configuration.misc
+- custommachinery.configuration.model_folders
+- custommachinery.configuration.rendering
+- custommachinery.configuration.structure_render_time
+- custommachinery.craftingstatus.default
+- custommachinery.gui.config.all_none
+- custommachinery.gui.creation.appearance.ambient_sound
+- custommachinery.gui.creation.appearance.ambient_sound.attenuation
+- custommachinery.gui.creation.appearance.ambient_sound.delay
+- custommachinery.gui.creation.appearance.ambient_sound.loop
+- custommachinery.gui.creation.appearance.ambient_sound.play
+- custommachinery.gui.creation.appearance.ambient_sound.relative
+- custommachinery.gui.creation.appearance.ambient_sound.sound
+- custommachinery.gui.creation.appearance.ambient_sound.source
+- custommachinery.gui.creation.appearance.ambient_sound.tooltip
+- custommachinery.gui.creation.appearance.block
+- custommachinery.gui.creation.appearance.block.tooltip
+- custommachinery.gui.creation.appearance.color
+- custommachinery.gui.creation.appearance.color.tooltip
+- custommachinery.gui.creation.appearance.hardness
+- custommachinery.gui.creation.appearance.hardness.tooltip
+- custommachinery.gui.creation.appearance.interaction_sound
+- custommachinery.gui.creation.appearance.interaction_sound.break
+- custommachinery.gui.creation.appearance.interaction_sound.fall
+- custommachinery.gui.creation.appearance.interaction_sound.hit
+- custommachinery.gui.creation.appearance.interaction_sound.pitch
+- custommachinery.gui.creation.appearance.interaction_sound.place
+- custommachinery.gui.creation.appearance.interaction_sound.step
+- custommachinery.gui.creation.appearance.interaction_sound.tooltip
+- custommachinery.gui.creation.appearance.interaction_sound.volume
+- custommachinery.gui.creation.appearance.item
+- custommachinery.gui.creation.appearance.item.tooltip
+- custommachinery.gui.creation.appearance.keep_inventory
+- custommachinery.gui.creation.appearance.keep_inventory.tooltip
+- custommachinery.gui.creation.appearance.light
+
+## ftbchunks (missing 316)
+- ftbchunks.action_prevented
+- ftbchunks.advanced
+- ftbchunks.advanced.debug_info
+- ftbchunks.advanced.memory
+- ftbchunks.advanced.memory.autorelease_on_map_close
+- ftbchunks.advanced.memory.autorelease_on_map_close.tooltip
+- ftbchunks.advanced.memory.max_zoom_constraint
+- ftbchunks.advanced.memory.max_zoom_constraint.tooltip
+- ftbchunks.advanced.memory.region_release_time
+- ftbchunks.advanced.memory.region_release_time.tooltip
+- ftbchunks.ally_mode
+- ftbchunks.ally_mode.default
+- ftbchunks.ally_mode.forced_all
+- ftbchunks.ally_mode.forced_none
+- ftbchunks.ally_mode.tooltip
+- ftbchunks.appearance
+- ftbchunks.appearance.biome_blend
+- ftbchunks.appearance.chunk_grid
+- ftbchunks.appearance.claimed_chunks_on_map
+- ftbchunks.appearance.map_mode
+- ftbchunks.appearance.noise
+- ftbchunks.appearance.only_surface_entities
+- ftbchunks.appearance.own_claimed_chunks_on_map
+- ftbchunks.appearance.reduced_color_palette
+- ftbchunks.appearance.saturation
+- ftbchunks.appearance.shadows
+- ftbchunks.appearance.water_height_factor
+- ftbchunks.biome_blend.blend_11x11
+- ftbchunks.biome_blend.blend_13x13
+- ftbchunks.biome_blend.blend_15x15
+- ftbchunks.biome_blend.blend_3x3
+- ftbchunks.biome_blend.blend_5x5
+- ftbchunks.biome_blend.blend_7x7
+- ftbchunks.biome_blend.blend_9x9
+- ftbchunks.biome_blend.none
+- ftbchunks.claim_result
+- ftbchunks.claim_result.already_claimed
+- ftbchunks.claim_result.already_loaded
+- ftbchunks.claim_result.dimension_forbidden
+- ftbchunks.claim_result.not_claimed
+- ftbchunks.claim_result.not_enough_power
+- ftbchunks.claim_result.not_loaded
+- ftbchunks.claim_result.not_owner
+- ftbchunks.claim_result.other
+- ftbchunks.claiming
+- ftbchunks.claiming.claim_dimension_blacklist
+- ftbchunks.claiming.claim_dimension_blacklist.tooltip
+- ftbchunks.claiming.claim_dimension_whitelist
+- ftbchunks.claiming.claim_dimension_whitelist.tooltip
+- ftbchunks.claiming.hard_team_claim_limit
+
+## simplyswords (missing 301)
+- advancements.simplyswords.arcanethyst.title
+- advancements.simplyswords.awakened_lichblade.title
+- advancements.simplyswords.bramblethorn.title
+- advancements.simplyswords.brimstone_claymore.title
+- advancements.simplyswords.caelestis.title
+- advancements.simplyswords.chompolotl.title
+- advancements.simplyswords.decaying_relic.title
+- advancements.simplyswords.dormant_relic.title
+- advancements.simplyswords.emberblade.title
+- advancements.simplyswords.emberlash.title
+- advancements.simplyswords.enigma.title
+- advancements.simplyswords.find_unique.description
+- advancements.simplyswords.flamewind.title
+- advancements.simplyswords.frostfall.title
+- advancements.simplyswords.harbinger.title
+- advancements.simplyswords.hearthflame.title
+- advancements.simplyswords.hiveheart.title
+- advancements.simplyswords.icewhisper.title
+- advancements.simplyswords.livyatan.title
+- advancements.simplyswords.magiblade.title
+- advancements.simplyswords.magiscythe.title
+- advancements.simplyswords.magispear.title
+- advancements.simplyswords.mjolnir.title
+- advancements.simplyswords.molten_edge.title
+- advancements.simplyswords.obtain_unique.description
+- advancements.simplyswords.ribboncleaver.title
+- advancements.simplyswords.root.description
+- advancements.simplyswords.root.title
+- advancements.simplyswords.runic_gear.description
+- advancements.simplyswords.runic_gear.title
+- advancements.simplyswords.shadowsting.title
+- advancements.simplyswords.slumbering_lichblade.title
+- advancements.simplyswords.soulkeeper.title
+- advancements.simplyswords.soulpyre.title
+- advancements.simplyswords.soulrender.title
+- advancements.simplyswords.soulstealer.title
+- advancements.simplyswords.stars_edge.title
+- advancements.simplyswords.stormbringer.title
+- advancements.simplyswords.storms_edge.title
+- advancements.simplyswords.sunfire.title
+- advancements.simplyswords.sword_on_a_stick.title
+- advancements.simplyswords.tempest.title
+- advancements.simplyswords.thunderbrand.title
+- advancements.simplyswords.toxic_longsword.title
+- advancements.simplyswords.twisted_blade.title
+- advancements.simplyswords.watcher_claymore.title
+- advancements.simplyswords.watching_warglaive.title
+- advancements.simplyswords.waxweaver.title
+- advancements.simplyswords.whisperwind.title
+- advancements.simplyswords.wickpiercer.title
+
+## twilightforest (missing 291)
+- advancement.twilightforest.chicken_jerky
+- advancement.twilightforest.craft_travellers_gear
+- advancement.twilightforest.craft_travellers_gear.desc
+- advancement.twilightforest.modify_travellers_gear
+- advancement.twilightforest.modify_travellers_gear.desc
+- biome.twilightforest.highlands_underground
+- block.twilightforest.acacia_drying_rack
+- block.twilightforest.bamboo_drying_rack
+- block.twilightforest.birch_drying_rack
+- block.twilightforest.blackberry_bush
+- block.twilightforest.blightberry_bush
+- block.twilightforest.blueberry_bush
+- block.twilightforest.canopy_drying_rack
+- block.twilightforest.canopy_wall_hanging_sign
+- block.twilightforest.canopy_wall_sign
+- block.twilightforest.cherry_drying_rack
+- block.twilightforest.chipped_keepsake_casket
+- block.twilightforest.copper_oreberry
+- block.twilightforest.creeper_wall_skull_candle
+- block.twilightforest.crimson_drying_rack
+- block.twilightforest.damaged_keepsake_casket
+- block.twilightforest.dark_drying_rack
+- block.twilightforest.dark_oak_drying_rack
+- block.twilightforest.dark_wall_hanging_sign
+- block.twilightforest.dark_wall_sign
+- block.twilightforest.duskberry_bush
+- block.twilightforest.essence_oreberry
+- block.twilightforest.gold_oreberry
+- block.twilightforest.iron_oreberry
+- block.twilightforest.jungle_drying_rack
+- block.twilightforest.maloberry_bush
+- block.twilightforest.mangrove_drying_rack
+- block.twilightforest.mangrove_wall_hanging_sign
+- block.twilightforest.mangrove_wall_sign
+- block.twilightforest.maze_slime_block
+- block.twilightforest.mining_drying_rack
+- block.twilightforest.mining_wall_hanging_sign
+- block.twilightforest.mining_wall_sign
+- block.twilightforest.oak_drying_rack
+- block.twilightforest.ominous_black_candle
+- block.twilightforest.ominous_blue_candle
+- block.twilightforest.ominous_brown_candle
+- block.twilightforest.ominous_candle
+- block.twilightforest.ominous_cyan_candle
+- block.twilightforest.ominous_fire
+- block.twilightforest.ominous_gray_candle
+- block.twilightforest.ominous_green_candle
+- block.twilightforest.ominous_light_blue_candle
+- block.twilightforest.ominous_light_gray_candle
+- block.twilightforest.ominous_lime_candle
+
+## fzzy_config (missing 284)
+- fc.button.accept
+- fc.button.add
+- fc.button.alert.active
+- fc.button.alert.inactive
+- fc.button.apply
+- fc.button.apply.desc
+- fc.button.cancel
+- fc.button.changelog
+- fc.button.changelog.desc
+- fc.button.changes
+- fc.button.changes.desc
+- fc.button.changes.message
+- fc.button.changes.message.noChanges
+- fc.button.changes.title
+- fc.button.clear
+- fc.button.click.copy_to_clipboard
+- fc.button.click.open_file
+- fc.button.click.open_url
+- fc.button.click.run_command
+- fc.button.compound
+- fc.button.config
+- fc.button.config_inactive
+- fc.button.copy
+- fc.button.delete
+- fc.button.deny
+- fc.button.down
+- fc.button.forward
+- fc.button.forward.active
+- fc.button.forward.confirm
+- fc.button.forward.inactive
+- fc.button.goto
+- fc.button.goto.narration
+- fc.button.info
+- fc.button.info.alert
+- fc.button.info.back
+- fc.button.info.back.desc
+- fc.button.info.context_keyboard
+- fc.button.info.context_keyboard.desc
+- fc.button.info.context_mouse
+- fc.button.info.context_mouse.desc
+- fc.button.info.copy
+- fc.button.info.copy.desc
+- fc.button.info.end
+- fc.button.info.end.desc
+- fc.button.info.fc
+- fc.button.info.fc.tip
+- fc.button.info.find
+- fc.button.info.find.desc
+- fc.button.info.full_exit
+- fc.button.info.full_exit.desc
+
+## rarcompat (missing 273)
+- item.rarcompat.mimi_dust
+- tooltip.rarcompat.mimi_dust
+- tooltip.rarcompat.modified
+- tooltip.relics.anglers_hat.ability.catch
+- tooltip.relics.anglers_hat.ability.catch.description
+- tooltip.relics.anglers_hat.description
+- tooltip.relics.anglers_hat.leveling_source.catch.description
+- tooltip.relics.anglers_hat.leveling_source.catch.title
+- tooltip.relics.antidote_vessel.ability.antidote
+- tooltip.relics.antidote_vessel.ability.antidote.description
+- tooltip.relics.antidote_vessel.ability.devourer
+- tooltip.relics.antidote_vessel.ability.devourer.description
+- tooltip.relics.antidote_vessel.description
+- tooltip.relics.antidote_vessel.leveling_source.antidote.description
+- tooltip.relics.antidote_vessel.leveling_source.antidote.title
+- tooltip.relics.antidote_vessel.leveling_source.devourer.description
+- tooltip.relics.antidote_vessel.leveling_source.devourer.title
+- tooltip.relics.bunny_hoppers.ability.hold
+- tooltip.relics.bunny_hoppers.ability.hold.description
+- tooltip.relics.bunny_hoppers.description
+- tooltip.relics.bunny_hoppers.leveling_source.hold.description
+- tooltip.relics.bunny_hoppers.leveling_source.hold.title
+- tooltip.relics.charm_of_shrinking.ability.shrinking
+- tooltip.relics.charm_of_shrinking.ability.shrinking.description
+- tooltip.relics.charm_of_shrinking.description
+- tooltip.relics.charm_of_sinking.ability.dipping
+- tooltip.relics.charm_of_sinking.ability.dipping.description
+- tooltip.relics.charm_of_sinking.ability.dive
+- tooltip.relics.charm_of_sinking.ability.dive.description
+- tooltip.relics.charm_of_sinking.description
+- tooltip.relics.charm_of_sinking.leveling_source.dipping.description
+- tooltip.relics.charm_of_sinking.leveling_source.dipping.title
+- tooltip.relics.chorus_totem.ability.past
+- tooltip.relics.chorus_totem.ability.past.description
+- tooltip.relics.chorus_totem.description
+- tooltip.relics.chorus_totem.leveling_source.past.description
+- tooltip.relics.chorus_totem.leveling_source.past.title
+- tooltip.relics.cloud_in_a_bottle.ability.jump
+- tooltip.relics.cloud_in_a_bottle.ability.jump.description
+- tooltip.relics.cloud_in_a_bottle.description
+- tooltip.relics.cloud_in_a_bottle.leveling_source.jump.description
+- tooltip.relics.cloud_in_a_bottle.leveling_source.jump.title
+- tooltip.relics.cowboy_hat.ability.cowboy
+- tooltip.relics.cowboy_hat.ability.cowboy.description
+- tooltip.relics.cowboy_hat.ability.overlord
+- tooltip.relics.cowboy_hat.ability.overlord.description
+- tooltip.relics.cowboy_hat.ability.overlord.predicate.overlord
+- tooltip.relics.cowboy_hat.description
+- tooltip.relics.cowboy_hat.leveling_source.cowboy.description
+- tooltip.relics.cowboy_hat.leveling_source.cowboy.title
+
+## ars_elemental (missing 258)
+- ars_elemental.armor_set.air_heavy
+- ars_elemental.armor_set.air_light
+- ars_elemental.armor_set.aqua_heavy
+- ars_elemental.armor_set.aqua_light
+- ars_elemental.armor_set.earth_heavy
+- ars_elemental.armor_set.earth_light
+- ars_elemental.armor_set.fire_heavy
+- ars_elemental.armor_set.fire_light
+- ars_elemental.familiar_desc.flashjack_familiar
+- ars_elemental.familiar_name.flashjack_familiar
+- ars_elemental.flashjack.connect
+- ars_elemental.flashjack.deny
+- ars_elemental.flashjack.deny.remove
+- ars_elemental.focus.shift_info
+- ars_elemental.glyph_desc.glyph_arc_projectile
+- ars_elemental.glyph_desc.glyph_conflagrate
+- ars_elemental.glyph_desc.glyph_envenom
+- ars_elemental.glyph_desc.glyph_nullify_defense
+- ars_elemental.glyph_desc.glyph_spark
+- ars_elemental.glyph_desc.glyph_spike
+- ars_elemental.glyph_name.glyph_arc_projectile
+- ars_elemental.glyph_name.glyph_conflagrate
+- ars_elemental.glyph_name.glyph_envenom
+- ars_elemental.glyph_name.glyph_nullify_defense
+- ars_elemental.glyph_name.glyph_spark
+- ars_elemental.glyph_name.glyph_spike
+- ars_elemental.lens.chaining
+- ars_elemental.page.air_bangle
+- ars_elemental.page.air_upstream
+- ars_elemental.page.anima
+- ars_elemental.page.anima_bangle
+- ars_elemental.page.curio_bag
+- ars_elemental.page.cut
+- ars_elemental.page.earth_bangle
+- ars_elemental.page.elemental_turrets
+- ars_elemental.page.everfull_urn
+- ars_elemental.page.fire_bangle
+- ars_elemental.page.freeze
+- ars_elemental.page.gravity
+- ars_elemental.page.grow
+- ars_elemental.page.ignite
+- ars_elemental.page.launch
+- ars_elemental.page.magma_upstream
+- ars_elemental.page.necrotic_focus
+- ars_elemental.page.schools
+- ars_elemental.page.spell_horn
+- ars_elemental.page.spell_mirror
+- ars_elemental.page.spell_schools
+- ars_elemental.page.summon_bangle
+- ars_elemental.page.water_bangle
+
+## fdbosses (missing 256)
+- advancements.qliphoth_awakening.chesed.description
+- advancements.qliphoth_awakening.chesed.title
+- advancements.qliphoth_awakening.geburah.description
+- advancements.qliphoth_awakening.geburah.title
+- advancements.qliphoth_awakening.malkuth.description
+- advancements.qliphoth_awakening.malkuth.title
+- advancements.qliphoth_awakening.root.description
+- advancements.qliphoth_awakening.root.title
+- block.fdbosses.chesed_trophy
+- block.fdbosses.chiseled_justicestone_bricks
+- block.fdbosses.geburah_respite_point
+- block.fdbosses.geburah_trophy
+- block.fdbosses.justicestone_beam
+- block.fdbosses.justicestone_bricks
+- block.fdbosses.justicestone_bricks_slab
+- block.fdbosses.justicestone_column
+- block.fdbosses.justicestone_column_wall
+- block.fdbosses.justicestone_stairs
+- block.fdbosses.justicestone_wall
+- block.fdbosses.malkuth_trophy
+- block.fdbosses.polished_justicestone
+- block.fdbosses.polished_justicestone_slab
+- block.fdbosses.polished_justicestone_stairs
+- death.attack.chesed_attack
+- death.attack.chesed_ba_attack
+- death.attack.chesed_block_attack
+- death.attack.chesed_earthquake
+- death.attack.chesed_earthquake.player
+- death.attack.chesed_falling_block
+- death.attack.chesed_falling_block.player
+- death.attack.chesed_lor_attack
+- death.attack.chesed_roll_attack
+- death.attack.chesed_vertical_ray
+- death.attack.cowardice
+- death.attack.electric_sphere
+- death.attack.electric_sphere.player
+- death.attack.geburah_earthquake
+- death.attack.geburah_judgement_ball
+- death.attack.geburah_justice_hammer
+- death.attack.geburah_laser_strike
+- death.attack.geburah_ray_strike
+- death.attack.geburah_sinned_too_much
+- death.attack.malkuth_cannons
+- death.attack.malkuth_chainpunch
+- death.attack.malkuth_earthshatter
+- death.attack.malkuth_hellshaper
+- death.attack.malkuth_impaling_doom
+- death.attack.malkuth_side_rocks
+- death.attack.malkuth_slashes
+- death.attack.malkuth_tsars_wrath
+
+## xycraft_machines (missing 225)
+- attribute.xycraft.hover_flight
+- block.xycraft_machines.buffer
+- block.xycraft_machines.charger
+- block.xycraft_machines.charger.tooltip
+- block.xycraft_machines.coagulated_lava
+- block.xycraft_machines.coagulated_water
+- block.xycraft_machines.collector
+- block.xycraft_machines.collector.tooltip
+- block.xycraft_machines.engineering_table
+- block.xycraft_machines.extractor
+- block.xycraft_machines.extractor.tooltip
+- block.xycraft_machines.fabricator
+- block.xycraft_machines.fabricator.tooltip
+- block.xycraft_machines.flare
+- block.xycraft_machines.fluid_selector
+- block.xycraft_machines.fluid_selector.tooltip.0
+- block.xycraft_machines.fluid_selector.tooltip.1
+- block.xycraft_machines.fluid_void
+- block.xycraft_machines.fluid_void.tooltip
+- block.xycraft_machines.hardened_gravel
+- block.xycraft_machines.hardened_red_sand
+- block.xycraft_machines.hardened_sand
+- block.xycraft_machines.hover_pylon
+- block.xycraft_machines.hydro_pump
+- block.xycraft_machines.hydro_pump.tooltip.0
+- block.xycraft_machines.hydro_pump.tooltip.1
+- block.xycraft_machines.hydro_pump.tooltip.2
+- block.xycraft_machines.hydro_pump.tooltip.3
+- block.xycraft_machines.ignition_plate
+- block.xycraft_machines.ignition_plate.tooltip
+- block.xycraft_machines.illumination_field
+- block.xycraft_machines.illumination_field.tooltip
+- block.xycraft_machines.isolator
+- block.xycraft_machines.item_io
+- block.xycraft_machines.item_io.tooltip
+- block.xycraft_machines.item_selector
+- block.xycraft_machines.item_selector.tooltip.0
+- block.xycraft_machines.item_selector.tooltip.1
+- block.xycraft_machines.light_field
+- block.xycraft_machines.light_field.tooltip.0
+- block.xycraft_machines.light_field.tooltip.1
+- block.xycraft_machines.machine_base
+- block.xycraft_machines.mekanical_condenser
+- block.xycraft_machines.mekanical_evaporator
+- block.xycraft_machines.nitrogen_extractor
+- block.xycraft_machines.nitrogen_extractor.tooltip
+- block.xycraft_machines.pipe_energy
+- block.xycraft_machines.pipe_fluid
+- block.xycraft_machines.planter
+- block.xycraft_machines.power_core
+
+## rechiseled (missing 224)
+- rechiseled.block.lapis_block_pattern_connecting
+- rechiseled.block.quartz_block_pattern_connecting
+- rechiseled.block.quartz_block_rotated_bricks
+- rechiseled.block.quartz_block_rotated_bricks_connecting
+- rechiseled.block.quartz_block_rows
+- rechiseled.block.quartz_block_rows_connecting
+- rechiseled.block.quartz_block_scales
+- rechiseled.block.quartz_block_scales_connecting
+- rechiseled.block.quartz_block_small_tiles
+- rechiseled.block.quartz_block_small_tiles_connecting
+- rechiseled.block.quartz_block_squares
+- rechiseled.block.quartz_block_squares_connecting
+- rechiseled.block.quartz_block_stripes
+- rechiseled.block.quartz_block_stripes_connecting
+- rechiseled.block.quartz_block_tiles
+- rechiseled.block.quartz_block_tiles_connecting
+- rechiseled.block.red_nether_bricks_beams
+- rechiseled.block.red_nether_bricks_beams_connecting
+- rechiseled.block.red_nether_bricks_brick_pattern
+- rechiseled.block.red_nether_bricks_brick_pattern_connecting
+- rechiseled.block.red_nether_bricks_brick_paving
+- rechiseled.block.red_nether_bricks_brick_paving_connecting
+- rechiseled.block.red_nether_bricks_chiseled_squares
+- rechiseled.block.red_nether_bricks_chiseled_squares_connecting
+- rechiseled.block.red_nether_bricks_diagonal_bricks
+- rechiseled.block.red_nether_bricks_diagonal_bricks_connecting
+- rechiseled.block.red_nether_bricks_large_bricks
+- rechiseled.block.red_nether_bricks_large_bricks_connecting
+- rechiseled.block.red_nether_bricks_large_tiles
+- rechiseled.block.red_nether_bricks_large_tiles_connecting
+- rechiseled.block.red_nether_bricks_rotated_bricks
+- rechiseled.block.red_nether_bricks_rotated_bricks_connecting
+- rechiseled.block.red_nether_bricks_small_tiles
+- rechiseled.block.red_nether_bricks_small_tiles_connecting
+- rechiseled.block.red_nether_bricks_smooth
+- rechiseled.block.red_nether_bricks_smooth_connecting
+- rechiseled.block.red_nether_bricks_squares
+- rechiseled.block.red_nether_bricks_squares_connecting
+- rechiseled.block.red_nether_bricks_tiles
+- rechiseled.block.red_nether_bricks_tiles_connecting
+- rechiseled.block.red_sandstone_brick_pattern
+- rechiseled.block.red_sandstone_brick_pattern_connecting
+- rechiseled.block.red_sandstone_brick_paving
+- rechiseled.block.red_sandstone_brick_paving_connecting
+- rechiseled.block.red_sandstone_bricks
+- rechiseled.block.red_sandstone_bricks_connecting
+- rechiseled.block.red_sandstone_diagonal_bricks
+- rechiseled.block.red_sandstone_diagonal_bricks_connecting
+- rechiseled.block.red_sandstone_large_tiles
+- rechiseled.block.red_sandstone_large_tiles_connecting
+
+## crystalix (missing 216)
+- block.crystalix.amber_bordered_crystalix_glass
+- block.crystalix.amber_clear_crystalix_glass
+- block.crystalix.amber_crystalix_glass
+- block.crystalix.aquamarine_bordered_crystalix_glass
+- block.crystalix.aquamarine_clear_crystalix_glass
+- block.crystalix.aquamarine_crystalix_glass
+- block.crystalix.beige_bordered_crystalix_glass
+- block.crystalix.beige_clear_crystalix_glass
+- block.crystalix.beige_crystalix_glass
+- block.crystalix.black_bordered_crystalix_glass
+- block.crystalix.black_clear_crystalix_glass
+- block.crystalix.black_crystalix_glass
+- block.crystalix.blue_bordered_crystalix_glass
+- block.crystalix.blue_clear_crystalix_glass
+- block.crystalix.blue_crystalix_glass
+- block.crystalix.bordered_crystalix_glass
+- block.crystalix.brown_bordered_crystalix_glass
+- block.crystalix.brown_clear_crystalix_glass
+- block.crystalix.brown_crystalix_glass
+- block.crystalix.bubblegum_bordered_crystalix_glass
+- block.crystalix.bubblegum_clear_crystalix_glass
+- block.crystalix.bubblegum_crystalix_glass
+- block.crystalix.chartreuse_bordered_crystalix_glass
+- block.crystalix.chartreuse_clear_crystalix_glass
+- block.crystalix.chartreuse_crystalix_glass
+- block.crystalix.cherenkov_bordered_crystalix_glass
+- block.crystalix.cherenkov_clear_crystalix_glass
+- block.crystalix.cherenkov_crystalix_glass
+- block.crystalix.clear_crystalix_glass
+- block.crystalix.cobalt_bordered_crystalix_glass
+- block.crystalix.cobalt_clear_crystalix_glass
+- block.crystalix.cobalt_crystalix_glass
+- block.crystalix.conifer_bordered_crystalix_glass
+- block.crystalix.conifer_clear_crystalix_glass
+- block.crystalix.conifer_crystalix_glass
+- block.crystalix.coral_bordered_crystalix_glass
+- block.crystalix.coral_clear_crystalix_glass
+- block.crystalix.coral_crystalix_glass
+- block.crystalix.cream_bordered_crystalix_glass
+- block.crystalix.cream_clear_crystalix_glass
+- block.crystalix.cream_crystalix_glass
+- block.crystalix.crimson_bordered_crystalix_glass
+- block.crystalix.crimson_clear_crystalix_glass
+- block.crystalix.crimson_crystalix_glass
+- block.crystalix.crystalix_glass
+- block.crystalix.cyan_bordered_crystalix_glass
+- block.crystalix.cyan_clear_crystalix_glass
+- block.crystalix.cyan_crystalix_glass
+- block.crystalix.emerald_bordered_crystalix_glass
+- block.crystalix.emerald_clear_crystalix_glass
