@@ -19,6 +19,15 @@ param(
     [string]$OutDir,
 
     [Parameter()]
+    [switch]$ReportMissing,
+
+    [Parameter()]
+    [int]$MissingTop = 20,
+
+    [Parameter()]
+    [switch]$ShowZeroOnly,
+
+    [Parameter()]
     [switch]$ExportCsv
 )
 
@@ -65,6 +74,38 @@ function Read-ZipEntryText {
     }
 }
 
+function Get-JsonKeysFromString {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$JsonText,
+        [Parameter(Mandatory = $true)]
+        [string]$SourcePath
+    )
+    $keys = New-OrdinalHashSet
+    try {
+        $obj = $JsonText | ConvertFrom-Json
+        $map = ConvertTo-HashtableFromJsonObject -JsonObject $obj
+        foreach ($key in $map.Keys) {
+            [void]$keys.Add([string]$key)
+        }
+        return $keys
+    } catch {
+        $script:parseErrors.Add([pscustomobject]@{
+            path   = $SourcePath
+            reason = $_.Exception.Message
+        })
+    }
+
+    $pattern = '"(?<k>(?:\\.|[^"\\])+)"\s*:'
+    foreach ($match in [regex]::Matches($JsonText, $pattern)) {
+        $key = $match.Groups['k'].Value
+        if ($key) {
+            [void]$keys.Add($key)
+        }
+    }
+    return $keys
+}
+
 if (-not $RepoRoot) {
     $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 }
@@ -79,6 +120,7 @@ if (-not $OutDir) {
 }
 
 $errorList = New-Object System.Collections.Generic.List[psobject]
+$parseErrors = New-Object System.Collections.Generic.List[psobject]
 $modMap = @{}
 
 if (-not (Test-Path $ModsDir)) {
@@ -98,25 +140,11 @@ foreach ($jar in $jars) {
             if ($entry.FullName -match $entryPattern) {
                 $modid = $matches[1]
                 $content = Read-ZipEntryText -Entry $entry
-                $jsonObj = $null
-                try {
-                    $jsonObj = $content | ConvertFrom-Json
-                } catch {
-                    $errorList.Add([pscustomobject]@{
-                        jar    = $jar.Name
-                        reason = "Invalid JSON for $modid en_us.json: $($_.Exception.Message)"
-                    })
-                    continue
-                }
-
-                $map = ConvertTo-HashtableFromJsonObject -JsonObject $jsonObj
-                $total = $map.Count
+                $sourcePath = Join-Path $jar.FullName $entry.FullName
+                $enSet = Get-JsonKeysFromString -JsonText $content -SourcePath $sourcePath
+                $total = $enSet.Count
 
                 if (-not $modMap.ContainsKey($modid) -or $total -gt $modMap[$modid].total) {
-                    $enSet = New-OrdinalHashSet
-                    foreach ($key in $map.Keys) {
-                        [void]$enSet.Add([string]$key)
-                    }
                     $modMap[$modid] = [pscustomobject]@{
                         modid     = $modid
                         total     = $total
@@ -137,18 +165,18 @@ foreach ($jar in $jars) {
 }
 
 $rows = New-Object System.Collections.Generic.List[psobject]
+$missingResults = New-Object System.Collections.Generic.List[psobject]
 
 foreach ($modid in ($modMap.Keys | Sort-Object)) {
     $entry = $modMap[$modid]
     $zhPath = Join-Path $PackAssetsRoot ("{0}\lang\zh_tw.json" -f $modid)
     $zhSet = New-OrdinalHashSet
+    $zhCount = 0
     if (Test-Path $zhPath) {
         try {
-            $zhObj = (Get-Content -Path $zhPath -Raw -Encoding UTF8) | ConvertFrom-Json
-            $zhMap = ConvertTo-HashtableFromJsonObject -JsonObject $zhObj
-            foreach ($key in $zhMap.Keys) {
-                [void]$zhSet.Add([string]$key)
-            }
+            $zhText = Get-Content -Path $zhPath -Raw -Encoding UTF8
+            $zhSet = Get-JsonKeysFromString -JsonText $zhText -SourcePath $zhPath
+            $zhCount = $zhSet.Count
         } catch {
             $errorList.Add([pscustomobject]@{
                 jar    = (Split-Path $entry.sourceJar -Leaf)
@@ -158,9 +186,15 @@ foreach ($modid in ($modMap.Keys | Sort-Object)) {
     }
 
     $translated = 0
+    $missingKeys = $null
+    if ($ReportMissing) {
+        $missingKeys = New-Object System.Collections.Generic.List[string]
+    }
     foreach ($key in $entry.enKeys) {
         if ($zhSet.Contains($key)) {
             $translated++
+        } elseif ($ReportMissing) {
+            $missingKeys.Add($key)
         }
     }
 
@@ -177,6 +211,18 @@ foreach ($modid in ($modMap.Keys | Sort-Object)) {
         sourceJar   = $entry.sourceJar
         zh_tw_path  = $zhPath
     })
+
+    if ($ReportMissing) {
+        $sortedMissing = $missingKeys | Sort-Object
+        $missingResults.Add([pscustomobject]@{
+            modid       = $modid
+            jar         = (Split-Path $entry.sourceJar -Leaf)
+            en_us_keys  = $entry.total
+            zh_tw_keys  = $zhCount
+            missing     = $sortedMissing.Count
+            missingKeys = $sortedMissing
+        })
+    }
 }
 
 $sortedRows = $rows | Sort-Object -Property @{ Expression = 'remaining'; Descending = $true }, modid
@@ -188,12 +234,23 @@ if ($overallRemaining -lt 0) { $overallRemaining = 0 }
 $overallPercent = if ($overallTotal -gt 0) { [math]::Round(($overallTranslated / $overallTotal) * 100, 1) } else { 0 }
 
 Write-Output ("sb4-zh_tw overall progress: translated={0} / total={1}, remaining={2}, percent={3}%" -f $overallTranslated, $overallTotal, $overallRemaining, $overallPercent)
+Write-Output ("JSON parse fallback used: {0} files" -f $parseErrors.Count)
+if ($parseErrors.Count -gt 0) {
+    $fallbackRows = $parseErrors | Select-Object -First 20
+    foreach ($entry in $fallbackRows) {
+        Write-Output ("- {0}: {1}" -f $entry.path, $entry.reason)
+    }
+}
 
 $header = "{0,-30} {1,10} {2,10} {3,10} {4,8}" -f 'modid', 'translated', 'total', 'remaining', 'percent'
 Write-Output $header
 Write-Output ("{0,-30} {1,10} {2,10} {3,10} {4,8}" -f ('-' * 30), ('-' * 10), ('-' * 10), ('-' * 10), ('-' * 8))
 
-$displayRows = $sortedRows | Select-Object -First 30
+$displayRows = $sortedRows
+if ($ShowZeroOnly) {
+    $displayRows = $displayRows | Where-Object { $_.total -gt 0 -and $_.translated -eq 0 }
+}
+$displayRows = $displayRows | Select-Object -First 30
 foreach ($row in $displayRows) {
     Write-Output ("{0,-30} {1,10} {2,10} {3,10} {4,8}" -f $row.modid, $row.translated, $row.total, $row.remaining, ("{0}%" -f $row.percent.ToString('0.0')))
 }
@@ -206,6 +263,50 @@ if ($ExportCsv) {
     $csvLines = $sortedRows | Select-Object modid, translated, total, remaining, percent, sourceJar, zh_tw_path | ConvertTo-Csv -NoTypeInformation
     [System.IO.File]::WriteAllLines($csvPath, $csvLines, (Get-Utf8NoBom))
     Write-Output ("CSV exported: {0}" -f $csvPath)
+}
+
+if ($ReportMissing) {
+    if (-not (Test-Path $OutDir)) {
+        New-Item -ItemType Directory -Path $OutDir -Force | Out-Null
+    }
+    $missingCsvPath = Join-Path $OutDir 'zh_tw_missing_summary.csv'
+    $missingJsonPath = Join-Path $OutDir 'zh_tw_missing_details.json'
+    $missingMdPath = Join-Path $OutDir ("zh_tw_missing_top_{0}.md" -f $MissingTop)
+
+    $sortedMissingResults = $missingResults | Sort-Object -Property missing -Descending
+
+    $sortedMissingResults |
+        Select-Object modid, jar, en_us_keys, zh_tw_keys, missing |
+        Export-Csv -Path $missingCsvPath -NoTypeInformation -Encoding UTF8
+
+    $jsonObj = [ordered]@{
+        generatedAt = (Get-Date).ToString('o')
+        pack        = $PackName
+        mods        = $sortedMissingResults
+    }
+    $jsonText = $jsonObj | ConvertTo-Json -Depth 10
+    [System.IO.File]::WriteAllText($missingJsonPath, $jsonText, (Get-Utf8NoBom))
+
+    $topMods = if ($MissingTop -gt 0) { $sortedMissingResults | Select-Object -First $MissingTop } else { @() }
+    $mdLines = New-Object System.Collections.Generic.List[string]
+    $mdLines.Add("# Top $MissingTop missing zh_tw keys")
+    $mdLines.Add("")
+
+    foreach ($item in $topMods) {
+        $mdLines.Add(("## {0} (missing {1})" -f $item.modid, $item.missing))
+        $keysToShow = $item.missingKeys | Select-Object -First 50
+        foreach ($k in $keysToShow) {
+            $mdLines.Add(("- {0}" -f $k))
+        }
+        $mdLines.Add("")
+    }
+
+    [System.IO.File]::WriteAllText($missingMdPath, ($mdLines -join "`n"), (Get-Utf8NoBom))
+
+    Write-Output "Missing zh_tw outputs:"
+    Write-Output ("  CSV:  {0}" -f $missingCsvPath)
+    Write-Output ("  JSON: {0}" -f $missingJsonPath)
+    Write-Output ("  MD:   {0}" -f $missingMdPath)
 }
 
 if ($errorList.Count -gt 0) {
