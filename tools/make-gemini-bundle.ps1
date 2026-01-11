@@ -102,10 +102,16 @@ function Normalize-KeyList {
         return @($RawKeys)
     }
     if ($RawKeys -is [System.Collections.IDictionary]) {
-        return if ($RawKeys.Count -gt 0) { @($RawKeys.Keys) } else { @() }
+        if ($RawKeys.Count -gt 0) {
+            return @($RawKeys.Keys)
+        }
+        return @()
     }
     if ($RawKeys -is [System.Management.Automation.PSCustomObject]) {
-        return if ($RawKeys.PSObject.Properties.Count -gt 0) { @($RawKeys.PSObject.Properties.Name) } else { @() }
+        if ($RawKeys.PSObject.Properties.Count -gt 0) {
+            return @($RawKeys.PSObject.Properties.Name)
+        }
+        return @()
     }
     if ($RawKeys -is [System.Collections.IEnumerable]) {
         return @($RawKeys)
@@ -412,6 +418,7 @@ function Add-KeysToSet {
 function Filter-KeysBySet {
     param(
         [Parameter(Mandatory = $true)]
+        [AllowEmptyCollection()]
         [object[]]$Keys,
         [Parameter()]
         [System.Collections.Generic.HashSet[string]]$Exclude
