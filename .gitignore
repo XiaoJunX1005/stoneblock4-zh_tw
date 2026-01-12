@@ -15,3 +15,7 @@ Thumbs.db
 .vscode/
 .idea/
 *.iml
+
+# Codex temp outputs
+tools/out/
+tools/_cache/
