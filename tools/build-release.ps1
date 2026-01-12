@@ -7,6 +7,7 @@ $ErrorActionPreference = "Stop"
 $repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
 $resourceRoot = Join-Path $repoRoot "resourcepacks\sb4-zh_tw"
 $kubejsRoot = Join-Path $repoRoot "kubejs"
+$configRoot = Join-Path $repoRoot "config"
 $stagingRoot = Join-Path $repoRoot "tools\out\release_staging"
 $outDir = Join-Path $repoRoot "tools\out"
 $zipName = "sb4-zh_tw-v$Version.zip"
@@ -53,6 +54,10 @@ Copy-Item -Recurse -Force -Path (Join-Path $resourceRoot "*") -Destination $reso
 
 if (Test-Path $kubejsRoot) {
     Copy-Item -Recurse -Force -Path $kubejsRoot -Destination $stagingRoot
+}
+
+if (Test-Path $configRoot) {
+    Copy-Item -Recurse -Force -Path $configRoot -Destination $stagingRoot
 }
 
 $forbiddenPaths = @(
