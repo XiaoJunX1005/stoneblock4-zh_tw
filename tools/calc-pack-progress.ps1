@@ -19,7 +19,10 @@ param(
     [string]$OutDir,
 
     [Parameter()]
-    [switch]$ExportCsv
+    [switch]$ExportCsv,
+
+    [Parameter()]
+    [switch]$DebugMissing
 )
 
 $ErrorActionPreference = 'Stop'
@@ -110,17 +113,17 @@ foreach ($jar in $jars) {
                 }
 
                 $map = ConvertTo-HashtableFromJsonObject -JsonObject $jsonObj
-                $total = $map.Count
+                $enMap = New-Object System.Collections.Hashtable ([System.StringComparer]::Ordinal)
+                foreach ($key in $map.Keys) {
+                    $enMap[[string]$key] = $map[$key]
+                }
+                $total = $enMap.Count
 
                 if (-not $modMap.ContainsKey($modid) -or $total -gt $modMap[$modid].total) {
-                    $enSet = New-OrdinalHashSet
-                    foreach ($key in $map.Keys) {
-                        [void]$enSet.Add([string]$key)
-                    }
                     $modMap[$modid] = [pscustomobject]@{
                         modid     = $modid
                         total     = $total
-                        enKeys    = $enSet
+                        enMap     = $enMap
                         sourceJar = $jar.FullName
                     }
                 }
@@ -137,17 +140,18 @@ foreach ($jar in $jars) {
 }
 
 $rows = New-Object System.Collections.Generic.List[psobject]
+$diagnosticRows = New-Object System.Collections.Generic.List[psobject]
 
 foreach ($modid in ($modMap.Keys | Sort-Object)) {
     $entry = $modMap[$modid]
     $zhPath = Join-Path $PackAssetsRoot ("{0}\lang\zh_tw.json" -f $modid)
-    $zhSet = New-OrdinalHashSet
+    $zhMap = New-Object System.Collections.Hashtable ([System.StringComparer]::Ordinal)
     if (Test-Path $zhPath) {
         try {
             $zhObj = (Get-Content -Path $zhPath -Raw -Encoding UTF8) | ConvertFrom-Json
-            $zhMap = ConvertTo-HashtableFromJsonObject -JsonObject $zhObj
-            foreach ($key in $zhMap.Keys) {
-                [void]$zhSet.Add([string]$key)
+            $rawZhMap = ConvertTo-HashtableFromJsonObject -JsonObject $zhObj
+            foreach ($key in $rawZhMap.Keys) {
+                $zhMap[[string]$key] = $rawZhMap[$key]
             }
         } catch {
             $errorList.Add([pscustomobject]@{
@@ -158,9 +162,25 @@ foreach ($modid in ($modMap.Keys | Sort-Object)) {
     }
 
     $translated = 0
-    foreach ($key in $entry.enKeys) {
-        if ($zhSet.Contains($key)) {
+    foreach ($key in $entry.enMap.Keys) {
+        if (-not $zhMap.ContainsKey($key)) {
+            continue
+        }
+        $enVal = $entry.enMap[$key]
+        $zhVal = $zhMap[$key]
+        $enStr = if ($null -eq $enVal) { '' } else { [string]$enVal }
+        $zhStr = if ($null -eq $zhVal) { '' } else { [string]$zhVal }
+        $enEmpty = [string]::IsNullOrWhiteSpace($enStr)
+        $zhEmpty = [string]::IsNullOrWhiteSpace($zhStr)
+        if ($enEmpty -or (-not $zhEmpty)) {
             $translated++
+        } elseif ($DebugMissing) {
+            $diagnosticRows.Add([pscustomobject]@{
+                modid    = $modid
+                key      = $key
+                en_empty = $enEmpty
+                zh_empty = $zhEmpty
+            })
         }
     }
 
@@ -206,6 +226,13 @@ if ($ExportCsv) {
     $csvLines = $sortedRows | Select-Object modid, translated, total, remaining, percent, sourceJar, zh_tw_path | ConvertTo-Csv -NoTypeInformation
     [System.IO.File]::WriteAllLines($csvPath, $csvLines, (Get-Utf8NoBom))
     Write-Output ("CSV exported: {0}" -f $csvPath)
+}
+
+if ($DebugMissing -and $diagnosticRows.Count -gt 0) {
+    Write-Output "Debug: zh_tw present but treated as untranslated (first 30)"
+    $diagnosticRows | Select-Object -First 30 | ForEach-Object {
+        Write-Output ("- {0}:{1} en_empty={2} zh_empty={3}" -f $_.modid, $_.key, $_.en_empty, $_.zh_empty)
+    }
 }
 
 if ($errorList.Count -gt 0) {
