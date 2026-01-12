@@ -1,0 +1,462 @@
+chapter.3BF272F9FDD1D8F9.title	Draconic Evolution
+quest.0171649B0F984DBB.quest_desc[0]	This quest will set up a waypoint to the &dWyrmwright's &6Archive&r.
+quest.0171649B0F984DBB.title	&fLocating &dThe Wyrmwright
+quest.0173ED2BED248CF6.quest_desc[0]	&aMatter&r &eTransmitters&r and &aReceivers&r can be used to set up teleportation back and forth within the world. 
+quest.03BEFC2150D09E7A.quest_desc[0]	&dWireless Grids&r allow remote access to your storage network when within range of the &3Wireless Transmitter&r.
+quest.03BEFC2150D09E7A.quest_desc[1]	
+quest.03BEFC2150D09E7A.quest_desc[2]	Each &dWireless Grid&r provides the same functionality as their corresponding &aGrids&r.
+quest.0484DE13B27E77D0.title	Explain Task Screen
+quest.04BF47162CC46237.quest_subtitle	Unearther, Archaeologist
+quest.051AA9C595DC9B02.quest_desc[0]	This quest will set up a waypoint to &dThe Catalyst's &6Archive&r.
+quest.051AA9C595DC9B02.title	&fLocating &dThe Catalyst
+quest.05BB2A6101B519A0.quest_desc[0]	The &6Dimension Card&r grants you access to your network across dimensions at a hefty energy cost.
+quest.06A86C3EC5CBF204.quest_subtitle	Unearther, Archaeologist
+quest.077F5C3829CA7300.title	Foods
+quest.082551D21363A1D9.title	&dArs Weaponry
+quest.0D864FD6A668D8C6.quest_desc[0]	&3Interfaces&r can input into and output from your network at the same time, functioning as an &aImporter&r and &2Exporter&r within the same blockspace.
+quest.0DF9EE9016483463.title	add WE schematics to rewards
+quest.0F1B7185D8F4CDE6.quest_desc[0]	&7Dark Matter Tools&r are fast and unbreakable, and the dark matter &aPickaxe&r can switch modes from normal to 3-block-wide mining.
+quest.0F1B7185D8F4CDE6.quest_desc[1]	
+quest.0F1B7185D8F4CDE6.quest_desc[2]	&eProjectE&r tools can be charged (default: "V") with EMC to empower powerful Area of Effect abilities when Right-Clicking each tool.
+quest.0F1B7185D8F4CDE6.title	&7Dark Matter &fTools
+quest.0FED418633235211.title	&fMidgame Vanilla Swords
+quest.1278BB2F13A74537.quest_subtitle	Unearther, Geologist
+quest.133ECE7BDDC8C13D.quest_desc[0]	Now that you've acquired <blank>, the &6Echo of Guidance&r mentioned further &dArchives&r that can be uncovered.
+quest.133ECE7BDDC8C13D.quest_desc[1]	
+quest.133ECE7BDDC8C13D.quest_desc[2]	Head back to the lobby to see what you can find!
+quest.133ECE7BDDC8C13D.quest_subtitle	Unlocks Tier 2 Questline
+quest.133ECE7BDDC8C13D.title	&fUncovering The Lost Echoes
+quest.136E32BEF40CCB1B.quest_subtitle	Unearther, Geologist
+quest.13D1BC0C49543326.quest_desc[0]	This quest will set up a waypoint to &dThe Ancient's &6Archive&r.
+quest.13D1BC0C49543326.quest_desc[1]	
+quest.13D1BC0C49543326.quest_desc[2]	&eNote&f: &dTwilight&r and &dThe Ancient&r share the same &6Archive&r.
+quest.13D1BC0C49543326.title	&fLocating &dThe Ancient
+quest.1402FA427FF1B8B3.quest_subtitle	Unearther, Dimensionalist
+quest.1628081CB8A2E5CA.quest_subtitle	Unearther, Geologist
+quest.1C3DFCB335276952.title	Mekanism Reactors
+quest.1DA11C69EFDA19EC.quest_subtitle	Unearther, Geologist
+quest.1DC5DE6E9F0D0B2C.quest_desc[0]	Spells can be cast by equipping your &aSpell Book&r in its curio slot.
+quest.1DC5DE6E9F0D0B2C.quest_desc[1]	
+quest.1DC5DE6E9F0D0B2C.quest_desc[2]	Once equipped, you can open up the scroll wheel using the &bR&r keybind by default. Casting the selected spell can be done by pressing &bV&r.
+quest.1DC5DE6E9F0D0B2C.quest_desc[3]	
+quest.1DC5DE6E9F0D0B2C.quest_desc[4]	These can all be changed in your keybinds. Try searching for &acategory:"Iron's Spells 'n Spellbooks - General"&r.
+quest.1DC5DE6E9F0D0B2C.quest_desc[5]	
+quest.1DC5DE6E9F0D0B2C.quest_desc[6]	There are also quick cast options!
+quest.1DC5DE6E9F0D0B2C.title	&bCasting Spells
+quest.1EC4F12DACE04299.quest_desc[0]	Gotten from the create vault
+quest.2140EAC255C3EA09.quest_desc[0]	The &aMultiblock Printer&f and &aMultiblock Validator&f are two tools that can help you build new structures and validate broken multiblocks.
+quest.2140EAC255C3EA09.quest_desc[1]	
+quest.2140EAC255C3EA09.quest_desc[2]	The following pages will teach you how to use each item.
+quest.2140EAC255C3EA09.quest_desc[3]	{@pagebreak}
+quest.2140EAC255C3EA09.quest_desc[4]	The &aMultiblock Printer&f supports only certain structures, which you can find in &eJEI&r by searching “&aMultiblock Printer&r” and checking for the "&aⓘ&f Compatible" tag. 
+quest.2140EAC255C3EA09.quest_desc[5]	
+quest.2140EAC255C3EA09.quest_desc[6]	Once you've gatherered the required blocks and cleared enough space for the multiblock, place down the &bController&r and Right-click it with the &aMultiblock Printer&r.
+quest.2140EAC255C3EA09.quest_desc[7]	
+quest.2140EAC255C3EA09.quest_desc[8]	It will place blocks automatically using items from your inventory. 
+quest.2140EAC255C3EA09.quest_desc[9]	
+quest.2140EAC255C3EA09.quest_desc[10]	If something blocks block placement or an item can’t be found in your inventory, the &aMultiblock Printer&f stops working and shows an error explaining the issue.
+quest.2140EAC255C3EA09.quest_desc[11]	{@pagebreak}
+quest.2140EAC255C3EA09.quest_desc[12]	The &aMultiblock Validator&f helps diagnose and maintain &eCustom Machinery&r multiblocks. 
+quest.2140EAC255C3EA09.quest_desc[13]	
+quest.2140EAC255C3EA09.quest_desc[14]	Using it on a &bCustom Machinery Controller&r shows all &aInstalled Multiblock Modules&f. 
+quest.2140EAC255C3EA09.quest_desc[15]	
+quest.2140EAC255C3EA09.quest_desc[16]	It can also re-align the World Engine automatically. 
+quest.2140EAC255C3EA09.quest_desc[17]	
+quest.2140EAC255C3EA09.quest_desc[18]	You can also reset all multiblock cores. This action will &c&n&lNOT&r&c&n refund any lost items&r to errored cores, meaning any items in those cores will be effectively voided.
+quest.2140EAC255C3EA09.title	Multiblock Tools
+quest.228D69F6ACAE761B.quest_subtitle	Unearther, Geologist
+quest.238137090A4F8FD6.title	Minor WE Upgrade Check
+quest.244134B3BF63A680.quest_subtitle	now available via unearther
+quest.24D045E9CE30A016.quest_subtitle	Unearther, Geologist
+quest.24F370B893D01143.quest_subtitle	Unearther, Geologist
+quest.25E0E97D705F3514.quest_subtitle	needs removing for IronJs
+quest.27D28CC22BB5C665.quest_subtitle	Used to craft other upgrades
+quest.27D28CC22BB5C665.title	Upgrade Base
+quest.2BFD68083AD1B894.quest_desc[0]	&aConstructors&r can place resources from your network into the world as blocks or item entities.
+quest.2BFD68083AD1B894.quest_desc[1]	
+quest.2BFD68083AD1B894.quest_desc[2]	Each &eCable Tiers&r upgrade works faster than its previous tier and has more filter slots.
+quest.2BFD68083AD1B894.quest_desc[3]	
+quest.2BFD68083AD1B894.quest_desc[4]	&7&oCheck each item's tooltip for exact speeds.
+quest.2BFD68083AD1B894.title	Constructors
+quest.2C141655079AC173.quest_desc[0]	&dWyvern&r weapons consume power instead of durability and can be customized via modules placed into their inventories.
+quest.2C141655079AC173.quest_desc[1]	
+quest.2C141655079AC173.quest_desc[2]	Their module inventory can be accessed via the keybind &eTool Modules&r, which isn't bound by default.
+quest.2C141655079AC173.title	&dWyvern &fWeapons
+quest.2DB9D91CFB15C210.quest_desc[0]	Use the Infuser to make the circuitry needed for the &2Machine Frames&r.
+quest.2DB9D91CFB15C210.title	&fBasic Circuitry
+quest.2FF6307E57E005C8.quest_subtitle	requires IE crusher, only used in IE
+quest.310F815C02B2CAF8.quest_desc[0]	This quest will set up a waypoint to the &dTwilight's &6Archive&r.
+quest.310F815C02B2CAF8.quest_desc[1]	
+quest.310F815C02B2CAF8.quest_desc[2]	&eNote&f: &dTwilight&r and &dThe Ancient&r share the same &6Archive&r.
+quest.310F815C02B2CAF8.title	&fLocating &dTwilight
+quest.33FEE29B3EF5A420.quest_subtitle	Unearther, Otherstone
+quest.364B2143B874582D.quest_desc[0]	
+quest.364B2143B874582D.title	&fUncovering The World Engine
+quest.36CB035F6484A70F.quest_desc[0]	
+quest.36CB035F6484A70F.title	&fLeather
+quest.38EDDC529FD4C665.quest_subtitle	Unearther, Geologist
+quest.3A106E4D6EE35D7A.quest_subtitle	Unearther, Geologist
+quest.3A47929FBAEEBD8B.quest_subtitle	Unearther, Cobblestone
+quest.3B0DA478464D29CC.title	&fEarlygame Vanilla Swords
+quest.3C25B0FAC773D70A.title	&dArs' Tools
+quest.3EF3DBD1F6ADEAEC.quest_subtitle	Unearther, Dimensionalist
+quest.428E671C1444C97B.quest_subtitle	Unearther, Archaeologist
+quest.44842AC8247EFDF4.quest_subtitle	Unearther, Geologist
+quest.44D9A7C563B087C0.quest_subtitle	unearthing
+quest.4A871B8D8648F305.quest_desc[0]	Smelted from its dust form or alloyed
+quest.4A871B8D8648F305.quest_desc[1]	
+quest.4A871B8D8648F305.quest_desc[2]	Dust from Metallurgic Infusing Nickel with Diamond
+quest.4B8E75ACE0AA6FA0.quest_desc[0]	Can be acquired from Geologist in an Unearther from Crushed Kivi.
+quest.4B8E75ACE0AA6FA0.quest_subtitle	requires ore generator
+quest.4BBDC7BF4B9EAD72.quest_subtitle	Unearther, Archaeologist
+quest.50416F411ED15BA5.quest_subtitle	requires ore generator
+quest.50EFBD8BDE0C88AF.quest_desc[0]	The &aRange Upgrade&r increases the range of the &3Wireless Transmitter&r, from 16 up to 48 blocks.
+quest.519C754DF20BF31E.quest_desc[0]	Plat block using Goo
+quest.519C754DF20BF31E.quest_subtitle	(Sold by Echo)
+quest.54404B81EAC760E8.quest_subtitle	(Sold by Echo)
+quest.55DB51D88B9C5724.quest_subtitle	alloy of tin and copper
+quest.594911C1304689E9.quest_desc[0]	&aExporters&r are used to move resources out of your network.
+quest.594911C1304689E9.quest_desc[1]	
+quest.594911C1304689E9.quest_desc[2]	Each &eCable Tiers&r upgrade works faster than its previous tier and has more filter slots.
+quest.594911C1304689E9.quest_desc[3]	
+quest.594911C1304689E9.quest_desc[4]	&7&oCheck each item's tooltip for exact speeds.
+quest.594911C1304689E9.title	Exporters
+quest.59D007531CD064D9.quest_subtitle	needs removing for IronJs
+quest.5B23C2EB38DCEE6E.quest_desc[0]	Alloying Platinum + Netherite
+quest.5B23C2EB38DCEE6E.quest_desc[1]	
+quest.5B23C2EB38DCEE6E.quest_desc[2]	Atomic Forging Platinum + 2 Reinforced Carbon Sheets
+quest.5E79F24C893AFF65.quest_subtitle	Unearther, Geologist
+quest.62BB5925FB6C05C6.title	&dEcho of The Magician &fWaypoint
+quest.6681C945EBF3E114.quest_desc[0]	Input mode
+quest.6697F832067F1A9C.quest_desc[0]	&eOritech's &3Enderic Railgun&r can shoot out both a concentrated laser beam and an explosive damaging beam depending on its mode. You can Shift + Right-click to toggle &bMining Mode&r on/off.
+quest.6697F832067F1A9C.quest_desc[1]	
+quest.6697F832067F1A9C.quest_desc[2]	In &bMining Mode&r this All-In-One tool mines blocks directly into your inventory with infinite block interaction range.
+quest.674AFF1CFDE5886F.title	Armorer
+quest.67747675548AAC80.quest_subtitle	Unearther, Archaeologist
+quest.67F596597F0B2825.title	&fMeet The Guide
+quest.69997DAB93184551.quest_desc[0]	The &dWyvern Chestpiece&r provides an energy shield when powered that nullifies damage taken by the player when worn in a Curios Slot. This can be upgraded via &aUpgrade Modules&r.
+quest.69997DAB93184551.quest_desc[1]	
+quest.69997DAB93184551.quest_desc[2]	Its module inventory can be accessed via the keybind &eTool Modules&r, which isn't bound by default.
+quest.69997DAB93184551.title	&dWyvern &fChestpiece
+quest.6BF5A24142C8FC67.quest_subtitle	Unearther, Geologist
+quest.6DB6B40C3E07E389.quest_desc[0]	If you manage to find your way through the puzzles of this vault, the &2Chroniton Star&r should be yours for the taking.
+quest.6DB6B40C3E07E389.quest_desc[1]	
+quest.6DB6B40C3E07E389.quest_desc[2]	Just remember, the cake is a lie.
+quest.6DEB5453D8E3BD76.quest_subtitle	Unearther, Dimensionalist
+quest.6DEB5453D8E3BD76.title	Ancient Debris or Netherite
+quest.6F68D2CC4B83671E.quest_subtitle	Unearther, Geologist
+quest.70D3D4701167B4D5.title	&fAlways greener on the other side
+quest.7169587C7DC4C8C0.quest_desc[3]	
+quest.7169587C7DC4C8C0.quest_desc[4]	It is recommended to craft the &5Encyclopedia Unveiled&r, as it shows you new &eGaze&r mechanics.
+quest.727FAF20A8E1303B.quest_subtitle	Found in Healing Springs
+quest.7379486ABDDE4430.quest_desc[0]	This quest will set up a waypoint to &dThe Light Bender's &6Archive&r.
+quest.7379486ABDDE4430.title	&fLocating &dThe Light Bender
+quest.75CAB7B10BA85935.title	Fusion Crafting
+quest.7614FCF3E2012C48.title	&dPsimetal Exosuit
+quest.779460FD700CB351.quest_subtitle	Unearther, Geologist
+quest.77ABD20EB652F302.quest_desc[0]	
+quest.77ABD20EB652F302.title	&fSpawning Farm Animals
+quest.79CB07BC6B2333AE.title	Prismarine
+quest.7A1BCD0876713992.quest_desc[0]	Flawed Budding Block is available to craft in the &bWorld Engine&r that has the basic &aMachine Block&r upgrade.
+quest.7C6BB27CCDA5E878.quest_desc[0]	This quest will set up a waypoint to &dThe Infernal's &6Archive&r.
+quest.7C6BB27CCDA5E878.title	&fLocating &dThe Infernal
+quest.7E062B48AD37EAF1.quest_desc[0]	Processors are used to craft most of the core components of your &eRS2&r network.
+quest.7E062B48AD37EAF1.quest_desc[1]	
+quest.7E062B48AD37EAF1.quest_desc[2]	["These can only be assembled inside a ", { "text": "Circuit Fabricator", "color": "light_purple", "underlined": true, "clickEvent": { "action": "change_page", "value": "663460DE8AF7E464" }, "hoverEvent": {"action": "show_text", "contents": "Go to Circuit Fabricator Quest"} }, "."]
+quest.7E062B48AD37EAF1.title	Processors
+quest.7E0E4E6260C1D61E.quest_desc[0]	With infinite power for your storage system and access to &zcreative spells&r from &6Ars&r, that only leaves one more thing to take care of before you can shape the world around you.
+quest.7E0E4E6260C1D61E.quest_desc[1]	
+quest.7E0E4E6260C1D61E.quest_desc[2]	&zCreative Power&r for everything.
+quest.7E0E4E6260C1D61E.title	Ascension Tier 3 - Omniscient
+quest.7F7D54E743F4E1DE.title	add WE schematics to rewards
+reward.00EC1162EB842D86.title	Void South
+reward.042C6860A26F6057.title	End West
+reward.053BB94B773511FC.title	{"translate": "ftb.shop.notification"}
+reward.07015FDD343B3E88.title	Wyvern Bow
+reward.08099C03B0628B39.title	Nether South
+reward.0BED496C8D68C629.title	Chaotic Shovel
+reward.0D23EB824CB0A0C2.title	Void East
+reward.0F2B93D49D8DA760.title	Wyrmwright Archive Waypoint
+reward.15B421B3ACE269E3.title	End North
+reward.16061432FA49EE66.title	Chaotic Sword
+reward.1A219FE0647ED732.title	Wyvern Axe
+reward.1ADD62DBE8217E40.title	Draconic Shovel
+reward.1B215A9431DBAF6F.title	Wyvern Shovel
+reward.1EA85DCE2A9227C3.title	End South
+reward.1FC0E512CB219EE5.title	Chaotic Axe
+reward.1FEFB160C37A91D4.title	Quartermaster Archive Waypoint
+reward.20DD8D5AAA044A24.title	Wyvern Sword
+reward.238A2E2AEE1B8D6A.title	Light Bender Archive Waypoint
+reward.24582F4B1C3E7E1F.title	Twilight Archive Waypoint
+reward.266BE24BD00654A1.title	Chaotic Bow
+reward.27EBCAD2651AD138.title	Void North
+reward.2A85D0C9269D0EE5.title	Infernal Archive Waypoint
+reward.2B0BC74A9E61D881.title	Draconic Capacitor
+reward.2CA4C34FFD72EA33.title	Twilight East
+reward.2E85DC3CE143BC3A.title	Machinist Vault Compass
+reward.31A55C1C7979AC74.title	End East
+reward.31B152CBB7E9CDAD.title	Nether West
+reward.3322D2E72CD06BE1.title	Mekanism Teleporter
+reward.338E0593C527D311.title	Mycelial Reactor Set
+reward.37851CF3F949515A.title	Twilight South
+reward.397185875416F4D2.title	Ocean West
+reward.39A9BA8313470A5D.title	Catalyst Archive Waypoint
+reward.3CC21684802E95E5.title	Wyvern Pickaxe
+reward.3E2DC10E8591B9CC.title	Wyvern Capacitor
+reward.3FBE85B391697AA3.title	Ocean East
+reward.419A1C4D9279BF50.title	Nether East
+reward.476F60C6DEB324A9.title	Draconic Bow
+reward.495DF49EBBF0B77D.title	Boon of the Earth 5
+reward.4A3B5AA97272B2D2.title	Draconic Axe
+reward.4EDE4462114C77EE.title	Deepslate North
+reward.4F0943ED6ECF70E6.title	Deepslate East
+reward.53ECA21ACDF436DD.title	Machinist Archive Waypoint
+reward.54DC27E90D2295BC.title	Looting 8
+reward.55FBD183C62F244F.title	Nether North
+reward.58419DD95D235FD7.title	Chaotic Chestpiece
+reward.594E158A9C86929B.title	&aTier 1 Glyph
+reward.59AD0E3C98FC5EA2.title	Void West
+reward.59E384F5A05211FC.title	Deepslate South
+reward.5BAED70596AA3D1B.title	{"translate": "ftb.shop.notification"}
+reward.5FEC6723B0F40A00.title	Enchanter Archive Waypoint
+reward.60A493A83705E5C6.title	Ancient Archive Waypoint
+reward.632965F5B615FA8D.title	Fusion Reactor
+reward.64CB075D188C05CC.title	Ocean South
+reward.68F8EBD48743037D.title	Simple Teleporter Bundle
+reward.693E7161A63AA8E7.title	Chaotic Pickaxe
+reward.694311419C81AF7D.title	Reactor (Nitro)
+reward.6A0011BF8C25D4FA.title	Draconic Sword
+reward.6A7A635D5039E00E.title	Deepslate West
+reward.6AA784677A036A36.title	Draconic Pickaxe
+reward.6AE5675C3DAAB1D9.title	Ocean North
+reward.6B56D274F5BC5918.title	&3Light Bender's Vault Compass
+reward.6B6E3D9E6F38918E.title	&dTier 3 Glyph
+reward.6E2831AAACB7E9AD.title	Draconic Chestpiece
+reward.70BC62F1A67B859F.title	Amulet of Protection Scroll
+reward.729901F3863D27E4.title	Fabricator Archive Waypoint
+reward.72FFFB11B65A0DF3.title	Chaotic Capacitor
+reward.742CB3E07E4CCEB1.title	&bTier 2 Glyph
+reward.747CED69FCED45E8.title	Magician Archive Waypoint
+reward.7834CF7F86C29EE0.title	Twilight North
+reward.798A5012C244EC87.title	Wayfinder Archive Waypoint
+reward.7AA9A619B211B53A.title	Wyvern Chestpiece
+reward.7DB306ACACBC5FA3.title	Twilight West
+task.003F316E9DCBE7FE.title	Any #minecraft:logs_that_burn
+task.0119636863DFB474.title	Speak to Guidance
+task.011E0B1769C2E749.title	Get Compass
+task.012649B3BEFFCA3E.title	Geologist Brushing Blocks
+task.018BA3043844C4CB.title	Block Interaction Machines
+task.0269945CD49FAC4A.title	Any #c:seeds/tiered
+task.0287C11F3728514E.title	World Engine Craft Unlocks
+task.02E900C9DF62699B.title	Any #irons_spellbooks:add_to_lectern_and_bookshelf
+task.045D6D51D5A394B8.title	Early Power
+task.04B00E264007135A.title	Extra Deepshelves
+task.05C31228DE4297E0.title	Resonant WE Crafts
+task.05EA231F68B35FBA.title	Generation 9
+task.06AA7AE5C6C5D694.title	Get Compass
+task.06F0C110F6DF4933.title	Color Guide
+task.07BBC0302934453B.title	Stone Generation Options
+task.09D272BA64115EA4.title	Congrats, You've finished the pack
+task.0AE9E3C1553154B6.title	Machine Cores
+task.0C703E47B7643F97.title	Level 1
+task.0CAD1A4AF9391EB7.title	Tiered Constructors
+task.0CDA50C894140131.title	Any spirit alchemy product
+task.0D549424518A10E0.title	chickens?
+task.0DD6F5AD5EE05878.title	home stage
+task.0E0DB651D35A550F.title	Generation 3
+task.0E558F6F41339C8A.title	Tier 4
+task.0E861275FB1F9A6E.title	&dEcho Unlock Twilight Ancient
+task.0F7A749B164D259A.title	Any #minecraft:coals
+task.1040794FCC53E1C2.title	check
+task.10F4611888E8BE79.title	Echo 1
+task.111E92A0F608B427.title	Start of Foundation Chapter
+task.11B86810F19A15B9.title	Runes
+task.121998ADA1263511.title	tier 4 echoes
+task.1221574B280EBA24.title	Behold: Grass!
+task.129AAFBA73EBA070.title	&dEcho Unlock Ancient
+task.13749D631F4473F2.title	things guide should say
+task.1427925FA59931D3.title	Wireless Porters
+task.143FD5E58F888422.title	Axes
+task.145E372410535D17.title	Spell Casting
+task.154C17C5C905CDB8.title	Draconic WE Upgrade Crafts
+task.159CA0D800D44755.title	AE2 + Advanced WE Craft Unlocks
+task.15E01B224B9897FE.title	Setup Apoth Enchanting System
+task.180232CD32A5D6B0.title	create craft
+task.189C216C50078C70.title	Gates Powah
+task.197E8D7DE2765B21.title	catalyst
+task.1AF85D1D3B0426BC.title	tier 3 echoes
+task.1B25E200BE38BF9E.title	middle quests
+task.1B354BFDDC6B862B.title	machinist
+task.1CFBFD68628474D1.title	Echo-Location
+task.1DF6D23F11B7296E.title	Get Compass
+task.1E4CCF6176F19AA2.title	Get a compass for Healing Spring
+task.1E5E244A9DF5B9B8.title	Level 1
+task.1EBEAF4114DC3BFD.title	Twilight WE Upgrade Crafts
+task.1F9A7927EEE12740.title	Any #c:seeds/tiered
+task.20FE0359B927FE66.title	Ore Generation Options
+task.22F4D12640FE8DE4.title	Growing Resources
+task.23288392FC94FD36.title	lightbender
+task.243CF5EB168426DC.title	Check
+task.2448423EA50BA0ED.title	Get Compass
+task.24F1AD47BF873ABE.title	magician
+task.254216164263D3E2.title	Talk with Dude
+task.258EC76B1D603C46.title	Tiered Destructors
+task.2595A4B8A1522BBC.title	Archaeologist Brush Blocks
+task.25A2E220B9181819.title	&dEcho Unlock Wyrmwright
+task.25E59EFA886226D4.title	Resource Check
+task.2689CFF1F62FA5FF.title	Echo-Location
+task.284A47FAF4885800.title	Tradeable
+task.2897D7BC60592E58.title	Any #c:wools
+task.28C14943E06CE907.title	Items Unlocked via World Craft
+task.293421D07539E14B.title	Any wizard armor
+task.29B29381709E8E09.title	Passive Mob Farms
+task.29F0C3330016EDCF.title	&fThe Start of Automation - RS2
+task.2B3540F8DE693645.title	Unlocks Quartermaster
+task.2B85248A0FF8317A.title	Tiered Exporters
+task.2C70B41BE01902A0.title	Echo-Location
+task.2C7178256D98DFC4.title	go visit lobby for echo
+task.2CDC924219F0604D.title	The Xychorium Gems
+task.2CDCBCC6501AC541.title	&eLocate&f: &eCatacombs&r Dungeon
+task.2DCE94139CB2078D.title	Drawer Item Management
+task.2E0D7FA5FBCAFA4D.title	check
+task.2E42256C51193994.title	wyrmright
+task.2EFD3D6830A8480A.title	&eLocate&f: &3Echoing Dread Vault
+task.2F3D8C75AD838DC1.title	&6Echo Unlock Fortronist
+task.30B05842C5C7D548.title	Powah Batteries
+task.318D58F3EAE30A2B.title	The World Engine
+task.323197B515C2DAB6.title	&3Echo Unlock Catalyst
+task.32463C2AE2B4F13B.title	Kill &6Malkuth&r
+task.346BBC841E2A3F2D.title	Tier 2 Echoes
+task.34F41FF2B63589A6.title	source inlet
+task.36114BC736C0EB31.title	Unlocks Machinist
+task.367FD95D506DE27B.title	Get Compass
+task.36851BEF447522C1.title	fabricator
+task.37AD604DC3429E57.title	Enderium WE Crafts
+task.388714C70D55C2C0.title	Get Compass
+task.38B484C5F2CD48C9.title	Echo-Location
+task.39A587FEA3FFAB6B.title	&aEcho Unlock Wayfinder
+task.3B085693A5797F89.title	Dark Matter Tools
+task.3B69744AB1794F4A.title	&3Echo Unlock Light Bender
+task.3B79C7596F19EFC3.title	Check
+task.3BB23794DB9DEDD4.title	Mud Products
+task.3CEB40B064A202AA.title	Unlock World Engine
+task.3D5F6DE10646EBE3.title	Wyvern Gear
+task.3E9C440E3E2EE022.title	Have a quest reward these things
+task.3EB209408B5FD9FA.title	Echo-Location
+task.40921D92713F1FB4.title	Give Gamestage
+task.41FB0785445FC826.title	Fluid Interaction Machines
+task.42D645B26E4EE8A4.title	Generation 6
+task.43010F9F652B5B4B.title	Any #minecraft:pickaxes
+task.430918A5AD62C27F.title	Mid Game Options
+task.4321D68C7B5CA800.title	Level 4
+task.4483C09E6123BC4C.title	Items Unlocked via World Craft
+task.4497434CDD9642C0.title	Villager Trading
+task.45B09FA666AC50A6.title	tier 2 echoes
+task.45B385C4A1E03540.title	Dungeon Vault
+task.46EC7CBCB208552B.title	&aEcho Unlock Enchanter
+task.478D81CA3E31709A.title	Echo-Location
+task.48521259017869AC.title	Generation 4
+task.48DEF5D938C94BF6.title	&fIndustrial Foregoing Options
+task.496455D7AB00E7B8.title	Constructors
+task.4973EE979B7CEBB2.title	Remove Gamestage
+task.49D95439F3D1CFCD.title	Kitchen Knives
+task.49E3AB30A12DF498.title	&6Echo Unlock Chaos
+task.4A252C67885BD891.title	Level 2 Dirt Products
+task.4B4B8BC2E5273E05.title	force
+task.4B64161A3F4645D8.title	tier 5 echoes
+task.4BD6BD132C5F5FD3.title	Echo-Location
+task.4C54ABE5A9160A74.title	Talk to echo
+task.4C972CA6C2864541.title	T2
+task.4CC67507BD359450.title	Tier 3
+task.4D5A20E3AAF6D613.title	Spoken to Echo
+task.4D83F46E810A7395.title	Requires Fabricator
+task.4E167989D804F280.title	Tiered Importers
+task.4EF4B4FB9E896FDA.title	Level 4
+task.501D5E25BC5D86BC.title	Dark Void Craft Unlocks
+task.50FC826E34DC4B21.title	unlocks Magician
+task.5117CEC9D541E6AD.title	Enderium WE Crafts
+task.515FA27128F1F9F4.title	Infused Charm of Flying
+task.517166DF490B8DF9.title	Level 2
+task.517D541820F94242.title	Cooldown Timer
+task.51A10188D6628ECE.title	Ender Cell World Engine Crafts
+task.523276D741403500.title	Mob Farms
+task.53B81DDD6321D728.title	Get Compass
+task.53DA98367BF86C09.title	power check
+task.53DCB3C11B6D07C7.title	Items Unlocked via World Craft
+task.54161E44D6EC0403.title	ancient
+task.545431F57E485EE7.title	Shovels
+task.56BA1011DDE093D0.title	Raw Osmium
+task.57A2EA2AAF0401BE.title	Echo-Location
+task.57BE5B16087C947C.title	&6Echo Unlock Infinity
+task.581CF680220285B0.title	Hearts
+task.58670C125A30CD28.title	wayfinder
+task.58BD6F9BD3D252EE.title	World Engine Craft Unlocks
+task.593AA0179354204B.title	Get Compass
+task.593B01E9D4776913.title	Processors
+task.598209AB20C523FC.title	Inferno Vault
+task.598955C607984551.title	Starter Gens
+task.5996778F5388841D.title	An Ivory or Ebony CAD Assembly
+task.59A9F44F40AF2E55.title	Echo-Location
+task.5A43BF69F5EE7A51.title	End Game Options
+task.5A9C48DEA2F607F9.title	Any #justdynathings:compat/ae2/buddings
+task.5AB9DD72EFFA8BB2.title	Hidden
+task.5AE65BF06E12FC55.title	&eObserve&r: World Engine Block
+task.5AEBA3792645C057.title	link
+task.5C1653E469BF0527.title	Villager Breeding
+task.5C3B57777EB7E7CD.title	Early Game Gens
+task.5C41B9EBAA3BFB91.title	infinity
+task.5C68D9D46C6D6566.title	&3Echo Unlock Infernal
+task.5CF31579D0098AE7.title	Cooldown Timer
+task.5D0C511745B5006A.title	Generation 8
+task.5D14CB44244C2750.title	chaos
+task.5D301EDAEC889F86.title	&7Echo Unlock Quartermaster
+task.5F9845BFD2B34AC6.title	Your Choice
+task.60A5E4D097F85580.title	Steel Acquisition
+task.614C3268B71D6CE3.title	enchanter
+task.61990CCF4D2011E7.title	Awakened Core + Dark Void Craft Unlocks
+task.619E259715D3DAFC.title	Any &eApplied Flux &fStorage Cell
+task.62978C611C641A3D.title	&fME Interface
+task.62D52342AFC4B5B5.title	Generation 5
+task.639A8E9CF51A8596.title	Plant Farming
+task.63A8F38180C3FD30.title	Tree Farming
+task.6405640824417BB2.title	Echo-Location
+task.64AB5234ED7B0BDC.title	Portal Vault
+task.651313A5A837BB13.title	&7Echo Unlock Magician
+task.65AD3185427B9AF3.title	Create Vault
+task.65B4BE28B27BE67B.title	infernal
+task.6662DD03B1F24FB1.title	Echo-Location
+task.6681C95BA23C70AA.title	Any metal impetus
+task.66B4466B7858F8C2.title	Any #minecraft:saplings
+task.66BE14D0E22A9924.title	Give Create Echo Unlock
+task.66E96E8D93525948.title	Fortron WE Crafts
+task.6751D267B2D7A52D.title	Uncovering The Lost Echoes
+task.678E1BECB4BB8A9A.title	Generation 2
+task.684A45E0379D0386.title	vault
+task.68B5F556D4439356.title	Generation 7
+task.68E6367E2F80DCBE.title	Mining Gadgets
+task.68FBE3E15C3F9B33.title	Any rune brooch
+task.69019AD3FEB39B7B.title	give stage
+task.69965C54E13B57DD.title	section on wireless redstone
+task.6A00069F522D80AB.title	See All Quests
+task.6B27B17119E4FED3.title	Spirit + Advanced WE Craft Unlocks
+task.6B45D5D3054C838C.title	Echo of Guidance
+task.6D0AA9BE40A0E859.title	Echo-Location
+task.6FCBB412F4BBBAEB.title	&aEcho Unlock Fabricator
+task.70D4BC76C32CE0A3.title	quartermaster
+task.719285FE3BB19A6E.title	quest 1
+task.71B63908FDE6CC61.title	&bAll-In-One Tools
+task.736019FA0D0976A4.title	Tier 5
+task.748C2ADA8E320CA0.title	Machine Fabrication
+task.765414790D7CA99B.title	Raw Nickel
+task.77D5AFC1BC5F67C9.title	World Engine Craft Unlocks
+task.782E4A45A331FB27.title	Echo Waypoint
+task.79CCC49178D03422.title	Auto-Build the World Engine Upgrade
+task.7A0B3916B2B15F4C.title	twilight
+task.7A9E3DADF485CCB4.title	some craft
+task.7C5681A418A2297F.title	&7Echo Unlock Machinist
+task.7C9A60156BE5D21A.title	Generation 1
+task.7D91A1EAA7FEC6BD.title	Things the Guides Should Say
+task.7E4EF12285852B6E.title	Plant Harvesting Options
+task.7F49EBC813E06257.title	world engine
+task.7F7FC9A4E8AADA7F.title	Villager Trading
+task.7FF2F415F5685DBA.title	Remove Create Echo Unlock
