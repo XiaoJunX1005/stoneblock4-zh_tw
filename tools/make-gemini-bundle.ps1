@@ -90,6 +90,31 @@ function Read-JsonFileAsMap {
     return ConvertTo-HashtableFromJsonObject -JsonObject $obj
 }
 
+function Get-InferredNamespace {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$Key,
+        [Parameter(Mandatory = $true)]
+        [string]$SourceModId
+    )
+    $keyText = $Key.ToLowerInvariant()
+    $sourceText = $SourceModId.ToLowerInvariant()
+
+    if ($sourceText -eq 'rarcompat') {
+        if ($keyText -match '\.relics\.' -or $keyText -like 'relics.*' -or $keyText -like 'key.relics.*') {
+            return 'relics'
+        }
+    }
+
+    if ($keyText -match '^(item|block|entity|key|subtitles|effect|enchantment|advancement|gui|config|stat)\.([a-z0-9_]+)\.') {
+        return $matches[2]
+    }
+    if ($keyText -match '^([a-z0-9_]+)\.') {
+        return $matches[1]
+    }
+    return $sourceText
+}
+
 function Normalize-KeyList {
     param(
         [Parameter()]
@@ -102,10 +127,16 @@ function Normalize-KeyList {
         return @($RawKeys)
     }
     if ($RawKeys -is [System.Collections.IDictionary]) {
-        return if ($RawKeys.Count -gt 0) { @($RawKeys.Keys) } else { @() }
+        if ($RawKeys.Count -gt 0) {
+            return @($RawKeys.Keys)
+        }
+        return @()
     }
     if ($RawKeys -is [System.Management.Automation.PSCustomObject]) {
-        return if ($RawKeys.PSObject.Properties.Count -gt 0) { @($RawKeys.PSObject.Properties.Name) } else { @() }
+        if ($RawKeys.PSObject.Properties.Count -gt 0) {
+            return @($RawKeys.PSObject.Properties.Name)
+        }
+        return @()
     }
     if ($RawKeys -is [System.Collections.IEnumerable]) {
         return @($RawKeys)
@@ -264,19 +295,23 @@ function Load-KubejsLangMap {
         if (-not ($file.FullName -match $regex)) {
             continue
         }
-        $modid = $matches[1]
-        if ($TargetModIds -and (-not $TargetModIds.Contains($modid))) {
-            continue
-        }
-        if ($map.ContainsKey($modid)) {
-            Write-Warning "Duplicate kubejs $Lang for modid '$modid' at $($file.FullName); skipping."
-            continue
-        }
-        $jsonMap = Read-JsonFileAsMap -Path $file.FullName -Context ("kubejs {0} {1}" -f $modid, $Lang)
+        $sourceModId = $matches[1].ToLowerInvariant()
+        $jsonMap = Read-JsonFileAsMap -Path $file.FullName -Context ("kubejs {0} {1}" -f $sourceModId, $Lang)
         if ($null -eq $jsonMap) {
             continue
         }
-        $map[$modid] = $jsonMap
+        foreach ($key in $jsonMap.Keys) {
+            $owner = Get-InferredNamespace -Key ([string]$key) -SourceModId $sourceModId
+            if ($TargetModIds -and (-not $TargetModIds.Contains($owner))) {
+                continue
+            }
+            if (-not $map.ContainsKey($owner)) {
+                $map[$owner] = New-CaseSensitiveHashtable
+            }
+            if (-not $map[$owner].ContainsKey([string]$key)) {
+                $map[$owner][[string]$key] = $jsonMap[$key]
+            }
+        }
     }
     return $map
 }
@@ -333,19 +368,29 @@ function Load-ResourcepackZhTwMap {
         return $map
     }
 
-    foreach ($modid in $TargetModIds) {
-        $path = Join-Path $assetsRoot ("{0}\lang\zh_tw.json" -f $modid)
-        if (-not (Test-Path $path)) {
+    $regex = [regex]"assets[\\/]+([^\\/]+)[\\/]+lang[\\/]zh_tw\.json$"
+    $files = Get-ChildItem -Path $assetsRoot -Recurse -Filter 'zh_tw.json' -File
+    foreach ($file in $files) {
+        if (-not ($file.FullName -match $regex)) {
             continue
         }
-        if ($map.ContainsKey($modid)) {
-            continue
-        }
-        $jsonMap = Read-JsonFileAsMap -Path $path -Context ("resourcepack zh_tw {0}" -f $modid)
+        $sourceModId = $matches[1].ToLowerInvariant()
+        $jsonMap = Read-JsonFileAsMap -Path $file.FullName -Context ("resourcepack zh_tw {0}" -f $sourceModId)
         if ($null -eq $jsonMap) {
             continue
         }
-        $map[$modid] = $jsonMap
+        foreach ($key in $jsonMap.Keys) {
+            $owner = Get-InferredNamespace -Key ([string]$key) -SourceModId $sourceModId
+            if ($TargetModIds -and (-not $TargetModIds.Contains($owner))) {
+                continue
+            }
+            if (-not $map.ContainsKey($owner)) {
+                $map[$owner] = New-CaseSensitiveHashtable
+            }
+            if (-not $map[$owner].ContainsKey([string]$key)) {
+                $map[$owner][[string]$key] = $jsonMap[$key]
+            }
+        }
     }
 
     return $map
@@ -412,6 +457,7 @@ function Add-KeysToSet {
 function Filter-KeysBySet {
     param(
         [Parameter(Mandatory = $true)]
+        [AllowEmptyCollection()]
         [object[]]$Keys,
         [Parameter()]
         [System.Collections.Generic.HashSet[string]]$Exclude
@@ -448,22 +494,28 @@ function Load-JarLangMap {
                 if ($entry.FullName -notmatch ("^assets/([^/]+)/lang/" + [regex]::Escape($Lang) + "\.json$")) {
                     continue
                 }
-                $modid = $matches[1]
-                if ($TargetModIds -and (-not $TargetModIds.Contains($modid))) {
-                    continue
-                }
-                if ($map.ContainsKey($modid)) {
-                    Write-Warning "Duplicate modid '$modid' for $Lang found in $($jar.Name); skipping."
-                    continue
-                }
+                $sourceModId = $matches[1].ToLowerInvariant()
                 $content = Read-ZipEntryText -Entry $entry
                 try {
                     $obj = $content | ConvertFrom-Json
                 } catch {
-                    Write-Warning "Invalid $Lang JSON in $($jar.Name) for mod '$modid'; skipping."
+                    Write-Warning "Invalid $Lang JSON in $($jar.Name) for mod '$sourceModId'; skipping."
                     continue
                 }
-                $map[$modid] = ConvertTo-HashtableFromJsonObject -JsonObject $obj
+
+                $rawMap = ConvertTo-HashtableFromJsonObject -JsonObject $obj
+                foreach ($key in $rawMap.Keys) {
+                    $owner = Get-InferredNamespace -Key ([string]$key) -SourceModId $sourceModId
+                    if ($TargetModIds -and (-not $TargetModIds.Contains($owner))) {
+                        continue
+                    }
+                    if (-not $map.ContainsKey($owner)) {
+                        $map[$owner] = New-CaseSensitiveHashtable
+                    }
+                    if (-not $map[$owner].ContainsKey([string]$key)) {
+                        $map[$owner][[string]$key] = $rawMap[$key]
+                    }
+                }
             }
         } catch {
             Write-Warning "Failed to read jar: $($jar.FullName). $($_.Exception.Message)"
@@ -760,6 +812,18 @@ if ($TargetModId -and $TargetModId.Trim() -ne '') {
     $missingKeys = Filter-KeysBySet -Keys $missingKeys -Exclude $translatedKeySet
     if ($null -eq $missingKeys) {
         $missingKeys = @()
+    }
+    if ($missingKeys.Count -eq 0) {
+        $missingList = New-Object System.Collections.Generic.List[string]
+        $allEnKeySet = New-OrdinalKeySet
+        if ($jarEnUs.ContainsKey($targetId)) { Add-KeysToSet -Set $allEnKeySet -Keys $jarEnUs[$targetId].Keys }
+        if ($kubejsEnUs.ContainsKey($targetId)) { Add-KeysToSet -Set $allEnKeySet -Keys $kubejsEnUs[$targetId].Keys }
+        foreach ($k in $allEnKeySet) {
+            if (-not $translatedKeySet.Contains([string]$k)) {
+                $missingList.Add([string]$k)
+            }
+        }
+        $missingKeys = $missingList
     }
     if ($KeysPerMod -gt 0) {
         $missingKeys = $missingKeys | Select-Object -First $KeysPerMod

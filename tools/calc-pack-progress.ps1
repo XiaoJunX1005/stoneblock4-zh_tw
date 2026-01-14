@@ -34,6 +34,10 @@ function Get-Utf8NoBom {
     return New-Object System.Text.UTF8Encoding($false)
 }
 
+function New-CaseSensitiveHashtable {
+    return New-Object System.Collections.Hashtable ([System.StringComparer]::Ordinal)
+}
+
 function New-OrdinalHashSet {
     return New-Object System.Collections.Generic.HashSet[string] ([System.StringComparer]::Ordinal)
 }
@@ -92,6 +96,71 @@ function Read-ZipEntryText {
     }
 }
 
+function Get-InferredNamespace {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$Key,
+        [Parameter(Mandatory = $true)]
+        [string]$SourceModId
+    )
+    $keyText = $Key.ToLowerInvariant()
+    $sourceText = $SourceModId.ToLowerInvariant()
+
+    if ($sourceText -eq 'rarcompat') {
+        if ($keyText -match '\.relics\.' -or $keyText -like 'relics.*' -or $keyText -like 'key.relics.*') {
+            return 'relics'
+        }
+    }
+
+    if ($keyText -match '^(item|block|entity|key|subtitles|effect|enchantment|advancement|gui|config|stat)\.([a-z0-9_]+)\.') {
+        return $matches[2]
+    }
+    if ($keyText -match '^([a-z0-9_]+)\.') {
+        return $matches[1]
+    }
+    return $sourceText
+}
+
+function Build-ZhTwIndex {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$AssetsRoot
+    )
+
+    $index = New-Object 'System.Collections.Generic.Dictionary[string, object]' ([System.StringComparer]::OrdinalIgnoreCase)
+    if (-not (Test-Path $AssetsRoot)) {
+        return $index
+    }
+
+    $regex = [regex]"assets[\\/]+([^\\/]+)[\\/]+lang[\\/]zh_tw\.json$"
+    $files = Get-ChildItem -Path $AssetsRoot -Recurse -Filter 'zh_tw.json' -File
+    foreach ($file in $files) {
+        if (-not ($file.FullName -match $regex)) {
+            continue
+        }
+        $sourceModId = $matches[1].ToLowerInvariant()
+        try {
+            $zhObj = (Get-Content -Path $file.FullName -Raw -Encoding UTF8) | ConvertFrom-Json
+        } catch {
+            Write-Warning "Invalid zh_tw.json for mod '$sourceModId' at $($file.FullName): $($_.Exception.Message)"
+            continue
+        }
+
+        foreach ($prop in $zhObj.PSObject.Properties) {
+            $key = [string]$prop.Name
+            $owner = Get-InferredNamespace -Key $key -SourceModId $sourceModId
+            if (-not $index.ContainsKey($owner)) {
+                $index[$owner] = New-CaseSensitiveHashtable
+            }
+            if (-not $index[$owner].ContainsKey($key)) {
+                $index[$owner][$key] = $prop.Value
+            }
+        }
+    }
+
+    return $index
+}
+
 if (-not $RepoRoot) {
     $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 }
@@ -109,8 +178,7 @@ if (-not $OutCsv) {
 }
 
 $errorList = New-Object System.Collections.Generic.List[psobject]
-$modMap = @{}
-$invalidMods = New-Object System.Collections.Generic.HashSet[string] ([System.StringComparer]::Ordinal)
+$modMap = New-Object 'System.Collections.Generic.Dictionary[string, object]' ([System.StringComparer]::OrdinalIgnoreCase)
 
 if (-not (Test-Path $ModsDir)) {
     throw "ModsDir not found: $ModsDir"
@@ -128,7 +196,7 @@ foreach ($jar in $jars) {
         $zip = [System.IO.Compression.ZipFile]::OpenRead($jar.FullName)
         foreach ($entry in $zip.Entries) {
             if ($entry.FullName -match $entryPattern) {
-                $modid = $matches[1]
+                $sourceModId = $matches[1].ToLowerInvariant()
                 $format = $matches[2]
                 $foundEntry = $true
                 $content = Read-ZipEntryText -Entry $entry
@@ -140,9 +208,8 @@ foreach ($jar in $jars) {
                     } catch {
                         $errorList.Add([pscustomobject]@{
                             jar    = $jar.Name
-                            reason = "Invalid JSON for $modid en_us.json: $($_.Exception.Message)"
+                            reason = "Invalid JSON for $sourceModId en_us.json: $($_.Exception.Message)"
                         })
-                        $invalidMods.Add($modid) | Out-Null
                         continue
                     }
                     $map = ConvertTo-HashtableFromJsonObject -JsonObject $jsonObj
@@ -152,42 +219,25 @@ foreach ($jar in $jars) {
                     } catch {
                         $errorList.Add([pscustomobject]@{
                             jar    = $jar.Name
-                            reason = "Invalid en_us.lang for ${modid}: $($_.Exception.Message)"
+                            reason = "Invalid en_us.lang for ${sourceModId}: $($_.Exception.Message)"
                         })
-                        $invalidMods.Add($modid) | Out-Null
                         continue
                     }
                 }
 
-                $enMap = New-Object System.Collections.Hashtable ([System.StringComparer]::Ordinal)
                 foreach ($key in $map.Keys) {
-                    $enMap[[string]$key] = $map[$key]
-                }
-                $total = $enMap.Count
-
-                if ($invalidMods.Contains($modid)) {
-                    continue
-                }
-
-                $existing = $null
-                if ($modMap.ContainsKey($modid)) { $existing = $modMap[$modid] }
-                $prefer = $false
-                if (-not $existing) {
-                    $prefer = $true
-                } elseif ($existing.format -ne 'json' -and $format -eq 'json') {
-                    $prefer = $true
-                } elseif ($existing.format -eq $format -and $total -gt $existing.total) {
-                    $prefer = $true
-                }
-
-                if ($prefer) {
-                    $modMap[$modid] = [pscustomobject]@{
-                        modid     = $modid
-                        total     = $total
-                        enMap     = $enMap
-                        sourceJar = $jar.FullName
-                        sourceEntry = $entry.FullName
-                        format    = $format
+                    $owner = Get-InferredNamespace -Key ([string]$key) -SourceModId $sourceModId
+                    if (-not $modMap.ContainsKey($owner)) {
+                        $modMap[$owner] = [pscustomobject]@{
+                            modid       = $owner
+                            enMap       = New-CaseSensitiveHashtable
+                            sourceJar   = $jar.FullName
+                            sourceEntry = $entry.FullName
+                        }
+                    }
+                    $entryOwner = $modMap[$owner]
+                    if (-not $entryOwner.enMap.ContainsKey([string]$key)) {
+                        $entryOwner.enMap[[string]$key] = $map[$key]
                     }
                 }
             }
@@ -210,26 +260,12 @@ foreach ($jar in $jars) {
 
 $rows = New-Object System.Collections.Generic.List[psobject]
 $diagnosticRows = New-Object System.Collections.Generic.List[psobject]
+$zhIndex = Build-ZhTwIndex -AssetsRoot $PackAssetsRoot
 
 foreach ($modid in ($modMap.Keys | Sort-Object)) {
-    if ($invalidMods.Contains($modid)) { continue }
     $entry = $modMap[$modid]
     $zhPath = Join-Path $PackAssetsRoot ("{0}\lang\zh_tw.json" -f $modid)
-    $zhMap = New-Object System.Collections.Hashtable ([System.StringComparer]::Ordinal)
-    if (Test-Path $zhPath) {
-        try {
-            $zhObj = (Get-Content -Path $zhPath -Raw -Encoding UTF8) | ConvertFrom-Json
-            $rawZhMap = ConvertTo-HashtableFromJsonObject -JsonObject $zhObj
-            foreach ($key in $rawZhMap.Keys) {
-                $zhMap[[string]$key] = $rawZhMap[$key]
-            }
-        } catch {
-            $errorList.Add([pscustomobject]@{
-                jar    = (Split-Path $entry.sourceJar -Leaf)
-                reason = "Invalid zh_tw.json for ${modid}: $($_.Exception.Message)"
-            })
-        }
-    }
+    $zhMap = if ($zhIndex.ContainsKey($modid)) { $zhIndex[$modid] } else { New-CaseSensitiveHashtable }
 
     $translated = 0
     foreach ($key in $entry.enMap.Keys) {
@@ -260,14 +296,15 @@ foreach ($modid in ($modMap.Keys | Sort-Object)) {
         }
     }
 
-    $remaining = $entry.total - $translated
+    $total = $entry.enMap.Count
+    $remaining = $total - $translated
     if ($remaining -lt 0) { $remaining = 0 }
-    $percent = if ($entry.total -gt 0) { [math]::Round(($translated / $entry.total) * 100, 1) } else { 0 }
+    $percent = if ($total -gt 0) { [math]::Round(($translated / $total) * 100, 1) } else { 0 }
 
     $rows.Add([pscustomobject]@{
         modid       = $modid
         translated  = $translated
-        total       = $entry.total
+        total       = $total
         remaining   = $remaining
         percent     = $percent
         sourceJar   = $entry.sourceJar
@@ -305,24 +342,9 @@ if ($ExportCsv) {
     Write-Output ("CSV exported: {0}" -f $csvPath)
 }
 
-if ($modMap.ContainsKey('ars_nouveau') -and -not $invalidMods.Contains('ars_nouveau')) {
+if ($modMap.ContainsKey('ars_nouveau')) {
     $entry = $modMap['ars_nouveau']
-    $zhPath = Join-Path $PackAssetsRoot ("{0}\lang\zh_tw.json" -f 'ars_nouveau')
-    $zhMap = New-Object System.Collections.Hashtable ([System.StringComparer]::Ordinal)
-    if (Test-Path $zhPath) {
-        try {
-            $zhObj = (Get-Content -Path $zhPath -Raw -Encoding UTF8) | ConvertFrom-Json
-            $rawZhMap = ConvertTo-HashtableFromJsonObject -JsonObject $zhObj
-            foreach ($key in $rawZhMap.Keys) {
-                $zhMap[[string]$key] = $rawZhMap[$key]
-            }
-        } catch {
-            $errorList.Add([pscustomobject]@{
-                jar    = (Split-Path $entry.sourceJar -Leaf)
-                reason = "Invalid zh_tw.json for ars_nouveau: $($_.Exception.Message)"
-            })
-        }
-    }
+    $zhMap = if ($zhIndex.ContainsKey('ars_nouveau')) { $zhIndex['ars_nouveau'] } else { New-CaseSensitiveHashtable }
 
     $missingKeys = New-Object System.Collections.Generic.List[string]
     $translated = 0
@@ -347,9 +369,10 @@ if ($modMap.ContainsKey('ars_nouveau') -and -not $invalidMods.Contains('ars_nouv
         }
         $missingKeys.Add($key) | Out-Null
     }
-    $remaining = $entry.total - $translated
+    $total = $entry.enMap.Count
+    $remaining = $total - $translated
     if ($remaining -lt 0) { $remaining = 0 }
-    Write-Output ("ars_nouveau check: translated={0} total={1} remaining={2}" -f $translated, $entry.total, $remaining)
+    Write-Output ("ars_nouveau check: translated={0} total={1} remaining={2}" -f $translated, $total, $remaining)
     $missingPreview = $missingKeys | Select-Object -First 20
     if ($missingPreview.Count -gt 0) {
         Write-Output "ars_nouveau missing keys (first 20):"
