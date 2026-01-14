@@ -43,6 +43,74 @@ function Read-ZipEntryText {
     }
 }
 
+function Get-InferredNamespace {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$Key,
+        [Parameter(Mandatory = $true)]
+        [string]$SourceModId
+    )
+    $keyText = $Key.ToLowerInvariant()
+    $sourceText = $SourceModId.ToLowerInvariant()
+
+    if ($sourceText -eq 'rarcompat') {
+        if ($keyText -match '\.relics\.' -or $keyText -like 'relics.*' -or $keyText -like 'key.relics.*') {
+            return 'relics'
+        }
+    }
+
+    if ($keyText -match '^(item|block|entity|key|subtitles|effect|enchantment|advancement|gui|config|stat)\.([a-z0-9_]+)\.') {
+        return $matches[2]
+    }
+    if ($keyText -match '^([a-z0-9_]+)\.') {
+        return $matches[1]
+    }
+    return $sourceText
+}
+
+function New-OrdinalKeySet {
+    return New-Object System.Collections.Generic.HashSet[string] ([System.StringComparer]::Ordinal)
+}
+
+function Build-ZhTwIndex {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$AssetsRoot
+    )
+
+    $index = New-Object 'System.Collections.Generic.Dictionary[string, object]' ([System.StringComparer]::OrdinalIgnoreCase)
+    if (-not (Test-Path $AssetsRoot)) {
+        return $index
+    }
+
+    $regex = [regex]"assets[\\/]+([^\\/]+)[\\/]+lang[\\/]zh_tw\.json$"
+    $files = Get-ChildItem -Path $AssetsRoot -Recurse -Filter 'zh_tw.json' -File
+    foreach ($file in $files) {
+        if (-not ($file.FullName -match $regex)) {
+            continue
+        }
+        $sourceModId = $matches[1].ToLowerInvariant()
+        try {
+            $zhText = Get-Content -Path $file.FullName -Raw -Encoding UTF8
+            $zhObj = $zhText | ConvertFrom-Json
+        } catch {
+            Write-Warning "Invalid zh_tw.json for mod '$sourceModId' at $($file.FullName); treating as 0 keys."
+            continue
+        }
+
+        foreach ($prop in $zhObj.PSObject.Properties) {
+            $key = [string]$prop.Name
+            $owner = Get-InferredNamespace -Key $key -SourceModId $sourceModId
+            if (-not $index.ContainsKey($owner)) {
+                $index[$owner] = (New-OrdinalKeySet)
+            }
+            $null = $index[$owner].Add($key)
+        }
+    }
+
+    return $index
+}
+
 if (-not $OutDir -or $OutDir.Trim() -eq '') {
     $OutDir = Join-Path $RepoRoot 'tools\out'
 }
@@ -71,66 +139,46 @@ $mdPath = Join-Path $OutDir ("zh_tw_missing_top_{0}.md" -f $Top)
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 $results = New-Object System.Collections.Generic.List[object]
-$seenModIds = New-Object System.Collections.Generic.HashSet[string]([System.StringComparer]::OrdinalIgnoreCase)
+$ownerMap = New-Object 'System.Collections.Generic.Dictionary[string, object]' ([System.StringComparer]::OrdinalIgnoreCase)
 
 $jars = Get-ChildItem -Path $ModsDir -Filter *.jar -File
 foreach ($jar in $jars) {
     $zip = $null
+    $foundEntry = $false
     try {
         $zip = [System.IO.Compression.ZipFile]::OpenRead($jar.FullName)
         foreach ($entry in $zip.Entries) {
             if ($entry.FullName -match '^assets/([^/]+)/lang/en_us\.json$') {
-                $modid = $matches[1]
-                if (-not $seenModIds.Add($modid)) {
-                    Write-Warning "Duplicate modid '$modid' found in $($jar.Name); skipping."
-                    continue
-                }
+                $sourceModId = $matches[1].ToLowerInvariant()
+                $foundEntry = $true
 
                 $enText = Read-ZipEntryText -Entry $entry
                 try {
                     $enObj = $enText | ConvertFrom-Json
                 } catch {
-                    Write-Warning "Invalid en_us.json in $($jar.Name) for mod '$modid'; skipping."
+                    Write-Warning "Invalid en_us.json in $($jar.Name) for mod '$sourceModId'; skipping."
                     continue
                 }
 
-                $enKeys = $enObj.PSObject.Properties.Name
-                $enKeyCount = $enKeys.Count
+                foreach ($prop in $enObj.PSObject.Properties) {
+                    $key = [string]$prop.Name
+                    $owner = Get-InferredNamespace -Key $key -SourceModId $sourceModId
+                    if (-not $ownerMap.ContainsKey($owner)) {
+                        $ownerMap[$owner] = [pscustomobject]@{
+                            modid     = $owner
+                            enKeys    = (New-OrdinalKeySet)
+                            jarCounts = @{}
+                        }
+                    }
 
-                $zhPath = Join-Path $assetsRoot ("{0}\lang\zh_tw.json" -f $modid)
-                $zhKeys = @()
-                if (Test-Path $zhPath) {
-                    try {
-                        $zhText = Get-Content -Path $zhPath -Raw -Encoding UTF8
-                        $zhObj = $zhText | ConvertFrom-Json
-                        $zhKeys = $zhObj.PSObject.Properties.Name
-                    } catch {
-                        Write-Warning "Invalid zh_tw.json for mod '$modid' at $zhPath; treating as 0 keys."
-                        $zhKeys = @()
+                    $entryOwner = $ownerMap[$owner]
+                    if ($entryOwner.enKeys.Add($key)) {
+                        if (-not $entryOwner.jarCounts.ContainsKey($jar.Name)) {
+                            $entryOwner.jarCounts[$jar.Name] = 0
+                        }
+                        $entryOwner.jarCounts[$jar.Name]++
                     }
                 }
-
-                $zhKeySet = New-Object System.Collections.Generic.HashSet[string]([System.StringComparer]::OrdinalIgnoreCase)
-                foreach ($k in $zhKeys) { $null = $zhKeySet.Add($k) }
-
-                $missingKeys = New-Object System.Collections.Generic.List[string]
-                foreach ($k in $enKeys) {
-                    if (-not $zhKeySet.Contains($k)) {
-                        $missingKeys.Add($k)
-                    }
-                }
-
-                $missingKeysSorted = $missingKeys | Sort-Object
-                $missingCount = $missingKeysSorted.Count
-
-                $results.Add([pscustomobject]@{
-                    modid       = $modid
-                    jar         = $jar.Name
-                    en_us_keys  = $enKeyCount
-                    zh_tw_keys  = $zhKeys.Count
-                    missing     = $missingCount
-                    missingKeys = $missingKeysSorted
-                })
             }
         }
     } catch {
@@ -138,6 +186,41 @@ foreach ($jar in $jars) {
     } finally {
         if ($zip) { $zip.Dispose() }
     }
+    if (-not $foundEntry) {
+        Write-Warning "No en_us.json found in $($jar.Name); skipped."
+    }
+}
+
+$zhIndex = Build-ZhTwIndex -AssetsRoot $assetsRoot
+
+foreach ($owner in $ownerMap.Keys) {
+    $entryOwner = $ownerMap[$owner]
+    $enKeys = $entryOwner.enKeys
+    $enKeyCount = $enKeys.Count
+
+    $zhKeySet = if ($zhIndex.ContainsKey($owner)) { $zhIndex[$owner] } else { New-OrdinalKeySet }
+    $missingKeys = New-Object System.Collections.Generic.List[string]
+    foreach ($k in $enKeys) {
+        if (-not $zhKeySet.Contains($k)) {
+            $missingKeys.Add($k)
+        }
+    }
+
+    $missingKeysSorted = $missingKeys | Sort-Object
+    $missingCount = $missingKeysSorted.Count
+    $jarName = ''
+    if ($entryOwner.jarCounts.Count -gt 0) {
+        $jarName = ($entryOwner.jarCounts.GetEnumerator() | Sort-Object Value -Descending | Select-Object -First 1).Name
+    }
+
+    $results.Add([pscustomobject]@{
+        modid       = $owner
+        jar         = $jarName
+        en_us_keys  = $enKeyCount
+        zh_tw_keys  = $zhKeySet.Count
+        missing     = $missingCount
+        missingKeys = $missingKeysSorted
+    })
 }
 
 $sorted = $results | Sort-Object -Property missing -Descending
