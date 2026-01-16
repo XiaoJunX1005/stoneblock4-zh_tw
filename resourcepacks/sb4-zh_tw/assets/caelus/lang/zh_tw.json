@@ -1,4 +1,4 @@
 {
-    "caelus.fallFlying":  "??",
-    "caelus.networking.failed":  "Caelus ???????%s"
+    "caelus.fallFlying":  "滑翔",
+    "caelus.networking.failed":  "Caelus 網路連線失敗：%s"
 }

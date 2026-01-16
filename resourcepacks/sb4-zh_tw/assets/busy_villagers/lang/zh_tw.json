@@ -1,5 +1,5 @@
 {
-    "itemGroup.busy_villagers":  "??????",
-    "block.busy_villagers.example_block":  "????",
-    "item.busy_villagers.example_item":  "????"
+    "itemGroup.busy_villagers":  "範例模組分頁",
+    "block.busy_villagers.example_block":  "範例方塊",
+    "item.busy_villagers.example_item":  "範例物品"
 }

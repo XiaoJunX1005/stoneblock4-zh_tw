@@ -1,5 +1,5 @@
 {
-    "createenderstorage.ponder.mounted_ender_chest.header":  "Ender Storage ???",
-    "createenderstorage.ponder.mounted_ender_chest.text_1":  "??????? Ender Storage ???????????",
-    "createenderstorage.ponder.mounted_ender_chest.text_2":  "????????Ender Storage ?????????????????????"
+    "createenderstorage.ponder.mounted_ender_chest.header":  "Ender Storage 相容性",
+    "createenderstorage.ponder.mounted_ender_chest.text_1":  "相同染色頻率的 Ender Storage 箱子共享同一個物品欄。",
+    "createenderstorage.ponder.mounted_ender_chest.text_2":  "包括在裝置上時。Ender Storage 方塊可被裝置內的行動方塊存取以進行自動化。"
 }
