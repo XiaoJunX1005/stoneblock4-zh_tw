@@ -482,4 +482,9 @@
     "sound.justdirethings.paradox_ambient":  "悖論機器：運作",
     "sound.justdirethings.portal_gun_close":  "傳送槍：關閉",
     "sound.justdirethings.portal_gun_open":  "傳送槍：打開"
-}
+,
+    "entity.justdirethings.creature_catcher":  "生物捕捉器",
+    "entity.justdirethings.justdireareaeffectcloud":  "範圍效果雲",
+    "entity.justdirethings.justdirearrow":  "Dire 箭矢",
+    "entity.justdirethings.portal_entity":  "DirePortal",
+    "entity.justdirethings.portal_projectile":  "傳送門投射物"}

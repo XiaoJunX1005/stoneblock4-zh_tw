@@ -73,4 +73,8 @@
     "tooltip.replication_motor.variable":  "可調速度控制器",
     "tooltip.titanium.facing_handler.output":  "輸出",
     "tooltip.titanium.tank.empty":  "空"
-}
+,
+    "block.replication.creative_matter_tank":  "創造模式物質槽",
+    "replication.infinite":  "無限",
+    "tooltip.replication.tank.priority":  "優先度：",
+    "tooltip.replication.tank.void_excess":  "多餘則虛空"}

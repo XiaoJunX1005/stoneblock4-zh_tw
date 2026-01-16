@@ -1,0 +1,7 @@
+{
+    "block.replication_rs2_bridge.rep_rs2_bridge":  "Replication RS2 橋接器",
+    "itemGroup.replication_rs2_bridge":  "Replication RS2 橋接器",
+    "block.replication_rs2_bridge.rep_rs2_bridge.priority":  "樣板優先度",
+    "block.replication_rs2_bridge.rep_rs2_bridge.priority.help":  "較高優先度的樣板會先用於自動合成。用此來優先進行物質合成而非一般配方。",
+    "block.replication_rs2_bridge.rep_rs2_bridge.tooltip":  "將 Replication 物質網路連接到 Refined Storage 2，並將 Replication 樣板作為 RS2 的自動合成配方。右鍵設定樣板優先度。"
+}

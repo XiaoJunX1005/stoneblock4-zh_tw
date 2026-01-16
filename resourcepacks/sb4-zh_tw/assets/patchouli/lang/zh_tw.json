@@ -88,4 +88,8 @@
     "patchouli.gui.lexicon.button.history":  "瀏覽歷史",
     "patchouli.gui.lexicon.button.mark_all_read":  "全部標記為已讀",
     "patchouli.gui.lexicon.button.mark_category_read":  "將此類別標記為已讀"
-}
+,
+    "item.patchouli.guide_book":  "指南書",
+    "patchouli.gui.lexicon.button.toggle_mock_header":  "切換模擬標題列",
+    "patchouli.networking.open_book.failed":  "無法開啟書本 %s",
+    "patchouli.networking.reload_contents.failed":  "無法重新載入內容 %S"}

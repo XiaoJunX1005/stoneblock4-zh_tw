@@ -1,0 +1,6 @@
+{
+    "soulkey.name":  "監守者靈魂",
+    "soulkey.description":  "靈魂",
+    "soulpliedenergistics.can_be_used_filter":  "*可用於 AE2 介面來請求靈魂*",
+    "soulpliedenergistics.storage_bus":  "*可在頂部使用 AE2 儲存匯流排存取靈魂*"
+}

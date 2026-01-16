@@ -34,4 +34,9 @@
     "stat.chancecubes.opened_chance_cube":  "機會方塊被打開了",
     "stat.chancecubes.opened_giant_chance_cube":  "巨型機會方塊被打開了",
     "stat.chancecubes.opened_d20":  "機會正二十面體被打開了"
-}
+,
+    "death.attack.digbuilddeath":  "%1$s 的手臂似乎斷了。",
+    "chancecubes.networking.trigger_d20.failed":  "無法觸發 D20：%s",
+    "chancecubes.networking.creative_pendant.failed":  "無法觸發創造吊墜：%s",
+    "chancecubes.networking.reward_selector.failed":  "無法觸發獎勵選擇器：%s",
+    "chancecubes.networking.cube_scan.failed":  "無法觸發方塊掃描：%s"}

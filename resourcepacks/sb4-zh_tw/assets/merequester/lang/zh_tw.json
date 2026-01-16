@@ -22,4 +22,8 @@
     "tooltip.merequester.link_desc":  "系統當前正在合成所請求的物品或液體。",
     "tooltip.merequester.export":  "導出中",
     "tooltip.merequester.export_desc":  "請求器正試圖將合成結果導出到系統中。如果請求器長時間處於這種狀態，則網絡沒有可用於導出的空間。"
-}
+,
+    "item.merequester.wireless_requester_terminal":  "無線請求終端",
+    "key.ae2.wireless_requester_terminal":  "開啟無線請求終端",
+    "tooltip.merequester.cpu":  "沒有 CPU",
+    "tooltip.merequester.cpu_desc":  "系統找不到可用的 CPU 來進行合成。找到 CPU 後會繼續處理。"}

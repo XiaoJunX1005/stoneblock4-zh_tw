@@ -66,4 +66,10 @@
     "pack.iris.list.label":  "+ 拖放光影包至此以添加",
     "label.iris.true":  "開",
     "label.iris.false":  "關"
-}
+,
+    "iris.shaders.debug.restartNoDebug":  "已啟用著色器除錯；NeoForge 不支援 OpenGL 除錯。",
+    "iris.load.failure.shader":  "著色器包載入失敗！請向著色器作者回報錯誤。",
+    "iris.load.failure.generic":  "Iris 載入著色器時發生問題；請向 Iris 開發者回報。",
+    "iris.keybind.wireframe":  "線框（僅單人）",
+    "options.iris.colorSpace":  "色彩空間",
+    "options.iris.colorSpace.sodium_tooltip":  "要將畫面轉換到的色彩空間。可套用在著色器包之上。不確定時請使用 SRGB。"}

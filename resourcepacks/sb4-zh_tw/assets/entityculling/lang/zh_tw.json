@@ -19,4 +19,9 @@
     "text.entityculling.skipEntityCulling.tooltip":  "開啟後，將完全跳過實體的剔除。這在你調試時很有用，或者當你想要臨時禁用剔除實體功能時也很方便。",
     "text.entityculling.skipBlockEntityCulling":  "跳過方塊實體剔除",
     "text.entityculling.skipBlockEntityCulling.tooltip":  "開啟後，將完全跳過方塊實體的剔除。這在你調試時很有用，或者當你想要臨時禁用剔除功能時也很方便。"
-}
+,
+    "key.category.minecraft.text.entityculling.title":  "EntityCulling",
+    "text.entityculling.blockEntityFrustumCulling":  "方塊實體視錐剔除",
+    "text.entityculling.blockEntityFrustumCulling.tooltip":  "開啟後，方塊實體的狀態擷取將會根據攝影機的視錐進行剔除。如果你的模組載入器或其他模組尚未執行此功能，這可以提升效能。",
+    "text.entityculling.forceDisplayCulling":  "強制顯示剔除",
+    "text.entityculling.forceDisplayCulling.tooltip":  "開啟後，沒有邊界框的顯示實體會被指派預設邊界框以進行剔除。這能改善未正確設定顯示實體的地圖/伺服器效能，但可能造成視覺問題。"}

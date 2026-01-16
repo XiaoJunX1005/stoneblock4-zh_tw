@@ -29,4 +29,10 @@
     "custommachinery.machine.guielement.heat":  "熱量",
     "custommachinery.machine.guielement.chemical":  "化學",
     "custommachinery.machine.guielement.radiation":  "輻射"
-}
+,
+    "custommachinerymekanism.gui.creation.components.chemical.radiations":  "輻射",
+    "custommachinerymekanism.gui.creation.components.chemical.radiations.tooltip":  "當機器損壞且含有放射性化學品時會釋放輻射",
+    "custommachinerymekanism.gui.creation.gui.heat.min":  "最小值",
+    "custommachinerymekanism.gui.creation.gui.heat.min.tooltip":  "條上顯示的最低溫度",
+    "custommachinerymekanism.gui.creation.gui.heat.max":  "最大值",
+    "custommachinerymekanism.gui.creation.gui.heat.max.tooltip":  "條上顯示的最高溫度"}
