@@ -1,0 +1,8 @@
+{
+    "message.structures_tweaker.no_elytra":  "§c此結構內禁止使用鞘翅飛行",
+    "message.structures_tweaker.no_pearls":  "§c此結構內禁止使用終界珍珠",
+    "message.structures_tweaker.no_riptide":  "§c此結構內禁止使用激流",
+    "message.structures_tweaker.no_creative_flight":  "§c此結構內禁止創造模式飛行",
+    "message.structures_tweaker.no_ender_teleportation":  "§c此結構內禁止終界傳送",
+    "message.structures_tweaker.item_blacklisted":  "§c此物品無法在此結構中使用"
+}

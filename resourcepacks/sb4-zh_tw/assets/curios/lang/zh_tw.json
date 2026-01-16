@@ -40,4 +40,11 @@
     "key.curios.category":  "飾品",
     "key.curios.open.desc":  "打開/關閉飾品欄",
     "gui.curios.toggle":  "切換是否可見"
-}
+,
+    "curios.tooltip.inactive":  "未啟用的槽位",
+    "commands.curios.drop.success":  "已為 %s 丟棄 %s 插槽的物品",
+    "commands.curios.dropAll.success":  "已為 %s 丟棄所有插槽中的物品",
+    "commands.curios.replace.success":  "已將 %s 的插槽 %s 替換為 %s",
+    "gui.curios.toggle.cosmetics":  "切換飾品顯示",
+    "gui.curios.page":  "第 %d / %d 頁",
+    "curios.networking.failed":  "Curios 網路連線失敗"}

@@ -1,3 +1,9 @@
 {
     "item.woodenshears.wooden_shears":  "木剪刀"
-}
+,
+    "text.autoconfig.woodenshears.option.DURABILITY":  "木剪刀耐久度",
+    "text.autoconfig.woodenshears.option.DURABILITY.@Tooltip[0]":  "§6§l木剪刀耐久度",
+    "text.autoconfig.woodenshears.option.DURABILITY.@Tooltip[1]":  "定義木剪刀的最大耐久度。",
+    "text.autoconfig.woodenshears.option.DURABILITY.@Tooltip[2]":  "§7§o0：停用耐久度",
+    "text.autoconfig.woodenshears.option.DURABILITY.@Tooltip[3]":  "§7§o最小：0；最大：10000",
+    "text.autoconfig.woodenshears.option.DURABILITY.@Tooltip[4]":  "§7§o預設：50"}

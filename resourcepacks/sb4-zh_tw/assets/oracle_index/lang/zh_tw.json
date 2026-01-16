@@ -1,0 +1,10 @@
+{
+    "oracle_index.title.oracle_index":  "Oracle 索引",
+    "oracle_index.title.oracle-index":  "Oracle 索引",
+    "key.oracle_index.open":  "開啟 Oracle 索引",
+    "key.oracle_index.search":  "開啟 Oracle 搜尋",
+    "key.categories.oracle":  "Oracle 索引",
+    "oracle_index.searchbar.placeholder":  "搜尋或計算",
+    "oracle_index.searchbar.tooltip":  "支援完整句與數學式的智慧搜尋。",
+    "tooltip.oracle_index.open_search":  "開啟搜尋。你也可以按下 [CTRL + %s] 或 [%s] 開啟。"
+}

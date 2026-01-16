@@ -1,0 +1,10 @@
+{
+    "synesthesia.button.visualizer.tooltip":  "聲音視覺化",
+    "synesthesia.button.visualizer.enabled":  "聲音視覺化：開",
+    "synesthesia.button.visualizer.disabled":  "聲音視覺化：關",
+    "key.synesthesia.toggle":  "切換聲音視覺化",
+    "key.categories.synesthesia":  "Synesthesia",
+    "message.synesthesia.enabled":  "聲音視覺化已啟用",
+    "message.synesthesia.disabled":  "聲音視覺化已停用",
+    "synesthesia.configuration.render.renderThroughWalls":  "穿牆渲染"
+}

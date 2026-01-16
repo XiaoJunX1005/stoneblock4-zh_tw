@@ -1,0 +1,10 @@
+{
+    "itemGroup.rsrequestify":  "RS：Requestify",
+    "block.rsrequestify.requester":  "請求器",
+    "button.refinedstoragerequestify:requester.save":  "儲存",
+    "block.rsrequestify.crafting_emitter":  "合成訊號發射器",
+    "block.rsrequestify.crafting_emitter.tooltip":  "當過濾器中的物品/流體有合成任務，且合成數量大於或等於指定數量時輸出紅石訊號。",
+    "block.rsrequestify.requester.tooltip":  "維持儲存網路中過濾物品/流體的目標數量。",
+    "block.rsrequestify.requester.tooltip.filter":  "應在儲存網路中維持庫存的資源",
+    "block.rsrequestify.crafting_emitter.tooltip.filter":  "應輸出紅石訊號的資源"
+}

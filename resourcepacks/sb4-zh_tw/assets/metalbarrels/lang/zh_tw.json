@@ -39,4 +39,10 @@
     "tooltip.metalbarrels.ironchest":  "也可升級《更多箱子》里的箱子！",
     "metalbarrels.upgrade_successful":  "升級成功",
     "metalbarrels.in_use":  "儲物桶被使用中"
-}
+,
+    "item.metalbarrels.copper_to_netherite":  "銅 → 獄髓",
+    "item.metalbarrels.diamond_to_netherite":  "鑽石 → 獄髓",
+    "item.metalbarrels.gold_to_netherite":  "金 → 獄髓",
+    "item.metalbarrels.iron_to_netherite":  "鐵 → 獄髓",
+    "item.metalbarrels.obsidian_to_netherite":  "黑曜石 → 獄髓",
+    "item.metalbarrels.silver_to_netherite":  "銀 → 獄髓"}

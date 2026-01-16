@@ -405,4 +405,13 @@
     "enchantment.level.125":  "CXXV",
     "enchantment.level.126":  "CXXVI",
     "enchantment.level.127":  "CXXVII"
-}
+,
+    "item.apothic_enchanting.music_disc_eterna":  "音樂唱片",
+    "jukebox_song.apothic_enchanting.eterna":  "Firel - Eterna",
+    "subtitle.apothic_enchanting.music_disc.eterna":  "Firel - Eterna",
+    "item.apothic_enchanting.music_disc_quanta":  "音樂唱片",
+    "jukebox_song.apothic_enchanting.quanta":  "Firel - Quanta",
+    "subtitle.apothic_enchanting.music_disc.quanta":  "Firel - Quanta",
+    "item.apothic_enchanting.music_disc_arcana":  "音樂唱片",
+    "jukebox_song.apothic_enchanting.arcana":  "Firel - Arcana",
+    "subtitle.apothic_enchanting.music_disc.arcana":  "Firel - Arcana"}

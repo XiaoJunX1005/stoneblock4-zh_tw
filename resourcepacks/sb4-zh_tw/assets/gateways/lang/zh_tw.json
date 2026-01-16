@@ -87,4 +87,13 @@
     "name.gateways.magicbane_slime":  "魔骨史萊姆",
     "name.gateways.acidic_slime":  "酸蝕史萊姆",
     "name.gateways.flaming_enderman":  "熾焰末影人"
-}
+,
+    "rule.gateways.requires_nearby_player":  "需要附近玩家：%s",
+    "rule.gateways.lives":  "生命：%s",
+    "error.gateways.no_nearby_player":  "傳送門因附近沒有玩家而內爆",
+    "error.gateways.out_of_lives":  "傳送門因生命耗盡而內爆",
+    "subtitle.gateways.gate_warp":  "傳送門生成物體",
+    "subtitle.gateways.gate_ambient":  "傳送門環境音",
+    "subtitle.gateways.gate_start":  "傳送門開啟",
+    "subtitle.gateways.gate_end":  "傳送門結束",
+    "text.gateways.errored_gate_pearl":  "未知傳送門：%s"}

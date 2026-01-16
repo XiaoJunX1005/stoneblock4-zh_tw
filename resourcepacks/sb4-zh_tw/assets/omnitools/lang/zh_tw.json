@@ -13,4 +13,13 @@
     "omnitools.compat.extendedae":  "§6[OmniTools] §r擴展AE",
     "omnitools.compat.powah":  "§6[OmniTools] §rPowah",
     "omnitools.compat.entangled":  "§6[OmniTools] §r糾纏方塊"
-}
+,
+    "item.omnitools.omni_vajra":  "Omni Vajra",
+    "key.categories.gameplay":  "遊戲玩法",
+    "toolmode.omnitools.configuration":  "設定模式",
+    "message.omnitools.vajra_mining_speed":  "§6[OmniTool] §r挖掘速度：§e%s",
+    "message.omnitools.vajra_pickup_mode":  "§6[OmniTool] §r自動拾取：§e%s",
+    "message.omnitools.vajra_pickup_mode_on":  "開",
+    "message.omnitools.vajra_pickup_mode_off":  "關",
+    "omnitools.compat.mekanism":  "§6[OmniTools] §rMekanism",
+    "omnitools.compat.ae2":  "§6[OmniTools] §rApplied Energistics 2"}

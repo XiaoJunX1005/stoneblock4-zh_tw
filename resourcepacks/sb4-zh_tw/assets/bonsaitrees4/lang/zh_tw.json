@@ -70,4 +70,12 @@
     "bonsaitrees4.redstone_mode.stop_on_power":  "接收到紅石信號時停止運行",
     "bonsaitrees4.redstone_mode.require_power":  "僅在接收到紅石信號時運行",
     "config.jade.plugin_bonsaitrees4.jade/bonsai_pot":  "盆栽盆"
-}
+,
+    "jei.bonsaitrees4.recipes.chance":  "機率：§e%.1f%%§r",
+    "jei.bonsaitrees4.recipes.rolls":  "擲骰：§e%d§r",
+    "bonsaitrees4.configuration.debug.show_unused_soil_recipes_in_jei":  "在 JEI 顯示未使用的土壤",
+    "bonsaitrees4.configuration.debug.show_unused_soil_recipes_in_jei.tooltip":  "這有助於找出土壤相關的問題。",
+    "bonsaitrees4.configuration.debug.show_rolls_as_count_in_jei":  "在 JEI 將擲骰顯示為物品數量",
+    "bonsaitrees4.configuration.debug.show_rolls_as_count_in_jei.tooltip":  "顯示在掉落生成時物品被擲中的頻率。",
+    "bonsaitrees4.configuration.gameplay.toolAllowIndestructible":  "允許不損壞的工具",
+    "bonsaitrees4.configuration.gameplay.toolAllowIndestructible.tooltip":  "啟用後，不會損壞的工具（例如神秘農業的超級斧）可用來砍盆栽。"}

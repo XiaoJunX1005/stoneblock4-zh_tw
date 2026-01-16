@@ -1,0 +1,9 @@
+{
+    "itemGroup.replication_matter_overflow":  "Replication：物質溢流槽",
+    "block.replication_matter_overflow.matter_void":  "物質溢流槽",
+    "tooltip.replication_matter_overflow.matter_void.line1":  "像一般槽一樣儲存物質",
+    "tooltip.replication_matter_overflow.matter_void.line2":  "滿時會將多餘物質虛空",
+    "tooltip.replication_matter_overflow.priority.current":  "優先度：%s",
+    "tooltip.replication_matter_overflow.priority.increase":  "提高槽的優先度",
+    "tooltip.replication_matter_overflow.priority.decrease":  "降低槽的優先度"
+}
