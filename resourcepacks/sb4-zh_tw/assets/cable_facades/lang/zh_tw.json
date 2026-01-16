@@ -1,0 +1,18 @@
+{
+    "item.cable_facades.facade_wrench":  "外觀面板扳手",
+    "cable_facades.tooltip.toggle_transparency":  "右鍵切換/停用面板透明度",
+    "cable_facades.tooltip.current_state":  "目前狀態：",
+    "cable_facades.tooltip.enabled":  "啟用",
+    "cable_facades.tooltip.disabled":  "停用",
+    "cable_facades.message.transparency_enabled":  "面板透明度現在為 ",
+    "cable_facades.message.shaders_warning":  "⚠ ",
+    "cable_facades.message.shaders_detected":  "偵測到著色器：",
+    "cable_facades.message.transparency_may_not_work":  "面板透明度可能無法正常運作",
+    "cable_facades.facade.name_prefix":  "面板 - ",
+    "cable_facades.facade.empty":  "面板 - 空",
+    "cable_facades.creative_tab":  "纜線面板",
+    "cable_facades.error.cannot_facade_itself":  "無法用自身作為面板",
+    "cable_facades.error.block_disabled":  "此方塊無法作為面板（已在設定中停用）",
+    "cable_facades.jei.facade_any_block":  "面板 - 任意方塊",
+    "cable_facades.jei.any_block":  "任意方塊"
+}

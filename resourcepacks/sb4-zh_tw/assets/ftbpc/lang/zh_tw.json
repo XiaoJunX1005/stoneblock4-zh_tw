@@ -1,0 +1,17 @@
+{
+    "block.ftbpc.trigger_block":  "玩家觸發器",
+    "ftbpackcompanion.actionpad.tpa.request_sent":  "傳送請求已送出至",
+    "ftbpackcompanion.home":  "家",
+    "ftbpackcompanion.key.category":  "Pack Companion",
+    "ftbpackcompanion.key.open_action_pad":  "開啟 Action Pad",
+    "ftbpackcompanion.shaders_notice.no_shaders.description":  "此整合包已包含著色器但預設停用。是否要啟用？著色器可能影響效能、與某些模組衝突，且可能不相容於你的硬體。",
+    "ftbpackcompanion.shaders_notice.no_shaders.title":  "無著色器",
+    "ftbpackcompanion.shaders_notice.shaders.description":  "若你想使用著色器，可在此啟用，以更生動的視覺體驗遊戲。若發生問題可隨時在影像設定中關閉。",
+    "ftbpackcompanion.shaders_notice.shaders.title":  "著色器",
+    "ftbpackcompanion.shaders_notice.shaders_btn.disable":  "停用著色器",
+    "ftbpackcompanion.shaders_notice.shaders_btn.enable":  "啟用著色器",
+    "ftbpackcompanion.shaders_notice.title":  "是否要使用著色器？",
+    "ftbpackcompanion.spawn":  "重生點",
+    "ftbpackcompanion.tpa":  "請求傳送",
+    "item.ftbpc.action_pad":  "Action Pad"
+}

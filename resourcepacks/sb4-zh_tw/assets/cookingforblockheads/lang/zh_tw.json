@@ -249,4 +249,19 @@
     "config.cookingforblockheads.showIngredientIcon.tooltip":  "如果不想在烹飪手冊中用特殊圖標標記食材，可以將其設為false。",
     "config.cookingforblockheads.allowVeryToastedBread":  "允許烤得非常焦的面包",
     "config.cookingforblockheads.allowVeryToastedBread.tooltip":  "再次烤制烤過的面包會變成木炭（僅當沒有其他添加吐司的模組時）。設為false以禁用。"
-}
+,
+    "block.cookingforblockheads.white_oven":  "烤箱",
+    "gui.cookingforblockheads.moved_to_oven":  "已移至烤箱",
+    "tooltip.cookingforblockheads.connector.description":  "讓廚房方塊可跨角落連接。",
+    "tooltip.cookingforblockheads.sort_by_eatenness":  "依食用程度排序",
+    "tooltip.cookingforblockheads.kitchen_upgrade":  "廚房升級",
+    "container.cookingforblockheads.cutting_board":  "砧板",
+    "config.jade.plugin_cookingforblockheads.preservation_chamber":  "保鮮室",
+    "config.cookingforblockheads.excludedRecipes":  "排除的配方",
+    "config.cookingforblockheads.excludedRecipes.tooltip":  "要從配方書排除的配方 ID 清單。",
+    "tag.item.cookingforblockheads.kitchen_item_providers":  "廚房物品提供者",
+    "tag.item.cookingforblockheads.foods":  "食物",
+    "tag.item.cookingforblockheads.ingredients":  "食材",
+    "tag.item.cookingforblockheads.milk":  "牛奶",
+    "tag.item.cookingforblockheads.utensils":  "餐具",
+    "tag.item.cookingforblockheads.water":  "水"}

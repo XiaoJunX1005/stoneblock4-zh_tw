@@ -1,0 +1,19 @@
+{
+    "entity.mecrh.egg_bomb":  "雞蛋炸彈",
+    "entity.mecrh.ender_chicken":  "強大的終界雞",
+    "item.mecrh.ender_chicken_spawn_egg":  "終界雞 生怪蛋",
+    "item.mecrh.music_disc_chicken_of_chaos":  "音樂唱片",
+    "item.mecrh.music_disc_chicken_of_chaos.desc":  "FTB Team - Chicken of Chaos",
+    "item.mecrh.test_stick":  "測試棒",
+    "mecrh.message.chicken_despawn_warning":  "競技場內沒有玩家！雞將在 %s 秒後消失！",
+    "mecrh.message.wrong_forcefield_item":  "力場的武器無效！",
+    "mecrh.subtitle.chaos_hurt":  "雞受傷",
+    "mecrh.subtitle.charge_start":  "雞開始衝刺",
+    "mecrh.subtitle.chicken_spin":  "雞開始旋轉",
+    "mecrh.subtitle.clear_warn":  "雞尖叫",
+    "mecrh.subtitle.forcefield_off":  "力場解除",
+    "mecrh.subtitle.forcefield_on":  "力場啟動",
+    "mecrh.subtitle.laser_end":  "雷射停止",
+    "mecrh.subtitle.laser_loop":  "雷射發射",
+    "mecrh.subtitle.laser_start":  "雷射啟動"
+}

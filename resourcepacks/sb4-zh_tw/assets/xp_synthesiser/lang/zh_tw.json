@@ -1,0 +1,17 @@
+{
+    "item.xp_synthesiser.kill_recorder":  "擊殺記錄器",
+    "block.xp_synthesiser.xp_synthesiser":  "XP 合成器",
+    "itemGroup.xp_synthesiser":  "XP 合成器",
+    "xp_synthesiser.configuration.general":  "一般設定",
+    "xp_synthesiser.configuration.title":  "XP 合成器",
+    "xp_synthesiser.configuration.section.xp.synthesiser.server.toml":  "XP 合成器",
+    "xp_synthesiser.configuration.xpPointCost.tooltip":  "每點經驗消耗",
+    "xp_synthesiser.configuration.requiresPower.tooltip":  "需要能量",
+    "xp_synthesiser.configuration.section.xp.synthesiser.server.toml.title":  "XP 合成器",
+    "xp_synthesiser.configuration.general.tooltip":  "設定",
+    "xp_synthesiser.configuration.general.button":  "開啟",
+    "xp_synthesiser.configuration.requiresPower":  "XP 合成器需要能量",
+    "xp_synthesiser.configuration.xpPointCost":  "每點經驗的能量消耗",
+    "xp_synthesiser.configuration.xpScalingCost":  "每點經驗的縮放能量消耗",
+    "xp_synthesiser.configuration.xpScalingFactor":  "經驗縮放能量係數"
+}

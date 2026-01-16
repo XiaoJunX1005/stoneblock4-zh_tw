@@ -1,0 +1,20 @@
+{
+    "block.ars_creo.starbuncle_wheel":  "星咕輪",
+    "ars_creo.page1.starbuncle_wheel":  "為 Create 提供旋轉動力。在輪子前放置金方塊可提升 RPM。",
+    "ars_creo.page.behaviors":  "Ars Creo 為 Ars Nouveau 的方塊提供特殊裝置行為，包括法術砲塔與源之罐。基本法術砲塔：互動時在裝置上施放法術。計時砲塔：依間隔施放法術。附魔法術砲塔：每造訪新方塊就施放法術。源之罐：可被裝置上的砲塔消耗。",
+    "itemGroup.ars_creo.general":  "Ars Creo",
+    "ars_creo.display_source.turret.not_enough_space":  "空間不足 ",
+    "ars_creo.display_source.turret.for_turret_status":  "以顯示砲塔狀態",
+    "ars_creo.display_source.turret.no_spell":  "未設定法術。",
+    "ars_creo.display_source.turret.spell_name":  "法術：%s",
+    "ars_creo.display_source.turret.spell":  "%s",
+    "ars_creo.display_source.turret_target":  "法術砲塔",
+    "ars_creo.display_source.source_count":  "源：%s",
+    "ars_creo.display_source.for_source_status":  "以顯示源狀態",
+    "ars_creo.display_source.source_jar":  "源量",
+    "ars_creo.display_source.turret":  "法術",
+    "ars_creo.page1.ars_creo.display_link":  "顯示連結可附加在源之罐上以顯示源量，或附加在法術砲塔上以在顯示板顯示目前法術。",
+    "ars_creo.page1.ars_creo.fluid_tank":  "可使用管線與槽將藥水儲存並在 Create 流體槽間傳輸。",
+    "ars_creo.display_link":  "Ars Creo：顯示連結",
+    "ars_creo.fluid_tank":  "Ars Creo：流體槽"
+}

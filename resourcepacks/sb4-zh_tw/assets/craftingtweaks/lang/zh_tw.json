@@ -22,4 +22,19 @@
     "tooltip.craftingtweaks.clear":  "清空網格",
     "tooltip.craftingtweaks.forceClear":  "強制清空網格",
     "tooltip.craftingtweaks.forceClearInfo":  "必要時丟出物品"
-}
+,
+    "config.craftingtweaks.title":  "Crafting Tweaks",
+    "config.craftingtweaks.common":  "通用",
+    "config.craftingtweaks.common.compressRequiresCraftingGrid":  "壓縮需要合成格",
+    "config.craftingtweaks.common.compressRequiresCraftingGrid.tooltip":  "設為 false 時，壓縮/解壓功能可在合成介面以外使用（僅在伺服器端安裝且位於玩家背包時有效）。",
+    "config.craftingtweaks.common.compressDenylist":  "壓縮拒絕清單",
+    "config.craftingtweaks.common.compressDenylist.tooltip":  "不會被壓縮鍵合成的 modid:name 清單。",
+    "config.craftingtweaks.client":  "用戶端",
+    "config.craftingtweaks.client.rightClickCraftsStack":  "右鍵合成一疊",
+    "config.craftingtweaks.client.rightClickCraftsStack.tooltip":  "設為 true 時，在合成台右鍵結果欄會合成一整疊。",
+    "config.craftingtweaks.client.hideVanillaCraftingGuide":  "隱藏原版合成指南",
+    "config.craftingtweaks.client.hideVanillaCraftingGuide.tooltip":  "你我都知道 JEI 更好用。此選項會隱藏原版合成書按鈕，而非移動它。",
+    "config.craftingtweaks.client.mode":  "模式",
+    "config.craftingtweaks.client.mode.tooltip":  "設為 DEFAULT 以啟用按鈕與快捷鍵；BUTTONS 只啟用按鈕；HOTKEYS 只啟用快捷鍵；DISABLED 完全停用。",
+    "config.craftingtweaks.client.disabledAddons":  "停用的附加模組",
+    "config.craftingtweaks.client.disabledAddons.tooltip":  "在此加入想停用 Crafting Tweaks 支援的模組 ID。"}

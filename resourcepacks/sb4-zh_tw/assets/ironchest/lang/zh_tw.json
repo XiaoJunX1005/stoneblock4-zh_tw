@@ -24,4 +24,19 @@
     "ironchest.book.dirtchest9000.4":  "質量保障: 恕本產品不提供任何質量保障。您的泥土或者能安全存儲其內，或者會逐漸流失到環境中，或者什麽也不會發生。(讀者:我了個去!)",
     "ironchest.book.dirtchest9000.5":  "泥箱子9000十分環保。請小心收藏好本手冊，如果您隨手丟進巖漿的話，我們可會傷心的。",
     "itemGroup.ironchest":  "Iron Chests"
-}
+,
+    "block.ironchest.trapped_copper_chest":  "陷阱銅箱",
+    "block.ironchest.trapped_crystal_chest":  "陷阱水晶箱",
+    "block.ironchest.trapped_diamond_chest":  "陷阱鑽石箱",
+    "block.ironchest.trapped_dirt_chest":  "陷阱泥箱子9000！",
+    "block.ironchest.trapped_gold_chest":  "陷阱金箱",
+    "block.ironchest.trapped_iron_chest":  "陷阱鐵箱",
+    "block.ironchest.trapped_obsidian_chest":  "陷阱黑曜石箱",
+    "ironchest.container.copper_chest":  "銅箱",
+    "ironchest.container.crystal_chest":  "水晶箱",
+    "ironchest.container.diamond_chest":  "鑽石箱",
+    "ironchest.container.dirt_chest":  "泥箱子9000！",
+    "ironchest.container.gold_chest":  "金箱",
+    "ironchest.container.iron_chest":  "鐵箱",
+    "ironchest.container.obsidian_chest":  "黑曜石箱",
+    "ironchest.container.silver_chest":  "銀箱"}

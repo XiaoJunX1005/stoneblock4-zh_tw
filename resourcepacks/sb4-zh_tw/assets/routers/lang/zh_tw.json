@@ -46,4 +46,19 @@
     "tooltip.routers.router_connector":  "右擊輸入口以設置位置，然後右擊輸出口進行連接。右擊可解除連接。",
     "tooltip.routers.source_upgrade":  "允許輸出口提取新生魔藝模組的魔源，每次操作轉移%s單位",
     "tooltip.routers.speed_upgrade":  "允許輸出口每%s刻進行一次操作"
-}
+,
+    "item.routers.advanced_pressure_upgrade":  "進階壓力升級",
+    "item.routers.dimensional_upgrade":  "跨維度升級",
+    "item.routers.heat_upgrade_pc":  "加熱升級（PneumaticCraft）",
+    "item.routers.mod_filter":  "模組過濾器",
+    "item.routers.pressure_upgrade":  "基本壓力升級",
+    "item.routers.reinforced_pressure_upgrade":  "強化壓力升級",
+    "item.routers.tag_filter":  "標籤過濾器",
+    "screen.routers.config_screen":  "設定過濾器",
+    "tooltip.routers.dimensional_upgrade":  "允許輸出器向其他維度的輸入器抽取",
+    "tooltip.routers.mod_filter":  "模組：%s",
+    "tooltip.routers.mod_filter_empty":  "右鍵開啟，可用標籤過濾",
+    "tooltip.routers.pressure_upgrade":  "允許輸出器以每次 %s 空氣量抽取 PneumaticCraft 的空氣",
+    "tooltip.routers.soul_upgrade":  "允許輸出器每次抽取 10 點 Industrial Foregoing Souls 的靈魂；輸入器必須連接靈魂湧動",
+    "tooltip.routers.tag_filter":  "標籤：%s",
+    "tooltip.routers.tag_filter_empty":  "右鍵開啟，可用模組過濾"}

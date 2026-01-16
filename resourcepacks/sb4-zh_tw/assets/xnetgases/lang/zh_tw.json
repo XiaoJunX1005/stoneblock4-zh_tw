@@ -1,0 +1,19 @@
+{
+    "xnetgases.channel.chemical":  "化學品",
+    "xnetgases.channel.chemical_logic":  "化學邏輯",
+    "xnetgases.require_insert_rate.label":  "需要輸入速率",
+    "xnetgases.chemical.rate.tooltip.formatted":  "化學 %s 速率｜（上限 %d mb）",
+    "xnetgases.chemical.min_max.tooltip.formatted":  "若化學品過於 %s，則停用 %s",
+    "xnetgases.enum.connector_mode.ins":  "入",
+    "xnetgases.enum.connector_mode.ins.tooltip":  "將化學品輸入到|連接的方塊",
+    "xnetgases.enum.connector_mode.ext":  "出",
+    "xnetgases.enum.connector_mode.ext.tooltip":  "從連接的方塊|抽取化學品",
+    "xnetgases.enum.channel_mode.priority":  "優先",
+    "xnetgases.enum.channel_mode.priority.tooltip":  "分配模式｜目前：優先",
+    "xnetgases.enum.channel_mode.round_robin":  "輪替",
+    "xnetgases.enum.channel_mode.round_robin.tooltip":  "分配模式｜目前：輪替",
+    "xnetgases.enum.sensor_mode.off":  "關",
+    "xnetgases.enum.sensor_mode.off.tooltip":  "不使用",
+    "xnetgases.enum.sensor_mode.on":  "開",
+    "xnetgases.enum.sensor_mode.on.tooltip":  "掃描連接方塊中的化學品量"
+}

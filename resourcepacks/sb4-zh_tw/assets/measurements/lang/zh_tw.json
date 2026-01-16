@@ -1,0 +1,17 @@
+{
+    "_comment":  "NeoForge 設定",
+    "item.measurements.tape_measure":  "捲尺",
+    "text.autoconfig.measurements.title":  "Measurements",
+    "text.autoconfig.measurements.option.client":  "用戶端",
+    "text.autoconfig.measurements.option.client.lineColor":  "線條顏色",
+    "text.autoconfig.measurements.option.client.textColor":  "文字顏色",
+    "text.autoconfig.measurements.option.client.textSize":  "文字大小",
+    "text.autoconfig.measurements.option.client.lineWidth":  "線條粗細",
+    "text.autoconfig.measurements.option.client.lineWidthMax":  "線條粗細上限",
+    "measurements.configuration.client":  "用戶端",
+    "measurements.configuration.lineColor":  "線條顏色",
+    "measurements.configuration.textColor":  "文字顏色",
+    "measurements.configuration.textSize":  "文字大小",
+    "measurements.configuration.lineWidth":  "線條粗細",
+    "measurements.configuration.lineWidthMax":  "線條粗細上限"
+}
