@@ -1,4 +1,6 @@
-{
-    "key.findme.search":  "在附近的容器查找一個物品",
-    "key.findme.category":  "東尋西覓"
-}
+{
+    "key.findme.search":  "在附近的容器查找一個物品",
+    "key.findme.category":  "東尋西覓"
+,
+    "key.findme.pull_one":  "??????? 1 ???",
+    "key.findme.pull_stack":  "??????? 1 ???"}
