@@ -1,0 +1,21 @@
+{
+    "advancements.jags.root.description":  "種下一顆草種子",
+    "advancements.jags.root.title":  "外面長這樣嗎？",
+    "block.jags.badlands_fake_grass_block":  "假草地方塊（惡地）",
+    "block.jags.birch_fake_grass_block":  "假草地方塊（樺木）",
+    "block.jags.cheery_fake_grass_block":  "假草地方塊（櫻）",
+    "block.jags.dark_forest_fake_grass_block":  "假草地方塊（黑森林）",
+    "block.jags.desert_fake_grass_block":  "假草地方塊（沙漠）",
+    "block.jags.fake_grass_block":  "假草地方塊",
+    "block.jags.jungle_fake_grass_block":  "假草地方塊（叢林）",
+    "block.jags.mangrove_fake_grass_block":  "假草地方塊（紅樹林）",
+    "block.jags.meadow_fake_grass_block":  "假草地方塊（草甸）",
+    "block.jags.mushroom_fake_grass_block":  "假草地方塊（蘑菇）",
+    "block.jags.ocean_fake_grass_block":  "假草地方塊（海洋）",
+    "block.jags.pale_garden_fake_grass_block":  "假草地方塊（蒼白花園）",
+    "block.jags.plains_fake_grass_block":  "假草地方塊（平原）",
+    "block.jags.snow_fake_grass_block":  "假草地方塊（雪地）",
+    "block.jags.sparse_jungle_fake_grass_block":  "假草地方塊（稀疏叢林）",
+    "block.jags.swamp_fake_grass_block":  "假草地方塊（沼澤）",
+    "item.jags.grass_seed":  "草種子"
+}

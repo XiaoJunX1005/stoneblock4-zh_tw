@@ -1,0 +1,23 @@
+{
+    "message.belts.reset":  "皮帶已重置！",
+    "message.belts.started":  "已儲存起點！",
+    "message.belts.belt_created":  "已建立皮帶！",
+    "message.belts.midpoint_added":  "已儲存中繼點！",
+    "message.belts.midpoint_duplicate":  "中繼點已儲存。",
+    "message.belts.chute_used":  "落料槽已被使用！",
+    "message.belts.filter_set":  "物品過濾器已設定",
+    "message.belts.filter_reset":  "物品過濾器已重置",
+    "itemgroup.belts.items":  "簡易皮帶",
+    "block.belts.chute":  "輸送帶物品落料槽",
+    "block.belts.chute.tooltip":  "將此附加到任意儲存方塊。輸送帶會接到此處。",
+    "block.belts.chute.tooltip.1":  "[右鍵] 以物品設為過濾器。",
+    "block.belts.chute.tooltip.ftbfilters":  "支援「FTB Filters」模組的智慧過濾器。",
+    "block.belts.conveyor_support":  "輸送帶支架",
+    "block.belts.conveyor_support.tooltip":  "用於引導輸送帶路徑。",
+    "item.belts.belt":  "輸送帶",
+    "item.belts.belt.tooltip.0":  "用於建立任意形狀與大小的輸送帶。會自動在起點與終點放置物品落料槽（物品選用）。",
+    "item.belts.belt.tooltip.1":  "點擊既有落料槽標記為起點/終點。點擊輸送帶支架可新增中繼點。",
+    "item.belts.belt.tooltip.2":  "[Shift] + [右鍵] 未指向方塊時可重置。",
+    "item.belts.belt.tooltip.3":  "可用物品點擊既有連接落料槽以啟用過濾。",
+    "message.belts.show_extra":  "按住 [ctrl] 顯示更多資訊。"
+}
