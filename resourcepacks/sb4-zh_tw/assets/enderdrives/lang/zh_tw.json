@@ -37,4 +37,8 @@
     "tooltip.enderdrives.scope.team":  "§7團隊：§e%s",
     "tooltip.enderdrives.scope.global":  "§7公開",
     "tooltip.enderdrives.unknown":  "未知"
-}
+,
+    "item.enderdrives.tape_disk":  "磁帶磁碟物品儲存元件",
+    "tooltip.enderdrives.partitioned":  "§7已分割：§f%s 個物品%s",
+    "tooltip.enderdrives.tape.types":  "%1$s / %2$s 種類",
+    "tooltip.enderdrives.tape.bytes":  "已使用 %1$s / %2$s 位元組"}

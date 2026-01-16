@@ -1,0 +1,5 @@
+{
+    "block.underlay.overlay":  " （覆蓋）",
+    "config.jade.plugin_underlay.overlay":  "覆蓋",
+    "config.jade.plugin_underlay.overlay.tooltip":  "顯示 Underlay 覆蓋提示"
+}

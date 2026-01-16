@@ -259,4 +259,8 @@
     "effect.createaddition.shocking.description":  "使移動速度嚴重下降",
     "createaddition.subtitle.loud_zap":  "特斯拉線圈：電擊",
     "createaddition.subtitle.little_zap":  "特斯拉線圈：火花"
-}
+,
+    "death.attack.createaddition.barbed_wire":  "%1$s 試圖穿越鐵絲網",
+    "death.attack.createaddition.barbed_wire.player":  "%1$s 在與 %2$s 戰鬥時試圖穿越鐵絲網",
+    "death.attack.createaddition.tesla_coil":  "%1$s 遭到致命電擊",
+    "death.attack.createaddition.tesla_coil.player":  "%1$s 在與 %2$s 戰鬥時遭到致命電擊"}

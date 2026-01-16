@@ -58,4 +58,7 @@
     "text.jei_mekanism_multiblocks.tooltip.need_more":  "需要更多‘%s’。",
     "text.jei_mekanism_multiblocks.tooltip.production_per_flow":  "每點流量的產出：%s。",
     "text.jei_mekanism_multiblocks.tooltip.need_set_injection_rate":  "需要設置反應堆的‘輸入速率’為%s。"
-}
+,
+    "text.jei_mekanism_multiblocks.building.better_fusion_reactor":  "改良聚變反應爐",
+    "text.jei_mekanism_multiblocks.building.extra_matrix":  "強化感應矩陣",
+    "text.jei_mekanism_multiblocks.not_supported":  "不支援"}

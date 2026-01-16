@@ -256,4 +256,7 @@
     "sfm.label_gun.view_mode.show_only_active_and_targeted":  "顯示帶活動標簽的方塊。按 %s 或在GUI中循環模式",
     "sfm.label_gun.view_mode.show_only_targeted":  "僅顯示目標方塊的標簽。按 %s 或在GUI中循環模式",
     "sfm.network_tool.reminder_overlay":  "按 %s 以切換網絡工具疊加層"
-}
+,
+    "block.sfm.buffer":  "資源緩衝器",
+    "block.sfm.tunnelled_manager":  "隧道式工廠管理器",
+    "sfm.error.bad_translation_argument":  "無法為鍵 \"{}\" 建立可翻譯內容，錯誤：{}"}

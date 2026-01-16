@@ -14,4 +14,7 @@
     "text.coin":  "硬幣",
     "text.coins":  "硬幣",
     "text.page":  "頁面"
-}
+,
+    "item.magic_coins.silver_coin.description":  "此硬幣的價值為 $%s",
+    "item.magic_coins.gold_coin.description":  "此硬幣的價值為 $%s",
+    "item.magic_coins.crystal_coin.description":  "此硬幣的價值為 $%s"}
