@@ -1,0 +1,14 @@
+{
+    "item.mob_bottle.tooltip":  "內含：%s",
+    "item.mob_bottle.tooltip_empty":  "對縮小的生物右鍵玻璃瓶即可捕捉",
+    "item.mob_bottle.tooltip_with_name":  "內含：%s（%s）",
+    "item.shrink.shrink_bottle":  "玻璃瓶",
+    "item.shrink.shrinking_device":  "個人縮小裝置",
+    "itemGroup.shrink":  "Shrink",
+    "key.shrink.category":  "Shrink",
+    "key.shrink.shrink":  "切換縮小",
+    "shrink.deny_shrink":  "因 deny 標籤而禁止縮小實體",
+    "shrink.message.already_shrunk":  "已縮小時無法開啟",
+    "shrink.message.missing":  "缺少 Shrink 屬性",
+    "shrink.message.power":  "能量不足"
+}

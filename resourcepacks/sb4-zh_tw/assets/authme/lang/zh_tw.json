@@ -40,4 +40,16 @@
     "text.rconfig.authme.option.methods.microsoft.mcProfileUrl":  "Minecraft 賬戶信息接口連接",
     "text.rconfig.authme.option.methods.offline":  "Offline",
     "text.rconfig.authme.option.methods.offline.lastUsername":  "最後一次使用的用戶名"
-}
+,
+    "gui.authme.error.notPurchased":  "此帳號尚未購買 Minecraft！",
+    "gui.authme.method.button.microsoft.selectAccount":  "Ctrl + 點一下以選取帳號",
+    "gui.authme.method.button.mojang.unavailable":  "無法使用，點擊以了解更多",
+    "gui.authme.microsoft.warning.title":  "警告！Microsoft 驗證的非預設選項",
+    "gui.authme.microsoft.warning.body":  "若你沒有進行此變更，可能會洩露你的帳號權杖。仍要繼續嗎？",
+    "gui.authme.microsoft.warning.accept":  "我知道我在做什麼",
+    "gui.authme.microsoft.warning.cancel":  "回到安全",
+    "text.rconfig.authme.description":  "在 Minecraft 中進行身分驗證並重新驗證工作階段",
+    "text.rconfig.authme.option.authButton.description":  "控制多人遊戲畫面的驗證按鈕行為",
+    "text.rconfig.authme.option.methods.description":  "控制可用登入方式的行為",
+    "text.rconfig.authme.option.methods.microsoft.description":  "控制 Microsoft 登入方式的行為",
+    "text.rconfig.authme.option.methods.offline.description":  "控制離線登入方式的行為"}

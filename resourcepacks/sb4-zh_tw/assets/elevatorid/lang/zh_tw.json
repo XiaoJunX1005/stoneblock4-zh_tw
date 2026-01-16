@@ -17,4 +17,15 @@
     "block.elevatorid.elevator_yellow":  "黃色電梯",
     "elevatorid.subtitle.teleport":  "使用電梯",
     "itemGroup.elevators_tab":  "電梯"
-}
+,
+    "elevatorid.subtitle.camouflage":  "電梯已偽裝",
+    "screen.elevatorid.elevator":  "電梯設定",
+    "screen.elevatorid.elevator.directional":  "定向",
+    "screen.elevatorid.elevator.directional_north":  "北",
+    "screen.elevatorid.elevator.directional_east":  "東",
+    "screen.elevatorid.elevator.directional_south":  "南",
+    "screen.elevatorid.elevator.directional_west":  "西",
+    "screen.elevatorid.elevator.hide_arrow":  "隱藏箭頭",
+    "screen.elevatorid.elevator.reset_camo":  "移除偽裝",
+    "elevatorid.message.missing_xp":  "你的經驗值不足以使用電梯",
+    "tag.item.elevatorid.elevators":  "電梯"}

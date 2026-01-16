@@ -238,4 +238,16 @@
     "emi.extendedae.text.success_chance":  "成功率：%s",
     "emi.extendedae.desc.entro_crystal":  "恩特羅水晶由萌芽的恩特羅化福魯伊克斯生長，就像賽特斯水晶的工作原理一樣。要獲得萌芽的恩特羅化福魯伊克斯，您需要制作恩特羅種子並在福魯伊克斯塊上使用它。",
     "emi.extendedae.desc.entro_seed":  "在放置於世界中的福魯伊克斯塊上使用恩特羅種子，會將該福魯伊克斯塊變成萌芽的恩特羅化福魯伊克斯。"
-}
+,
+    "block.extendedae.ex_emc_interface":  "ME 擴充換質介面",
+    "item.extendedae.wireless_connector_upgrade":  "無線連接器升級",
+    "item.extendedae.ex_emc_interface_part":  "ME 擴充換質介面",
+    "item.extendedae.emc_interface_upgrade":  "換質介面升級",
+    "item.extendedae.ex_emc_export_bus_part":  "ME 擴充換質匯出匯流排",
+    "item.extendedae.ex_emc_import_bus_part":  "ME 擴充換質匯入匯流排",
+    "item.extendedae.emc_io_bus_upgrade":  "換質匯入/匯出匯流排升級",
+    "gui.wireless_connect.remote_channel":  "位置 X：%s，Y：%s，Z：%s\n使用通道：%s",
+    "gui.extendedae.ex_emc_interface":  "ME 擴充換質介面",
+    "gui.extendedae.ex_emc_export_bus_part":  "ME 擴充換質匯出匯流排",
+    "gui.extendedae.ex_emc_import_bus_part":  "ME 擴充換質匯入匯流排",
+    "group.ex_emc_io_bus_part":  "ME 擴充換質匯入/匯出匯流排"}

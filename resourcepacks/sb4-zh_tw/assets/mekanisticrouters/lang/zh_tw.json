@@ -1,0 +1,15 @@
+{
+    "mekanisticrouters.guiText.popup.chemical.direction":  "§a§n傳輸方向§r\n\n你可以在此控制路由器是把化學品推送到槽，或從槽拉取化學品。",
+    "mekanisticrouters.guiText.popup.chemical.maxTransfer":  "§a§n最大傳輸量§r\n\n路由器在一次操作中嘗試傳輸的最大化學品量。\n\n請注意傳輸速率仍受路由器中的化學傳輸升級數量與外部槽（若有）的傳輸速率限制，因此此數值應視為上限而非目標。",
+    "mekanisticrouters.itemText.chemical.maxTransfer":  "化學傳輸速率：每次最多 %s mB",
+    "mekanisticrouters.guiText.tooltip.chemicalTransferTooltip":  "§b最大化學傳輸\n每次操作可嘗試的最大量（mB）。\n仍受路由器整體傳輸速率（化學傳輸與速度升級）限制",
+    "item.mekanisticrouters.chemical_module_mk2":  "化學模組 Mk2",
+    "item.mekanisticrouters.chemical_module_mk1":  "化學模組 Mk1",
+    "item.mekanisticrouters.chemical_refill_module":  "化學補充模組",
+    "item.mekanisticrouters.chemical_upgrade":  "化學傳輸升級",
+    "mekanisticrouters.itemText.usage.item.chemical_upgrade":  "提升路由器可傳輸的流體量（每方向每刻）+%d mB",
+    "mekanisticrouters.itemText.usage.item.chemical_module_mk1":  "依模組方向將化學品從相鄰方塊傳入/傳出路由器。\n• 路由器緩衝區必須有化學容器物品。",
+    "mekanisticrouters.itemText.usage.item.chemical_module_mk2":  "將化學品從附近方塊傳入/傳出路由器。\n• 路由器緩衝區必須有化學容器物品。\n• 可傳輸至/自槽。",
+    "mekanisticrouters.itemText.usage.item.chemical_refill_module":  "無線為玩家背包中的化學容器物品（如噴射背包）補充化學品。",
+    "mekanisticrouters.guiText.popup.chemical_refill.control":  "§a§n化學補充模組§r\n\n你可以在此設定：\n- 玩家背包中要互動的區段。\n\n過濾器控制哪些物品可從此模組接收化學品。"
+}

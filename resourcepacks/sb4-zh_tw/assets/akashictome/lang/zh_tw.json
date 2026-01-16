@@ -1,0 +1,13 @@
+{
+    "akashictome.sudo_name":  "阿卡西之書（%s）",
+    "akashictome.click_morph":  "Shift+右鍵點擊以切換",
+    "item.akashictome.tome":  "阿卡西之書",
+    "akashictome.misc.shift_for_info":  "§7按住 §bSHIFT§7 查看更多資訊",
+    "akashictome.configuration.Allow all items to be added":  "允許新增所有物品",
+    "akashictome.configuration.Whitelisted Items":  "白名單物品",
+    "akashictome.configuration.Blacklisted Mods":  "黑名單模組",
+    "akashictome.configuration.Mod Aliases":  "模組別名",
+    "akashictome.configuration.Hide Book Render":  "隱藏書本渲染",
+    "akashictome.configuration.Whitelisted Names":  "白名單名稱",
+    "akashictome.configuration.Blacklisted Items":  "黑名單物品"
+}

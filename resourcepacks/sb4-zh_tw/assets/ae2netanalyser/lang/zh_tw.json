@@ -23,4 +23,18 @@
     "gui.ae2netanalyser.network_analyser.state.normal_nodes":  "普通節點: %s",
     "gui.ae2netanalyser.network_analyser.state.dense_nodes":  "致密節點: %s",
     "gui.ae2netanalyser.network_analyser.state.missing_nodes":  "離線節點: %s"
-}
+,
+    "item.ae2netanalyser.tick_analyser":  "ME 刻分析器",
+    "gui.ae2netanalyser.tick_analyser.set_duration":  "分析時長（秒）",
+    "gui.ae2netanalyser.tick_analyser.begin":  "開始",
+    "gui.ae2netanalyser.tick_analyser.cancel":  "中止",
+    "gui.ae2netanalyser.tick_analyser.range1":  "<5μs/刻",
+    "gui.ae2netanalyser.tick_analyser.range2":  "5–100μs/刻",
+    "gui.ae2netanalyser.tick_analyser.range3":  "100–500μs/刻",
+    "gui.ae2netanalyser.tick_analyser.range4":  ">500μs/刻",
+    "chat.ae2netanalyser.tick_analyser.begin":  "將執行分析 %s 秒。",
+    "chat.ae2netanalyser.tick_analyser.finish":  "分析完成。",
+    "chat.ae2netanalyser.tick_analyser.waiting":  "已送出分析請求，請稍候完成。",
+    "chat.ae2netanalyser.tick_analyser.cannel":  "分析已取消。",
+    "chat.ae2netanalyser.tick_analyser.no_cannel":  "目前沒有執行中的分析作業。",
+    "chat.ae2netanalyser.tick_analyser.user_control":  "你沒有權限在此伺服器進行分析。"}

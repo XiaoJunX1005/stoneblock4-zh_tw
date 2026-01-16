@@ -1,0 +1,14 @@
+{
+    "packAction.copyId.description":  "按住 %s 以複製",
+    "packAction.copyId.success":  "已複製！",
+    "packAction.copyId.title":  "複製資源包 ID",
+    "packAction.reloadSettings.description":  "按住 %s 以重新載入",
+    "packAction.reloadSettings.success":  "已重新載入！",
+    "packAction.reloadSettings.title":  "重新載入設定",
+    "packAction.restoreDefaults.description":  "按住 %s 以還原",
+    "packAction.restoreDefaults.success":  "已還原！",
+    "packAction.restoreDefaults.title":  "還原預設資源包",
+    "packAction.toggleDebug.description":  "按住 %s 以切換",
+    "packAction.toggleDebug.success":  "已切換！",
+    "packAction.toggleDebug.title":  "切換資源包 ID"
+}

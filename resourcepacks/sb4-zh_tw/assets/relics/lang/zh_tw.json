@@ -701,4 +701,16 @@
     "tooltip.relics.flippers.ability.swimmer.description":  "玩家游泳速度提升 %1$s%%。",
     "tooltip.relics.flippers.leveling_source.swimmer.title":  "魚尾",
     "tooltip.relics.flippers.leveling_source.swimmer.description":  "每游泳 1 秒獲得 +%1$s 經驗值。"
-}
+,
+    "tooltip.relics.holy_locket.ability.faith":  "信仰",
+    "tooltip.relics.holy_locket.ability.faith.description":  "有兩種可切換模式：神聖與不潔。在紅色的神聖模式下，會從半徑 %3$s 格內可見實體偷取 %1$s%% 的治療量並轉移給遺物配戴者；在藍色的不潔模式下，會對同半徑內可見實體造成等於配戴者所受治療量 %2$s%% 的傷害。",
+    "tooltip.relics.holy_locket.ability.penitence":  "懺悔",
+    "tooltip.relics.holy_locket.ability.penitence.description":  "點燃不死生物 10 秒，並使對其造成的傷害提高 %1$s%%。",
+    "tooltip.relics.holy_locket.ability.ascension":  "昇華",
+    "tooltip.relics.holy_locket.ability.ascension.description":  "擊殺目標會為配戴者提供可疊加的暫時不朽效果，持續 %2$s 秒，最多可疊加到 %1$s 秒。",
+    "tooltip.relics.holy_locket.leveling_source.faith.title":  "信仰",
+    "tooltip.relics.holy_locket.leveling_source.faith.description":  "每次啟用 %2$s 能力可獲得 +%1$s 經驗值。",
+    "tooltip.relics.holy_locket.leveling_source.penitence.title":  "懺悔",
+    "tooltip.relics.holy_locket.leveling_source.penitence.description":  "對尚未燃燒的不死生物啟用 %2$s 能力可獲得 +%1$s 經驗值。",
+    "tooltip.relics.holy_locket.leveling_source.ascension.title":  "昇華",
+    "tooltip.relics.holy_locket.leveling_source.ascension.description":  "每次啟用 %2$s 能力可獲得 +%1$s 經驗值。"}

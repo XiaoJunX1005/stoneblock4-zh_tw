@@ -69,4 +69,16 @@
     "tip.tipsmod.shear_mooshroom.text":  "你可以剪掉哞菇的蘑菇使它變為一頭普通的牛。",
     "tip.tipsmod.peaceful_tnt.text":  "TNT無法在和平模式下傷害玩家。",
     "tip.tipsmod.weather_sleep.text":  "睡覺可以使天空放晴並停止雷雨或下雨。"
-}
+,
+    "tip.tipsmod.compass_spawn.text":  "羅盤會指向世界的重生點。",
+    "tip.tipsmod.elytra_boost.text":  "使用鞘翅飛行時搭配煙火可以加速！",
+    "tip.tipsmod.enderman_projectiles.text":  "終界使者不會被投射物擊中。",
+    "tip.tipsmod.enderman_pumpkin.text":  "戴上雕刻南瓜能降低終界使者注意到你的機率。",
+    "tip.tipsmod.enderman_stare.text":  "直視終界使者的眼睛會使其敵對。",
+    "tip.tipsmod.endermites.text":  "終界使者傳送或使用終界珍珠時可能生成終界蟎。",
+    "tip.tipsmod.locked_repeaters.text":  "中繼器可以用另一個中繼器從側邊供電來鎖定狀態。",
+    "tip.tipsmod.nether_travel.text":  "在地獄移動一格等於在主世界移動八格。",
+    "tip.tipsmod.obsidian_formation.text":  "水碰到岩漿源方塊會形成黑曜石。",
+    "tip.tipsmod.sheared_cave_vines.text":  "你可以剪斷洞穴藤蔓的末端以停止生長。",
+    "tip.tipsmod.shears_dispenser.text":  "你可以把剪刀放進發射器來剪羊毛。",
+    "tip.tipsmod.spider_jockey.text":  "在罕見情況下，骷髏可能會騎著蜘蛛投入戰鬥！"}
